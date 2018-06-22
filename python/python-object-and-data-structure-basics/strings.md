@@ -3,7 +3,7 @@ Python is a ```dynamic typed language```, not to be confused with ```static typi
 ## Benefits of dynamic typed language are
 * Very easy to work with
 
-*Faster development time
+* Faster development time
 ## Cons of dynamic typed language are
 * May result in unexpected data types
 
