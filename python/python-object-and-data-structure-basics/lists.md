@@ -1,4 +1,4 @@
-# Lists (Similar to ```Arrays``` in Javascript)
+# Lists (Similar to Arrays in Javascript)
 
 Lists ordered sequences that can hold a variety of object types
 

@@ -8,7 +8,7 @@ This key-value pair allows users to quickly grab objects without needs to know a
 ```
 {'key0':'value0', 'key1':'value1', 'key2':'value2'}
 ```
-## When to use a ```Dictionary``` vs a ```Lists```
+## When to use a Dictionary vs Lists
 
 ```Dictionaries``` Objects retrieved by key name pairs
 
@@ -18,7 +18,7 @@ This key-value pair allows users to quickly grab objects without needs to know a
 
 * Ordered Sequence can be indexed or sliced.
 
-## How to use a ```Dictionary``` (Similar to ```Objects``` in Javascript)
+## How to use a Dictionary (Similar to Objects in Javascript)
 ```
 my_dict = {"key": "value", "key1": "value1", "key2": "value2"}
 
