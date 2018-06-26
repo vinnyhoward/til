@@ -10,7 +10,7 @@ let toAlternatingCase = str => {
       newCase.push(newStr[i])
     }
   }
-  return newCase.join('');
+  console.log(newCase.join(''));
 }
 
 toAlternatingCase("HelLo wORLD")
