@@ -17,7 +17,6 @@
 // And the final string to return is 'Cdwr oeas'
 
 let sortMyString = (s) => {
-	var splitStr = s.split('');
 	var evenArr = [];
 	var oddArr = [];
 
@@ -30,5 +29,4 @@ let sortMyString = (s) => {
 	}
 	return evenArr.join('') + ' ' + oddArr.join('');
 };
-
 console.log(sortMyString("YCOLUE'VREER"));
