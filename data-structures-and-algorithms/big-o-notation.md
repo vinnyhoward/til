@@ -68,3 +68,15 @@ def example4(manatees):
                 oldest_manatee = manatee1['name']
     print oldest_manatee
 ```
+
+Example 1:
+```O(n)```
+
+Example 2:
+```O(1)```
+
+Example 3:
+```O(nm)```
+
+Example 4:
+```O(n^2)```
