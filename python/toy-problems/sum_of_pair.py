@@ -27,7 +27,52 @@
 
 # There will also be lists tested of lengths upwards of 10,000,000 elements. Be sure your code doesn't time out.
 
+
+def sum_pairs(ints, sum):
+    sl = set([ints[0]])
+    result = []
+
+    for num in ints[1:]:
+        diff = sum - num
+        if diff in sl:
+            result.append(diff)
+            result.append(num)
+        else:
+            result.append(sl.add(num))
+
+    final_result = [x for x in result if x is not None]
+
+    if final_result == []:
+        return None
+    else:
+        return [final_result[0], final_result[1]]
+
+# Better answer
+# def sum_pairs(lst, s):
+#     cache = set()
+#     for i in lst:
+#         if s - i in cache:
+#             return [s - i, i]
+#         cache.add(i)
+
+
+l1 = [1, 4, 8, 7, 3, 15]
+l2 = [1, -2, 3, 0, -6, 1]
+l3 = [20, -13, 40]
+l4 = [1, 2, 3, 4, 1, 0]
+l5 = [10, 5, 2, 3, 7, 5]
+l6 = [4, -2, 3, 3, 4]
+l7 = [0, 2, 0]
+l8 = [5, 9, 13, -3]
+l9 = [1, -2, 3, 0, -6, 1]
+l10 = [1, 4, 8, 7, 3, 15]
+l11 = [1, -2, 3, 0, -6, 1]
+l12 = [10, 5, 2, 3, 7, 5]
+l13 = [1, 2, 3, 4, 1, 0]
+sum_pairs(l3, -7)
+
 # Failed Attempt :(
+
 # def sum_pairs(ints, s):
 #     indice = []
 #     temp_val = []
@@ -58,21 +103,17 @@
 #     else:
 #         return list(answer[0])
 
+# Failed Attempt # 2 lmao :(
 
-l1 = [1, 4, 8, 7, 3, 15]
-l2 = [1, -2, 3, 0, -6, 1]
-l3 = [20, -13, 40]
-l4 = [1, 2, 3, 4, 1, 0]
-l5 = [10, 5, 2, 3, 7, 5]
-l6 = [4, -2, 3, 3, 4]
-l7 = [0, 2, 0]
-l8 = [5, 9, 13, -3]
-l9 = [1, -2, 3, 0, -6, 1]
-l10 = [1, 4, 8, 7, 3, 15]  # [7, 1]
-sum_pairs(l5, 10)
+# def sum_pairs(ints, s):
+#     summed_val = []
 
-# sum_pairs(l2, -6)
-# sum_pairs(l3, -7)
+#     for idx, valx in enumerate(ints):
+#         for idy, valy in enumerate(ints):
+#             if valx + valy == s and idx != idy:
+#                 summed_val.append((valx, valy))
 
-# print('Index: ', index_count, 'Comparing Idx: ',
-#       idx, 'Comparing Idy: ', idy)
+#     if summed_val == []:
+#         return None
+#     else:
+#         return list(summed_val[0])
