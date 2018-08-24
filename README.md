@@ -15,6 +15,8 @@ _17 TILs and counting..._
 
 * [Python](#python)
 
+* [Data Structures & Algorithms](#Data-Structures-&-Algorithms)
+
 ---
 
 ### Python
@@ -31,6 +33,8 @@ _17 TILs and counting..._
 - [In](/python/useful-operators/in.md)
 - [Range](/python/useful-operators/range.md)
 - [Zip](/python/useful-operators/zip.md)
+
+### Data Structures & Algorithms
 
 <!-- ## Usage
 
