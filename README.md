@@ -4,10 +4,13 @@
 
 A collection of small things that I've learned and toy problems that I have done everyday to help enrich myself in a variety of languages and technologies.
 
-_3 TIL streak so far..._
+_Streaks:_
 
+_4 TIL so far..._
 
-_17 TILs and counting..._
+_4 Toy Problems done and counting..._
+
+_18 TILs and counting..._
 
 ---
 
