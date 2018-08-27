@@ -6,11 +6,11 @@ A collection of small things that I've learned and toy problems that I have done
 
 _Streaks:_
 
-_4 TIL so far..._
+_8 TIL so far..._
 
-_4 Toy Problems done and counting..._
+_8 Toy Problems done and counting..._
 
-_18 TILs and counting..._
+_22 TILs and counting..._
 
 ---
 
@@ -38,6 +38,14 @@ _18 TILs and counting..._
 - [Zip](/python/useful-operators/zip.md)
 
 ### Data Structures & Algorithms
+
+- [Big O notation](/data-structures-and-algorithms/big-o-notation.md)
+- [Binary Search](/data-structures-and-algorithms/binary-search.md)
+- [Bubble Sort](/data-structures-and-algorithms/bubble-sort.md)
+- [Linked List](/data-structures-and-algorithms/linked-list.md)
+- [Recursion](/data-structures-and-algorithms/recursion.md)
+- [Stacks](/data-structures-and-algorithms/stacks.md)
+- [Merge Sort](/data-structures-and-algorithms/merge-sort.md)
 
 <!-- ## Usage
 
