@@ -6,11 +6,9 @@ A collection of small things that I've learned and toy problems that I have done
 
 _Streaks:_
 
-_8 TIL so far..._
+_9 TILs so far..._
 
-_8 Toy Problems done and counting..._
-
-_22 TILs and counting..._
+<!-- _0 Toy Problems done and counting..._ -->
 
 ---
 
@@ -46,6 +44,7 @@ _22 TILs and counting..._
 - [Recursion](/data-structures-and-algorithms/recursion.md)
 - [Stacks](/data-structures-and-algorithms/stacks.md)
 - [Merge Sort](/data-structures-and-algorithms/merge-sort.md)
+- [Quick Sort](/data-structures-and-algorithms/quick-sort.md)
 
 <!-- ## Usage
 
