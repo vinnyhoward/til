@@ -1,0 +1,3 @@
+# Hashing
+
+A ```hash``` function is any function that can be used to map data of arbitrary size to data of a fixed size. The values returned by a ```hash``` function are called ```hash values```, ```hash codes```, ```digests```, or ```simply hashes```. Hash functions are often used in combination with a hash table, a common data structure used in computer software for rapid data lookup. Hash functions accelerate table or database lookup by detecting duplicated records in a large file.
