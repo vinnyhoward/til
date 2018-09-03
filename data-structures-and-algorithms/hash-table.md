@@ -15,3 +15,5 @@ On average, hash tables turn out to be more efficient than ```search trees``` or
 ### Choosing a hashing function
 
 Good hash functions and their implementation algorithms are essential for good hash table performance. But may be difficult to achieve. 
+
+Basic requirements of ```hash tables``` should provide a ```uniform distribution``` of hash values. 

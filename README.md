@@ -6,7 +6,7 @@ A collection of small things that I've learned and toy problems that I have done
 
 _Streaks:_
 
-_13 TILs so far..._
+_15 TILs so far..._
 
 <!-- _0 Toy Problems done and counting..._ -->
 
@@ -15,8 +15,10 @@ _13 TILs so far..._
 ### Categories
 
 * [Python](#python)
-
 * [Data Structures & Algorithms](#Data-Structures-&-Algorithms)
+* [Web](#web)
+* [CSS](#css)
+* [React](#react)
 
 ---
 
@@ -45,6 +47,26 @@ _13 TILs so far..._
 - [Stacks](/data-structures-and-algorithms/stacks.md)
 - [Merge Sort](/data-structures-and-algorithms/merge-sort.md)
 - [Quick Sort](/data-structures-and-algorithms/quick-sort.md)
+- [Hashing](/data-structures-and-algorithms/hashing.md)
+- [Hash Tables](/data-structures-and-algorithms/hash-table.md)
+
+### Web
+
+- [FTP](/web/ftp.md)
+- [SSH](/web/ssh.md)
+- [Transfer Protocol](/web/transfer-protocols.md)
+
+### CSS
+
+- [Alt Attribute](/web/ftp.md)
+- [CSS BEM](/css/css-bem.md)
+- [CSS Preprocessors](/css/css-preprocessors.md)
+- [CSS Box Model](/css/css-box-model.md)
+
+### React
+
+- [Get Derived State](/react/lifecycle-methods/get-derived-state-from-props.md)
+
 
 <!-- ## Usage
 
