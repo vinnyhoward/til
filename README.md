@@ -6,7 +6,7 @@ A collection of small things that I've learned and toy problems that I have done
 
 _Streaks:_
 
-_15 TILs so far..._
+_16 TILs so far..._
 
 <!-- _0 Toy Problems done and counting..._ -->
 
@@ -55,6 +55,7 @@ _15 TILs so far..._
 - [FTP](/web/ftp.md)
 - [SSH](/web/ssh.md)
 - [Transfer Protocol](/web/transfer-protocols.md)
+- [Encryption](/web/encryption.md)
 
 ### CSS
 
