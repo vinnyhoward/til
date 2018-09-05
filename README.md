@@ -6,7 +6,7 @@ A collection of small things that I've learned and toy problems that I have done
 
 _Streaks:_
 
-_16 TILs so far..._
+_17 TILs so far..._
 
 <!-- _0 Toy Problems done and counting..._ -->
 
@@ -49,6 +49,8 @@ _16 TILs so far..._
 - [Quick Sort](/data-structures-and-algorithms/quick-sort.md)
 - [Hashing](/data-structures-and-algorithms/hashing.md)
 - [Hash Tables](/data-structures-and-algorithms/hash-table.md)
+- [Trees](/data-structures-and-algorithms/trees.md)
+- [Tree Traversal](/data-structures-and-algorithms/tree-traversal.md)
 
 ### Web
 
@@ -56,6 +58,7 @@ _16 TILs so far..._
 - [SSH](/web/ssh.md)
 - [Transfer Protocol](/web/transfer-protocols.md)
 - [Encryption](/web/encryption.md)
+- [Hashing](/web/hashing.md)
 
 ### CSS
 
