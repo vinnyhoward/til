@@ -6,7 +6,7 @@ A collection of small things that I've learned and toy problems that I have done
 
 _Streaks:_
 
-_17 TILs so far..._
+_18 TILs so far..._
 
 <!-- _0 Toy Problems done and counting..._ -->
 
@@ -51,6 +51,7 @@ _17 TILs so far..._
 - [Hash Tables](/data-structures-and-algorithms/hash-table.md)
 - [Trees](/data-structures-and-algorithms/trees.md)
 - [Tree Traversal](/data-structures-and-algorithms/tree-traversal.md)
+- [Binary Tree](/data-structures-and-algorithms/binary-tree.md)
 
 ### Web
 

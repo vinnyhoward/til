@@ -21,6 +21,7 @@ Pre-order (Root, Left, Right) : 1 2 4 5 3
 Post-order (Left, Right, Root) : 4 5 2 3 1
 
 ## In-Order 
+
 1. Check if the current node is empty or null.
 2. Traverse the left subtree by recursively calling the in-order function.
 3. Display the data part of the root (or current node).
@@ -41,3 +42,4 @@ In a ```binary search tree```, in-order traversal retrieves data in sorted order
 2. Traverse the left subtree by recursively calling the post-order function.
 3. Traverse the right subtree by recursively calling the post-order function.
 4. Display the data part of the root (or current node).
+

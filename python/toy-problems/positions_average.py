@@ -26,19 +26,27 @@
 def pos_average(s):
     split_lst = s.split(', ')
     multiple_lst = []
+    count = 0
+    length = 0
 
     for lst in split_lst:
         multiple_lst.append(list(lst))
 
-    for idx, x in enumerate(multiple_lst):
-        print(x[idx])
+    for idx, valx in enumerate(multiple_lst):
+        for idy, valy in enumerate(valx):
+            length += 1
+            print(valx.index(valy))
+            # if valx[idy] == valy and idy == valx.index(idx):
+            #     count += 1
 
-    # print(multiple_lst)
+    # return count
 
 
-print(pos_average(
-    "466960, 069060, 494940, 060069, 060090, 640009, 496464, 606900, 004000, 944096"))
+# print(pos_average(
+#     "466960, 069060, 494940, 060069, 060090, 640009, 496464, 606900, 004000, 944096"))
 # 26.6666666667
 # print(pos_average(
 #     "444996, 699990, 666690, 096904, 600644, 640646, 606469, 409694, 666094, 606490"))
 # # 29.2592592593
+print(pos_average(
+    "6900690040, 4690606946, 9990494604"))
