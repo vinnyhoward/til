@@ -10,20 +10,18 @@ def distribute(m, n):
             num = 1
             num_lst.append(num)
 
-    while m >= sum(num_lst):
-        print(sum(num_lst))
-        for num in num_lst:
-
-            if num >= 1:
-                num += 1
-            num_lst.append(num)
-
-    return sum(num_lst)
+    if m == sum(num_lst):
+        return num_lst
+    else:
+        while m >= sum(num_lst):
+            for idx, x in enumerate(num_lst):
+                num_lst[idx] += 1
+            return num_lst
 
 
 
 # print(distribute(-5, 10))  # [0, 0, 0, 0, 0, 0, 0, 0, 0, 0])
 # print(distribute(0, 10))  # [0, 0, 0, 0, 0, 0, 0, 0, 0, 0])
 # print(distribute(5, 10))  # [0, 0, 0, 0, 0, 1, 1, 1, 1, 1])
-print(distribute(10, 10))  # [1, 1, 1, 1, 1, 1, 1, 1, 1, 1])
-# print(distribute(15, 10))  # [1, 1, 1, 1, 1, 2, 2, 2, 2, 2])
+# print(distribute(10, 10))  # [1, 1, 1, 1, 1, 1, 1, 1, 1, 1])
+print(distribute(15, 10))  # [1, 1, 1, 1, 1, 2, 2, 2, 2, 2])

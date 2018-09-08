@@ -6,7 +6,7 @@ A collection of small things that I've learned and toy problems that I have done
 
 _Streaks:_
 
-_18 TILs so far..._
+_19 TILs so far..._
 
 <!-- _0 Toy Problems done and counting..._ -->
 

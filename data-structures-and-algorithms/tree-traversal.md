@@ -14,6 +14,7 @@ These searches are referred to as ```depth-first search``` (DFS), as the search 
 
 [logo]: https://www.geeksforgeeks.org/wp-content/uploads/2009/06/tree12.gif "Tree"
 
+
 In-order (Left, Root, Right) : 4 2 5 1 3
 
 Pre-order (Root, Left, Right) : 1 2 4 5 3
@@ -29,12 +30,24 @@ Post-order (Left, Right, Root) : 4 5 2 3 1
 
 In a ```binary search tree```, in-order traversal retrieves data in sorted order.
 
+![alt text][In-order]
+
+[In-order]: https://image.ibb.co/ffAvaU/Screen_Shot_2018_09_07_at_4_25_59_PM.png "In-Order"
+
+
 ## Pre-order (NLR)
 
+Example - [Pre-Order Traversal](/data-structures-and-algorithms/examples/binary_tree_recursive.py) 
 1. Check if the current node is empty or null.
 2. Display the data part of the root (or current node).
 3. Traverse the left subtree by recursively calling the pre-order function.
 4. Traverse the right subtree by recursively calling the pre-order function.
+
+
+![alt text][pre-order]
+
+[pre-order]: https://image.ibb.co/geaNN9/Screen_Shot_2018_09_07_at_3_55_24_PM.png "Pre-Order"
+
 
 ## Post-order (LRN)
 
