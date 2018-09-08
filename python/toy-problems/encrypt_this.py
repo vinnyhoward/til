@@ -10,9 +10,14 @@
 # Keepin' it simple: There are no special characters in input.
 # Examples:
 
+# My Answer
+
 
 def encrypt_this(text):
-    lst = text.split(' ')
+    if text == "":
+        return ""
+
+    lst = text.split()
     answer_lst = []
 
     for letter in lst:
@@ -20,58 +25,63 @@ def encrypt_this(text):
         convert = ''
         first_letter = ''
         last_letter = letter[-1]
-        print(last_letter)
-        for idx, x in enumerate(list(letter)):
-            if idx == 0:
-                convert = ord(list(letter)[idx])
-                # words += str(convert)
-            elif idx == 1:
-                first_letter = list(letter)[idx]
-                # print('last element:', list(letter)[-1])
-            else:
-                words += x
-        # words.append(first_letter)
-        # words.append(last_letter)
-        # words.pop()
-        answer_lst.append(words)
 
-    print(answer_lst)
+        if len(letter) <= 2:
+            for idy, y in enumerate(list(letter)):
+                if idy == 0:
+                    convert = ord(list(letter)[idy])
+                    words.append(str(convert))
+
+                elif idy == 1:
+                    words.append(y)
+            answer_lst.append(words)
+
+        elif len(letter) > 2:
+            for idx, x in enumerate(list(letter)):
+
+                if idx == 0:
+                    convert = ord(list(letter)[idx])
+
+                elif idx == 1:
+                    first_letter = list(letter)[idx]
+                    words.append(x)
+
+                else:
+                    words.append(x)
+
+            if words:
+                words[0] = last_letter
+                words[-1] = first_letter
+                words.insert(0, str(convert))
+
+            answer_lst.append(words)
+
+    return ' '.join(''.join(inner) for inner in answer_lst)
 
 
-# print(encrypt_this("A in"))
-print(encrypt_this("A wise old owl lived in an oak"))
-# print(encrypt_this("The more he saw the less he spoke"))
-# print(encrypt_this("The less he spoke the more he heard"))
-# print(encrypt_this("Why can we not all be like that wise old bird"))
-# print(encrypt_this("Thank you Piotr for all your help"))
+# Other Answers on CodeWars
 
+# def swapper(w):
+#     return w if len(w)<2 else w[-1] + w[1:-1] + w[0]
+
+# def encrypt_this(s):
+#     return ' '.join(w if not w else str(ord(w[0])) + swapper(w[1:]) for w in s.split())
+
+# def encrypt_word(word):
+#     result = list(word)
+#     result[0] = str(ord(result[0]))
+#     if len(word) > 1:
+#         result[1], result[-1] = result[-1], result[1]
+#     return "".join(result)
 
 # def encrypt_this(text):
-#     lst = text.split(' ')
-#     answer_lst = []
-
-#     for letter in lst:
-#         words = ''
-#         if len(letter) <= 2:
-#             for idx, x in enumerate(list(letter)):
-#                 if idx == 0:
-#                     convert = ord(list(letter)[idx])
-#                     words += str(convert)
-#                 else:
-#                     words += x
-#             answer_lst.append(words)
-
-#         else:
-#             for idx, x in enumerate(list(letter)):
-#                 if idx == 0:
-#                     convert = ord(list(letter)[idx])
-#                     words += str(convert)
-#                 elif idx == 1:
-#                     first_temp = list(letter)[idx]
+#     return " ".join(encrypt_word(word) for word in text.split())
 
 
-#                 else:
-#                     words += x
-#             answer_lst.append(words)
-
-#     print(answer_lst)
+print(encrypt_this("A in"))
+print(encrypt_this("OVpbJrGHqVSJOYD oHknVDkkRYcbOil lSoYlEZU aBWEkYTBb JsSbXdQMgjkHima pPOHBjCiKnWXjHxqaVVQ VF  IbcyEhncDoy hvaMAvDaJXgodDS fRZmbVz UTlMzuATKiXf UIYFhgGVDYlSAJSK jE NK"))
+print(encrypt_this("A wise old owl lived in an oak"))
+print(encrypt_this("The more he saw the less he spoke"))
+print(encrypt_this("The less he spoke the more he heard"))
+print(encrypt_this("Why can we not all be like that wise old bird"))
+print(encrypt_this("Thank you Piotr for all your help"))

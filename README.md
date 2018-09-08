@@ -6,7 +6,7 @@ A collection of small things that I've learned and toy problems that I have done
 
 _Streaks:_
 
-_19 TILs so far..._
+_20 TILs so far..._
 
 <!-- _0 Toy Problems done and counting..._ -->
 
@@ -67,6 +67,7 @@ _19 TILs so far..._
 - [CSS BEM](/css/css-bem.md)
 - [CSS Preprocessors](/css/css-preprocessors.md)
 - [CSS Box Model](/css/css-box-model.md)
+- [CSS Sprites](/css/css-sprites.md)
 
 ### React
 
