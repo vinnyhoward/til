@@ -38,19 +38,21 @@
 def longest_bouncy_list(arr):
     lst_one = []
     lst_two = []
+    is_bouncy = False
+    prev_value = arr[0]
 
-    for x in arr:
-        print(x + 1)
+    for idx, x in enumerate(arr):
+        print(idx)
 
 
 arr1 = [7, 9, 6, 10, 5, 11, 10, 12, 13, 4, 2, 5, 1, 6, 4, 8]
 print(longest_bouncy_list(arr1))
 # [7,9,6,10,5,11,10,12]
 
-arr2 = [7, 7, 7, 7, 7]
-print(longest_bouncy_list(arr2))
-#  [7]
+# arr2 = [7, 7, 7, 7, 7]
+# print(longest_bouncy_list(arr2))
+# #  [7]
 
-arr3 = [1, 2, 3, 4, 5, 6]
-print(longest_bouncy_list(arr3))
-# [1,2]
+# arr3 = [1, 2, 3, 4, 5, 6]
+# print(longest_bouncy_list(arr3))
+# # [1,2]

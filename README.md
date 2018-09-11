@@ -6,7 +6,7 @@ A collection of small things that I've learned and toy problems that I have done
 
 _Streaks:_
 
-_20 TILs so far..._
+_21 TILs so far..._
 
 <!-- _0 Toy Problems done and counting..._ -->
 
@@ -52,6 +52,7 @@ _20 TILs so far..._
 - [Trees](/data-structures-and-algorithms/trees.md)
 - [Tree Traversal](/data-structures-and-algorithms/tree-traversal.md)
 - [Binary Tree](/data-structures-and-algorithms/binary-tree.md)
+- [Binary Search Tree](/data-structures-and-algorithms/binary_search_tree.md)
 
 ### Web
 
@@ -60,6 +61,7 @@ _20 TILs so far..._
 - [Transfer Protocol](/web/transfer-protocols.md)
 - [Encryption](/web/encryption.md)
 - [Hashing](/web/hashing.md)
+- [CORS](/web/cors.md)
 
 ### CSS
 
@@ -79,6 +81,8 @@ _20 TILs so far..._
 The `.vimrc` file for this project contains a function `CountTILs` that can
 be invoked with `<leader>c`. This will do a substitution count of the
 current number of TILs and display the result in the command tray. -->
+
+---
 
 ## About
 
