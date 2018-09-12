@@ -6,7 +6,7 @@ A collection of small things that I've learned and toy problems that I have done
 
 _Streaks:_
 
-_21 TILs so far..._
+_22 TILs so far..._
 
 <!-- _0 Toy Problems done and counting..._ -->
 
@@ -70,7 +70,7 @@ _21 TILs so far..._
 - [CSS Preprocessors](/css/css-preprocessors.md)
 - [CSS Box Model](/css/css-box-model.md)
 - [CSS Sprites](/css/css-sprites.md)
-
+- [Media Queries](/css/media-queries.md)
 ### React
 
 - [Get Derived State](/react/lifecycle-methods/get-derived-state-from-props.md)
