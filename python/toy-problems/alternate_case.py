@@ -12,16 +12,17 @@
 
 
 def to_alternating_case(string):
-  newCase = []
-  for word in string:
+    newCase = []
+    for word in string:
 
-    if word.isupper():
-      newCase.append(word.lower())
-    elif word.islower():
-      newCase.append(word.upper())
-    else: 
-      newCase.append(word)
+        if word.isupper():
+            newCase.append(word.lower())
+        elif word.islower():
+            newCase.append(word.upper())
+        else:
+            newCase.append(word)
 
-  return ''.join(newCase)
+    return ''.join(newCase)
 
-to_alternating_case("HeLLo WORLD")
+
+print(to_alternating_case("HeLLo WORLD"))

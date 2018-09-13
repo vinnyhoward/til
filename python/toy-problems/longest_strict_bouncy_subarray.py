@@ -34,25 +34,70 @@
 
 # Toy Problem in Progress
 
+# Giant Failure - Still in progress
+
 
 def longest_bouncy_list(arr):
-    lst_one = []
-    lst_two = []
-    is_bouncy = False
-    prev_value = arr[0]
+    lst_one, lst_two = [], []
+    bounce = ''
+    count = 0
+    value = []
 
-    for idx, x in enumerate(arr):
-        print(idx)
+    if arr[1:] == arr[:-1]:
+        return [arr[0]]
+
+    if arr[0] < arr[1]:
+        bounce = 'low'
+    elif arr[0] > arr[1]:
+        bounce = 'high'
+
+    for x, y in zip(arr[::], arr[1::]):
+        if bounce == 'low' and x < y:
+            lst_one.append(x)
+            count += 1
+            bounce = 'high'
+        elif bounce == 'high' and x > y:
+            lst_one.append(x)
+            count += 1
+            bounce = 'low'
+        elif bounce == 'low' and x > y or bounce == 'high' and x < y:
+            count += 1
+            value.append(count)
+
+    lst_answer = arr[0: value.pop(0)]
+    last_value = value.pop(-1)
+
+    if arr[last_value::] < arr[last_value + 1::]:
+        bounce = 'low'
+    elif arr[last_value::] > arr[last_value + 1::]:
+        bounce = 'high'
+
+    for x, y in zip(arr[last_value::], arr[last_value + 1::]):
+        if bounce == 'low' and x < y:
+            lst_two.append(x)
+            count += 1
+            bounce = 'high'
+        elif bounce == 'high' and x > y:
+            lst_two.append(x)
+            count += 1
+            bounce = 'low'
+        elif bounce == 'low' and x > y or bounce == 'high' and x < y:
+            count += 1
+            value.append(count)
+
+    if len(lst_answer) > len(lst_two):
+        return lst_answer
+    else:
+        return lst_two
 
 
+# [13, 2]
 arr1 = [7, 9, 6, 10, 5, 11, 10, 12, 13, 4, 2, 5, 1, 6, 4, 8]
 print(longest_bouncy_list(arr1))
-# [7,9,6,10,5,11,10,12]
-
-# arr2 = [7, 7, 7, 7, 7]
-# print(longest_bouncy_list(arr2))
-# #  [7]
-
-# arr3 = [1, 2, 3, 4, 5, 6]
-# print(longest_bouncy_list(arr3))
-# # [1,2]
+[7, 9, 6, 10, 5, 11, 10, 12]
+arr2 = [7, 7, 7, 7, 7]
+print(longest_bouncy_list(arr2))
+#  [7]
+arr3 = [1, 2, 3, 4, 5, 6]
+print(longest_bouncy_list(arr3))
+# [1,2]
