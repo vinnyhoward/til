@@ -36,3 +36,7 @@ As you can see the time complexity for a ```Binary Search Tree``` is overall, mu
 | deletion        | O(n)     |    O(n) |
 
 A height balanced ```Binary Tree``` is more favorable for a ```Binary Tree Search```
+
+- Search - A recursive algorithm to search for a key in a ```Binary Search Tree``` or BST. If the tree is empty, it returns null; if the search key is equal to the root, we have a search hit. Otherwise the function will continue recursively search for the key. The recursive function ```get``` implements the algorithm directly. It takes a node, (root of a subtree) as the first argument and a key as a second argument. Starting with the root node.
+
+- Insert - Implementation of ```insert``` is not much harder then ```search```. When a ```search``` method is used and the value is not in the tree, the value returns ```null```. With the ```insert``` method, instead of returning null, the key and value will be inserted into the new node. If the search key is less than the key at the root, we set the left link to the result of inserting the key into the left subtree, otherwise set the right link to the result of inserting the key into the right subtree.
