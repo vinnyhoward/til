@@ -3,10 +3,9 @@
 # than its neighbours.
 
 # For example, the array:
-
 # arr = [7,9,6,10,5,11,10,12,13,4,2,5,1,6,4,8] (length = 16)
-# The two longest bouncy subarrays of arr are
 
+# The two longest bouncy subarrays of arr are
 # [7,9,6,10,5,11,10,12] (length = 8) and [4,2,5,1,6,4,8] (length = 7)
 
 # According to the given definition, the arrays [8,1,4,6,7], [1,2,2,1,4,5], are not bouncy.
@@ -38,10 +37,11 @@
 
 
 def longest_bouncy_list(arr):
-    lst_one, lst_two = [], []
     bounce = ''
     count = 0
     value = []
+
+    depths = [[] for i in range(4)]
 
     if arr[1:] == arr[:-1]:
         return [arr[0]]
@@ -52,52 +52,39 @@ def longest_bouncy_list(arr):
         bounce = 'high'
 
     for x, y in zip(arr[::], arr[1::]):
-        if bounce == 'low' and x < y:
-            lst_one.append(x)
-            count += 1
-            bounce = 'high'
-        elif bounce == 'high' and x > y:
-            lst_one.append(x)
+        current_depth = 0
+
+        if bounce == 'high' and x > y:
+            print("true high:", 'x:', x, 'y:', y)
             count += 1
             bounce = 'low'
-        elif bounce == 'low' and x > y or bounce == 'high' and x < y:
-            count += 1
-            value.append(count)
-
-    lst_answer = arr[0: value.pop(0)]
-    last_value = value.pop(-1)
-
-    if arr[last_value::] < arr[last_value + 1::]:
-        bounce = 'low'
-    elif arr[last_value::] > arr[last_value + 1::]:
-        bounce = 'high'
-
-    for x, y in zip(arr[last_value::], arr[last_value + 1::]):
-        if bounce == 'low' and x < y:
-            lst_two.append(x)
+            depths[current_depth].append(x)
+        elif bounce == 'low' and x < y:
+            print("true low:", 'x:', x, 'y:', y)
             count += 1
             bounce = 'high'
-        elif bounce == 'high' and x > y:
-            lst_two.append(x)
-            count += 1
-            bounce = 'low'
+            depths[current_depth].append(x)
         elif bounce == 'low' and x > y or bounce == 'high' and x < y:
-            count += 1
-            value.append(count)
+            current_depth += 1
+            depths[current_depth].append(x)
+            depths[current_depth].append(y)
+            print('break:', 'x:', x, 'y:', y)
 
-    if len(lst_answer) > len(lst_two):
-        return lst_answer
-    else:
-        return lst_two
+    print('depths:', depths)
 
+
+arr4 = [10, 8, 1, -11, -14, 7, 0, 8, -2, 2, -9,
+        9, -2, 14, -16, -12, -12, -8, -1, -13, -11, 11]
+print(longest_bouncy_list(arr4))
+# [-11, -14, 7, 0, 8, -2, 2, -9, 9, -2, 14, -16, -12]
 
 # [13, 2]
 arr1 = [7, 9, 6, 10, 5, 11, 10, 12, 13, 4, 2, 5, 1, 6, 4, 8]
 print(longest_bouncy_list(arr1))
-[7, 9, 6, 10, 5, 11, 10, 12]
-arr2 = [7, 7, 7, 7, 7]
-print(longest_bouncy_list(arr2))
-#  [7]
-arr3 = [1, 2, 3, 4, 5, 6]
-print(longest_bouncy_list(arr3))
+# [7, 9, 6, 10, 5, 11, 10, 12]
+# arr2 = [7, 7, 7, 7, 7]
+# print(longest_bouncy_list(arr2))
+# #  [7]
+# arr3 = [1, 2, 3, 4, 5, 6]
+# print(longest_bouncy_list(arr3))
 # [1,2]
