@@ -20,18 +20,18 @@
 // The middle character(s) of the word represented as a string.
 
 // My Answer
-// const getMiddle = (s) => {
-// 	if (s.length == 1) return s;
+const getMiddle = (s) => {
+	if (s.length == 1) return s;
 
-// 	let splitWord = s.split('');
-// 	let middle = splitWord.length / 2;
+	let splitWord = s.split('');
+	let middle = splitWord.length / 2;
 
-// 	if (s.length % 2 == 0) {
-// 		return splitWord[Math.floor(middle - 1)] + splitWord[Math.floor(middle)];
-// 	} else if (s.length % 2 != 0) {
-// 		return splitWord[Math.floor(middle)];
-// 	}
-// };
+	if (s.length % 2 == 0) {
+		return splitWord[Math.floor(middle - 1)] + splitWord[Math.floor(middle)];
+	} else if (s.length % 2 != 0) {
+		return splitWord[Math.floor(middle)];
+	}
+};
 
 // Best Answer
 

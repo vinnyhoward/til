@@ -28,7 +28,10 @@
 // Matrix with the order of elements on its longest diagonals reversed.
 
 function reverseOnDiagonals(matrix) {
-	console.log(matrix);
+	let length = matrix[0].length;
+	let count = 0;
+
+	console.log(length);
 }
 
 // console.log(reverseOnDiagonals([ [ 1, 2, 3 ], [ 4, 5, 6 ], [ 7, 8, 9 ] ]));
