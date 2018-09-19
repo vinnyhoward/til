@@ -65,4 +65,82 @@ If you're returning an ```object literal``` you will need to use curly braces up
 x => ({ y: x })
 ```
 
-<!-- ## Syntactically Anonymous  -->
+## Syntactically Anonymous 
+
+It is important to note that arrow functions are anonymous, which means that they are not named.
+
+This anonymity creates some issues:
+
+- Harder to debug
+
+When you get an error, you will not be able to trace the name of the function or the exact line number where it occurred.
+
+- No self-referencing
+
+If your function needs to have a self-reference at any point (e.g. recursion, event handler that needs to unbind), it will not work.
+
+## Main benefit: No binding of ‘this’
+
+In classic function expressions, the this keyword is bound to different values based on the context in which it is called. With arrow functions however, this is lexically bound. It means that it usesthis from the code that contains the arrow function.
+
+For example, look at the setTimeout function below:
+
+```
+// ES5
+var obj = {
+  id: 42,
+  counter: function counter() {
+    setTimeout(function() {
+      console.log(this.id);
+    }.bind(this), 1000);
+  }
+};
+```
+
+In the ES5 example, .bind(this) is required to help pass the this context into the function. Otherwise, by default this would be undefined.
+
+```
+// ES6
+var obj = {
+  id: 42,
+  counter: function counter() {
+    setTimeout(() => {
+      console.log(this.id);
+    }, 1000);
+  }
+};
+```
+
+ES6 arrow functions can’t be bound to a this keyword, so it will lexically go up a scope, and use the value of this in the scope in which it was defined.
+
+## When you should not use Arrow Functions
+
+After learning a little more about arrow functions, I hope you understand that they do not replace regular functions.
+
+Here are some instances where you probably wouldn’t want to use them:
+
+### Object methods
+
+When you call ```cat.jumps```, the number of lives does not decrease. It is because this is not bound to anything, and will inherit the value of this from its parent scope.
+
+```
+var cat = {
+  lives: 9,
+  jumps: () => {
+    this.lives--;
+  }
+}
+```
+
+###  Callback functions with dynamic context
+
+If you need your context to be dynamic, arrow functions are not the right choice. Take a look at this event handler below:
+
+```
+var button = document.getElementById('press');
+button.addEventListener('click', () => {
+  this.classList.toggle('on');
+});
+```
+
+If we click the button, we would get a TypeError. It is because this is not bound to the button, but instead bound to its parent scope.

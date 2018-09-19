@@ -6,7 +6,7 @@ A collection of small things that I've learned and toy problems that I have done
 
 _Streaks:_
 
-_26 TILs in a row so far..._
+_27 TILs in a row so far..._
 
 <!-- _0 Toy Problems done and counting..._ -->
 
@@ -15,10 +15,12 @@ _26 TILs in a row so far..._
 ### Categories
 
 * [Python](#python)
+* [Javascript](#javascript)
 * [Data Structures & Algorithms](#Data-Structures-&-Algorithms)
 * [Web](#web)
 * [CSS](#css)
 * [React](#react)
+* [MongoDB](#mongodb)
 
 ---
 
@@ -42,6 +44,7 @@ _26 TILs in a row so far..._
 - [Constants](/javascript/es6/constants.md)
 - [Scoping](/javascript/es6/scoping.md)
 - [Template Literals](/javascript/es6/template-literals.md)
+- [Arrow Functions](/javascript/es6/arrow-functions.md)
 
 
 ### Data Structures & Algorithms
