@@ -41,10 +41,12 @@ _28 TILs in a row so far..._
 
 ### Javascript
 
+#### ES6 
 - [Constants](/javascript/es6/constants.md)
 - [Scoping](/javascript/es6/scoping.md)
 - [Template Literals](/javascript/es6/template-literals.md)
 - [Arrow Functions](/javascript/es6/arrow-functions.md)
+- [Promises](/javascript/es6/arrow-functions.md)
 
 
 ### Data Structures & Algorithms
