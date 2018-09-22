@@ -6,7 +6,7 @@ A collection of small things that I've learned and toy problems that I have done
 
 _Streaks:_
 
-_29 TILs in a row so far..._
+_30 TILs in a row so far..._
 
 <!-- _0 Toy Problems done and counting..._ -->
 
@@ -75,6 +75,7 @@ _29 TILs in a row so far..._
 - [Encryption](/web/encryption.md)
 - [Hashing](/web/hashing.md)
 - [CORS](/web/cors.md)
+- [DOM](/web/dom.md)
 
 ### CSS
 

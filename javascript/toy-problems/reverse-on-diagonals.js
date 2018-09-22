@@ -26,12 +26,23 @@
 // [output] 2D integer array
 
 // Matrix with the order of elements on its longest diagonals reversed.
-
+// In Progress
 function reverseOnDiagonals(matrix) {
 	let length = matrix[0].length;
 	let count = 0;
+	let temp;
+	let negative = -1;
 
-	console.log(length);
+	for (x in matrix) {
+		for (y in matrix[x]) {
+			if (y == count) {
+				// temp = matrix[x][y];
+				// matrix[x][y] = matrix[0][matrix[0].length - 1];
+				// matrix[0][matrix[0].length - 1] = temp;
+			}
+		}
+	}
+	console.log(matrix);
 }
 
 // console.log(reverseOnDiagonals([ [ 1, 2, 3 ], [ 4, 5, 6 ], [ 7, 8, 9 ] ]));
@@ -44,7 +55,8 @@ function reverseOnDiagonals(matrix) {
 // reverseOnDiagonals([ [ 43, 455, 32, 103 ], [ 102, 988, 298, 981 ], [ 309, 21, 53, 64 ], [ 2, 22, 35, 291 ] ])
 // );
 // [[291,455,32,2],  [102,53,21,981],  [309,298,988,64], [103,22,35,43]]
-console.log(
-	reverseOnDiagonals([ [ 43, 455, 32, 103 ], [ 102, 988, 298, 981 ], [ 309, 21, 53, 64 ], [ 2, 22, 35, 291 ] ])
-);
+// console.log(
+reverseOnDiagonals([ [ 43, 455, 32, 103 ], [ 102, 988, 298, 981 ], [ 309, 21, 53, 64 ], [ 2, 22, 35, 291 ] ]);
+// );
 // [[291, 455, 32, 2], [102, 53, 21, 981], [309, 298, 988, 64]
+// console.log(reverseOnDiagonals([ [ 43, 455, 32, 103 ] ]));
