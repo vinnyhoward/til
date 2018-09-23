@@ -6,7 +6,7 @@ A collection of small things that I've learned and toy problems that I have done
 
 _Streaks:_
 
-_30 TILs in a row so far..._
+_31 TILs in a row so far..._
 
 <!-- _0 Toy Problems done and counting..._ -->
 
@@ -16,7 +16,7 @@ _30 TILs in a row so far..._
 
 * [Python](#python)
 * [Javascript](#javascript)
-* [Data Structures & Algorithms](#Data-Structures-&-Algorithms)
+* [Data Structures & Algorithms](#data-structures-and-algorithms)
 * [Web](#web)
 * [CSS](#css)
 * [React](#react)
@@ -42,6 +42,7 @@ _30 TILs in a row so far..._
 ### Javascript
 
 - [Hoisting](/javascript/hoisting.md)
+- [Methods](/javascript/methods.md)
 #### ES6 
 - [Constants](/javascript/es6/constants.md)
 - [Scoping](/javascript/es6/scoping.md)
@@ -50,7 +51,7 @@ _30 TILs in a row so far..._
 - [Promises](/javascript/es6/arrow-functions.md)
 
 
-### Data Structures & Algorithms
+### Data Structures And Algorithms
 
 - [Big O notation](/data-structures-and-algorithms/big-o-notation.md)
 - [Binary Search](/data-structures-and-algorithms/binary-search.md)
@@ -102,6 +103,13 @@ be invoked with `<leader>c`. This will do a substitution count of the
 current number of TILs and display the result in the command tray. -->
 
 ---
+## Cheat Sheets
+- [Javascript](https://htmlcheatsheet.com/js/)
+
+- [CSS](https://htmlcheatsheet.com/css/)
+
+- [HTML](https://htmlcheatsheet.com/)
+
 
 ## About
 
