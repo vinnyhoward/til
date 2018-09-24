@@ -28,7 +28,7 @@ Object.assign(Number.prototype, {
 	}
 });
 
-// Better Answer
+// Better Answers
 Number.prototype.times = function(iteratee) {
 	for (let i = Math.round(this); i > 0; i--) iteratee();
 };
