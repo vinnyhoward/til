@@ -43,6 +43,7 @@ _32 TILs in a row so far..._
 
 - [Hoisting](/javascript/hoisting.md)
 - [Methods](/javascript/methods.md)
+- [Imperative vs Declarative](/javascript/imperative-declarative.md)
 #### ES6 
 - [Constants](/javascript/es6/constants.md)
 - [Scoping](/javascript/es6/scoping.md)
