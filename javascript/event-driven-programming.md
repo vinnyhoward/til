@@ -1,4 +1,4 @@
-# Event-Driven Programming?
+# Event-Driven Programming
 
 Event-driven programming is a paradigm that involves building applications that send and receive events. When the program emits events, the program responds by running any callback functions that are registered to that event and context, passing in associated data to the function. With this pattern, events can be emitted into the wild without throwing errors even if no functions are subscribed to it.
 
