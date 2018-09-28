@@ -27,6 +27,7 @@ console.log(count('aba'));
 // { a: 2, b: 1 }
 console.log(count(''));
 // {}
+console.log(count('abaaaaabcddeafdaefkfxaoija'));
 
 // Better Answer
 // function count (string) {
