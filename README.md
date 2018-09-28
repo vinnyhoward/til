@@ -6,7 +6,7 @@ A collection of small things that I've learned and toy problems that I have done
 
 _Streaks:_
 
-_35 TILs in a row so far..._
+_36 TILs in a row so far..._
 
 <!-- _0 Toy Problems done and counting..._ -->
 
@@ -47,6 +47,8 @@ _35 TILs in a row so far..._
 - [Imperative vs Declarative](/javascript/imperative-declarative.md)
 - [Event Driven Programming](/javascript/event-driven-programming.md)
 - [Classes](/javascript/classes.md)
+- [Objects](/javascript/objects.md)
+
 #### ES6 
 - [Constants](/javascript/es6/constants.md)
 - [Scoping](/javascript/es6/scoping.md)
