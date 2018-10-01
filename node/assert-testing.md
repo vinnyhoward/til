@@ -1,12 +1,15 @@
 # Assert Testing
 
-The assert module provides a simple set of assertion tests that can be used to test invariants.
+The assert module provides a simple set of assertion tests that can be used to test invariants. A ```strict``` and ```legacy``` mode exists. While it is recommended only to use the ```strict mode```.
+
+
 
 ## assert(value[, message])#
 
 value ```<any>```
 message ```<any>```
 An alias of ```assert.ok().```
+
 
 ## assert.deepEqual(actual, expected[, message])#
 

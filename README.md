@@ -6,7 +6,7 @@ A collection of small things that I've learned and toy problems that I have done
 
 _Streaks:_
 
-_39 TILs in a row so far..._
+_40 TILs in a row so far..._
 
 <!-- _0 Toy Problems done and counting..._ -->
 
@@ -55,6 +55,8 @@ _39 TILs in a row so far..._
 - [Template Literals](/javascript/es6/template-literals.md)
 - [Arrow Functions](/javascript/es6/arrow-functions.md)
 - [Promises](/javascript/es6/arrow-functions.md)
+#### ES7
+- [Includes](/javascript/es7/includes.md)
 
 
 ### Data Structures And Algorithms
@@ -105,6 +107,7 @@ _39 TILs in a row so far..._
 ### MongoDB
 
 - [Introduction](./mongodb/intro-mongo.md)
+- [Assert Equals](./mongodb/assert-testing.md)
 
 
 <!-- ## Usage
