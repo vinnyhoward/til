@@ -6,7 +6,7 @@ A collection of small things that I've learned and toy problems that I have done
 
 _Streaks:_
 
-_41 TILs in a row so far..._
+_42 TILs in a row so far..._
 
 <!-- _0 Toy Problems done and counting..._ -->
 
@@ -61,6 +61,8 @@ _41 TILs in a row so far..._
 
 - [Includes](/javascript/es7/includes.md)
 - [Infix Operator](/javascript/es7/infix.md)
+- [Object.Values()](/javascript/es7/object-values.md)
+
 
 ### Data Structures And Algorithms
 
