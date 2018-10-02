@@ -6,7 +6,7 @@ A collection of small things that I've learned and toy problems that I have done
 
 _Streaks:_
 
-_40 TILs in a row so far..._
+_41 TILs in a row so far..._
 
 <!-- _0 Toy Problems done and counting..._ -->
 
@@ -50,14 +50,17 @@ _40 TILs in a row so far..._
 - [Objects](/javascript/objects.md)
 
 #### ES6 
+
 - [Constants](/javascript/es6/constants.md)
 - [Scoping](/javascript/es6/scoping.md)
 - [Template Literals](/javascript/es6/template-literals.md)
 - [Arrow Functions](/javascript/es6/arrow-functions.md)
 - [Promises](/javascript/es6/arrow-functions.md)
-#### ES7
-- [Includes](/javascript/es7/includes.md)
 
+#### ES7
+
+- [Includes](/javascript/es7/includes.md)
+- [Infix Operator](/javascript/es7/infix.md)
 
 ### Data Structures And Algorithms
 
@@ -103,11 +106,11 @@ _40 TILs in a row so far..._
 ### Node
 
 - [Introduction](/node/intro-node.md)
+- [Assert Equals](/node/assert-testing.md)
 
 ### MongoDB
 
 - [Introduction](./mongodb/intro-mongo.md)
-- [Assert Equals](./mongodb/assert-testing.md)
 
 
 <!-- ## Usage
@@ -118,6 +121,7 @@ current number of TILs and display the result in the command tray. -->
 
 ---
 ## Cheat Sheets
+
 - [Javascript](https://htmlcheatsheet.com/js/)
 
 - [CSS](https://htmlcheatsheet.com/css/)
