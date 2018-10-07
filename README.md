@@ -6,7 +6,7 @@ A collection of small things that I've learned and toy problems that I have done
 
 _Streaks:_
 
-_45 TILs in a row so far..._
+_46 TILs in a row so far..._
 
 <!-- _0 Toy Problems done and counting..._ -->
 
@@ -48,6 +48,7 @@ _45 TILs in a row so far..._
 - [Event Driven Programming](/javascript/event-driven-programming.md)
 - [Classes](/javascript/classes.md)
 - [Objects](/javascript/objects.md)
+- [Console](/javascript/debugging/console-methods.md)
 
 #### ES6 
 
@@ -56,12 +57,14 @@ _45 TILs in a row so far..._
 - [Template Literals](/javascript/es6/template-literals.md)
 - [Arrow Functions](/javascript/es6/arrow-functions.md)
 - [Promises](/javascript/es6/arrow-functions.md)
+- [Spread Syntax](/javascript/es6/spread-operator.md)
 
 #### ES7
 
 - [Includes](/javascript/es7/includes.md)
 - [Infix Operator](/javascript/es7/infix.md)
-- [Object.Values()](/javascript/es7/object-values.md)
+- [Object Values](/javascript/es7/object-values.md)
+- [Infix](/javascript/es7/infix.md)
 
 
 ### Data Structures And Algorithms
