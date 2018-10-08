@@ -58,3 +58,41 @@ console.log(max);
 ```
 
 Instead of having to create a function and utilize the ```.apply``` method to return the result of ```Math.max()``` , we only need two lines of code. The ```spread syntax``` expands our array elements and inputs each element in our array individually into the ```Math.max()``` method
+
+Another use case for the ```Spread Syntax``` is copying an array. A naive approach would be this:
+
+```
+var arr = ['a', 'b', 'c']
+var arr2 = arr;
+
+Output: ['a', 'b', 'c']
+``` 
+
+Now, at first glance, it looks like it worked — it looks like we’ve copied the values of arr into arr2. But that’s not what has happened. You see, when working with objects in javascript (arrays are a type of object) we assign by reference, not by value. This means that arr2 has been assigned to the same reference as arr. In other words, anything we do to arr2 will also affect the original arr array (and vice versa). Take a look below:
+
+```
+var arr = ['a', 'b', 'c'];
+var arr2 = arr;
+
+arr2.push('d');
+
+console.log(arr);
+```
+
+Above, we’ve pushed a new element d into arr2. Yet, when we log out the value of arr, you’ll see that the d value was also added to that array:
+
+```
+['a', 'b', 'c', 'd']
+```
+
+But we can just use the spread operator.
+
+Consider the code below. It’s almost the same as above. Instead though, we’ve used the spread operator within a pair of square brackets:
+
+```
+var arr = ['a', 'b', 'c'];
+var arr2 = [...arr];
+
+console.log(arr2);
+Output: ['a', 'b', 'c']
+```
