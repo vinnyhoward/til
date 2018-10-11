@@ -58,6 +58,7 @@ _50 TILs in a row so far..._
 - [Arrow Functions](/javascript/es6/arrow-functions.md)
 - [Promises](/javascript/es6/arrow-functions.md)
 - [Spread Syntax](/javascript/es6/spread-operator.md)
+- [Async/Await](/javascript/es6/async-await.md)
 
 #### ES7
 
