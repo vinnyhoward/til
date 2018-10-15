@@ -14,3 +14,9 @@ Express is the most popular ```Node``` web framework and is the most used framew
 - Add additional request processing "middleware" at any point within the request handling pipeline.
 
 While ```Express``` itself is fairly minimalistic, the community has created a plethora of compatible middleware packages that compliment and address almost any web development problem that is out there. There are libraries out there that can help with topics such as ```cookies```, ```sessions```, ```authentication```, ```URL parameters```, ```POST data```, ```security headers```, and that is just the tip of the ice berg. You can find a list of middleware packages maintained by the express team on their website.
+
+## Opinionated vs Un-opinionated
+
+Opinionated software and frameworks are those with opinions about how to handle a particular task the "right" way. They often support rapid development in a particular domain or environment. The positive outlook on this is that the "right" way is usually well-understood and documented, the negative side is that there is not alot of flexibility at solving certain issues outside their main domain.
+
+However, un-opinionated frameworks and software are more open and free, giving you a wide range of possibilities on how to solve a particular problem, ExpressJS is in this category. With a downside of more maintenance how a chance of certain methods may lack documentation are not understood very well. 
