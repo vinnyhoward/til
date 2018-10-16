@@ -68,6 +68,7 @@ const removeDuplicates = (n) => {
 		cur = n[i];
 		found = false;
 		console.log(i - 1);
+
 		for (j = i - 1; !found && j >= 0; j--) {
 			if (cur === n[j]) {
 				if (i !== j) {

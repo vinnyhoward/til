@@ -24,22 +24,34 @@
 // Explanation: In this case, no transaction is done, i.e. max profit = 0.
 
 // Failed, will try again tomorrow
+// const maxProfit = (prices) => {
+// 	let cur, next, sum, found;
+
+// 	for (let i = 0; i < prices.length; i++) {
+// 		found = false;
+// 		cur = prices[i];
+
+// 		for (let j = 0; !found && j < prices.length; j++) {
+// 			next = prices[j];
+
+// 			if (i !== j) {
+// 				sum = next - cur;
+// 				console.log(sum);
+// 			}
+// 		}
+// 	}
+// };
+
 const maxProfit = (prices) => {
-	let cur, next, sum, found;
+	let res = 0;
 
 	for (let i = 0; i < prices.length; i++) {
-		found = false;
-		cur = prices[i];
-
-		for (let j = 0; !found && j < prices.length; j++) {
-			next = prices[j];
-
-			if (i !== j) {
-				sum = next - cur;
-				console.log(sum);
-			}
+		if (prices[i] - prices[i - 1] > 0) {
+			res += prices[i] - prices[i - 1];
 		}
 	}
+
+	return res;
 };
 
 let stocks1 = [ 7, 1, 5, 3, 6, 4 ];
