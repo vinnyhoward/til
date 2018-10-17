@@ -54,11 +54,11 @@ const containsDuplicate = (num) => {
 
 let arr1 = [ 1, 2, 3, 1 ];
 // Output: true
-// let arr2 = [ 1, 2, 3, 4 ];
+let arr2 = [ 1, 2, 3, 4 ];
 // // Output: false
-// let arr3 = [ 1, 1, 1, 3, 3, 4, 3, 2, 4, 2 ];
+let arr3 = [ 1, 1, 1, 3, 3, 4, 3, 2, 4, 2 ];
 // // Output: true
-// let arr4 = [ 3, 3 ];
+let arr4 = [ 3, 3 ];
 
 console.log(containsDuplicate(arr1));
 
