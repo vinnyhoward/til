@@ -6,7 +6,7 @@ A collection of small things that I've learned and toy problems that I have done
 
 _Streaks:_
 
-_59 TILs in a row so far..._
+_60 TILs in a row so far..._
 
 <!-- _0 Toy Problems done and counting..._ -->
 
@@ -62,6 +62,7 @@ _59 TILs in a row so far..._
 - [Spread Syntax](/javascript/es6/spread-operator.md)
 - [Async/Await](/javascript/es6/async-await.md)
 - [Filter](/javascript/es6/filter.md)
+- [Array Destructuring](/javascript/es6/array-destructuring.md)
 
 #### ES7
 
