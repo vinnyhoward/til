@@ -25,20 +25,7 @@
 //  * @param {number[]} num2
 //  * @return {number[]}
 //  */
-const intersect = (num1, num2) => {
-	let arr = [],
-		ind;
-
-	while (num1.length) {
-		ind = num2.indexOf(num1.shift());
-		// console.log(ind);
-		if (ind > -1) {
-			console.log(num2.splice(ind, 1)[0]);
-			arr.push(num2.splice(ind, 1)[0]);
-		}
-	}
-	return arr;
-};
+const intersect = (arr1, arr2) => arr1.filter((type) => arr2.includes(type));
 
 let arr1 = [ 1, 2, 2, 1 ];
 let arr2 = [ 2, 2 ];
@@ -66,13 +53,13 @@ let arr12 = [ 1 ];
 
 console.log(intersect(arr1, arr2));
 // Output: [2,2]
-// console.log(intersect(arr3, arr4));
+console.log(intersect(arr3, arr4));
 // // Output: [4,9]
-// console.log(intersect(arr5, arr6));
+console.log(intersect(arr5, arr6));
 // // Output: [2]
-// console.log(intersect(arr7, arr8));
+console.log(intersect(arr7, arr8));
 // // Output: [1]
-// console.log(intersect(arr9, arr10));
+console.log(intersect(arr9, arr10));
 // // Output: [1]
-// console.log(intersect(arr11, arr12));
+console.log(intersect(arr11, arr12));
 // Output: [1]
