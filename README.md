@@ -72,6 +72,7 @@ _63 TILs in a row so far..._
 - [Object Values](/javascript/es7/object-values.md)
 - [Infix](/javascript/es7/infix.md)
 - [Finally](/javascript/es7/finally.md)
+- [Object.getOwnPropertyDescriptors](/javascript/es7/Object.getOwnPropertyDescriptors.md)
 
 
 ### Data Structures And Algorithms
