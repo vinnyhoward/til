@@ -6,7 +6,7 @@ A collection of small things that I've learned and toy problems that I have done
 
 _Streaks:_
 
-_65 TILs in a row so far..._
+_66 TILs in a row so far..._
 
 <!-- _0 Toy Problems done and counting..._ -->
 
@@ -122,6 +122,7 @@ _65 TILs in a row so far..._
 
 - [Introduction](/node/intro-node.md)
 - [Assert Equals](/node/assert-testing.md)
+- [REST](/node/rest.md)
 
 ### MongoDB
 
