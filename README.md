@@ -6,7 +6,7 @@ A collection of small things that I've learned and toy problems that I have done
 
 _Streaks:_
 
-_67 TILs in a row so far..._
+_68 TILs in a row so far..._
 
 <!-- _0 Toy Problems done and counting..._ -->
 
@@ -52,7 +52,6 @@ _67 TILs in a row so far..._
 - [Event Loop](/javascript/event-loop.md)
 - [Object.keys()](/javascript/object-keys.md)
 
-
 #### ES6 
 
 - [Constants](/javascript/es6/constants.md)
@@ -76,7 +75,6 @@ _67 TILs in a row so far..._
 - [Finally](/javascript/es7/finally.md)
 - [Object.getOwnPropertyDescriptors](/javascript/es7/Object.getOwnPropertyDescriptors.md)
 - [padStart and padEnd](/javascript/es7/string-padding.md)
-
 
 ### Data Structures And Algorithms
 
@@ -118,7 +116,7 @@ _67 TILs in a row so far..._
 
 - [Get Derived State](/react/lifecycle-methods/get-derived-state-from-props.md)
 - [PropTypes](/react/proptypes.md)
-
+- [Error Boundary](/react/error-boundary.md)
 
 ### Node
 
