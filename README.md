@@ -6,7 +6,7 @@ A collection of small things that I've learned and toy problems that I have done
 
 _Streaks:_
 
-_68 TILs in a row so far..._
+_69 TILs in a row so far..._
 
 <!-- _0 Toy Problems done and counting..._ -->
 
@@ -117,6 +117,7 @@ _68 TILs in a row so far..._
 - [Get Derived State](/react/lifecycle-methods/get-derived-state-from-props.md)
 - [PropTypes](/react/proptypes.md)
 - [Error Boundary](/react/error-boundary.md)
+- [Fragments](/react/fragments.md)
 
 ### Node
 
