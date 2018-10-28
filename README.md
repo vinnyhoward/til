@@ -6,7 +6,7 @@ A collection of small things that I've learned and toy problems that I have done
 
 _Streaks:_
 
-_69 TILs in a row so far..._
+_70 TILs in a row so far..._
 
 <!-- _0 Toy Problems done and counting..._ -->
 
@@ -75,6 +75,7 @@ _69 TILs in a row so far..._
 - [Finally](/javascript/es7/finally.md)
 - [Object.getOwnPropertyDescriptors](/javascript/es7/Object.getOwnPropertyDescriptors.md)
 - [padStart and padEnd](/javascript/es7/string-padding.md)
+- [Trailing Commas](/javascript/es7/trailing-commas.md)
 
 ### Data Structures And Algorithms
 
