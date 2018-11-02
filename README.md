@@ -6,7 +6,7 @@ A collection of small things that I've learned and toy problems that I have done
 
 _Streaks:_
 
-_74 TILs in a row so far..._
+_75 TILs in a row so far..._
 
 <!-- _0 Toy Problems done and counting..._ -->
 
@@ -51,6 +51,7 @@ _74 TILs in a row so far..._
 - [Console](/javascript/debugging/console-methods.md)
 - [Event Loop](/javascript/event-loop.md)
 - [Object.keys()](/javascript/object-keys.md)
+- [For-of Loop](/javascript/for-of-loop.md)
 
 #### ES6 
 
