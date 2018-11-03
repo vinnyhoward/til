@@ -6,7 +6,7 @@ A collection of small things that I've learned and toy problems that I have done
 
 _Streaks:_
 
-_75 TILs in a row so far..._
+_76 TILs in a row so far..._
 
 <!-- _0 Toy Problems done and counting..._ -->
 
@@ -124,6 +124,7 @@ _75 TILs in a row so far..._
 - [Fragments](/react/fragments.md)
 - [Portals](/react/portals.md)
 - [Accessing Refs](/react/accessing-refs.md)
+- [Key](/react/key.md)
 
 ### Node
 
