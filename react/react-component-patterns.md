@@ -68,3 +68,143 @@ class Hello extends React.Component {
 ```
 
 This component can be divided to a presentational (stateless) component, further dividing the responsibilities.  
+
+### Presentational
+
+Presentational components utilize props, render, and context (stateless API’s) and can be the syntactically-pretty functional, stateless component:
+
+```
+const HelloCard = (props) => {
+  return (
+    <div>
+      <h1>Hello! {props.name}</h1>
+    </div>
+  )
+}
+```
+
+Presentational components receive data and callbacks from props only, which can be provided by its container or parent component.
+
+Together, containers and presentational components encapsulate logic and presentation to their prospective components:
+
+```
+const HelloCard = (props) => {
+  return (
+    <div>
+      <h1>{props.name}</h1>
+    </div>
+  )
+}
+
+class Hello extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      name: "",
+    };
+  }
+
+  componentDidMount() {
+    // SOME AJAX REQUEST HERE
+    this.setState(() => {
+      return {
+        name: "Vinny",
+      };
+    });
+  }
+
+  render() {
+    return (
+      <div>
+       <HelloCard name={this.state.name} />
+      </div>
+    );
+  }
+}
+```
+
+ Removing the presentational part from the Hello class component into its own functional stateless component. Of course, this is meant to be a very easy example — with more complex apps, this is fundamental.
+
+ ### Higher Order Component (HOC)
+
+ A higher order component is a function that takes a component as its argument and return a new component. This is a powerful pattern for providing and fetching data to any number of components and can be used for reusing component logic. 
+
+ This is a powerful pattern that allows fetching and providing data to any number of components and the logic can be reused. For example ```react-router-v3``` and ```redux``` you will use the ```withRouter()``` which allows components to access routes as props if the components is used with ```connect({}())```
+
+ ```
+ import {withRouter} from 'react-router-dom';
+
+class App extends React.Component {
+  constructor() {
+    super();
+    this.state = {path: ''}
+  }
+  
+  componentDidMount() {
+    let pathName = this.props.location.pathname;
+    this.setState(() => {
+      return {
+        path: pathName,
+      }
+    })
+  }
+  
+  render() {
+    return (
+      <div>
+        <h1>Hi! I'm being rendered at: {this.state.path}</h1>
+      </div>
+    )
+  }
+}
+
+export default withRouter(App);
+```
+
+When exporting my component, I am wrapping it with ```react-router-v4``` ```withRouter()```. In the App;s lifecyle event ```componentDidMount()```, the state is updating with the value provided by ```this.props.location.pathname```. By wrapping the component with ```withRouter()``` the component has access to ```react-router-v4``` methods via props.
+
+### Render Callbacks
+
+Similar to higher order components, render ```callbacks``` or render ```props``` are used to share or reuse component logic. While many developers tend to lean more towards HOC’s for reusable logic, there are some very good reasons and advantages to use render callbacks — this is best explained in Michael Jackson’s “Never write another HOC.” Just to touch base on some of the talk’s key points, render callbacks provide the luxury of reducing namespace collision and better illustrate where exactly the logic is coming from.
+
+```
+class Counter extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      count: 0,
+    };
+  }
+
+  increment = () => {
+    this.setState(prevState => {
+      return {
+        count: prevState.count + 1,
+      };
+    });
+  };
+
+  render() {
+    return (
+      <div onClick={this.increment}>{this.props.children(this.state)}</div>
+    );
+  }
+}
+
+class App extends React.Component {
+  render() {
+    return (
+      <Counter>
+        {state => (
+          <div>
+            <h1>The count is: {state.count}</h1>
+          </div>
+        )}
+      </Counter>
+    );
+  }
+}
+
+```
+
+Above in the Counter class, I’m nesting t```his.props.children``` in the render method and taking ```this.state``` as an argument. Below in the App class, I’m able to wrap my component in the Counter component, hence having access to Counter’s logic. The render callback part is line 28, where I have ```{state => ()}``` — bam! I automatically have access to Counter’s state above.
