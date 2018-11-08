@@ -6,7 +6,7 @@ A collection of small things that I've learned and toy problems that I have done
 
 _Streaks:_
 
-_80 TILs in a row so far..._
+_81 TILs in a row so far..._
 
 <!-- _0 Toy Problems done and counting..._ -->
 
@@ -134,7 +134,13 @@ _80 TILs in a row so far..._
 
 ### MongoDB
 
-- [Introduction](./mongodb/intro-mongo.md)
+- [Introduction](/mongodb/intro-mongo.md)
+
+### GraphQL
+
+- [Introduction](/graphql/introduction-graphql.md)
+- [Queries](/graphql/queries.md)
+- [Arguments](/graphql/arguments.md)
 
 
 <!-- ## Usage
