@@ -6,7 +6,7 @@ A collection of small things that I've learned and toy problems that I have done
 
 _Streaks:_
 
-_81 TILs in a row so far..._
+_82 TILs in a row so far..._
 
 <!-- _0 Toy Problems done and counting..._ -->
 
@@ -21,6 +21,7 @@ _81 TILs in a row so far..._
 * [CSS](#css)
 * [React](#react)
 * [MongoDB](#mongodb)
+* [GraphQL](#graphql)
 
 ---
 
@@ -141,6 +142,7 @@ _81 TILs in a row so far..._
 - [Introduction](/graphql/introduction-graphql.md)
 - [Queries](/graphql/queries.md)
 - [Arguments](/graphql/arguments.md)
+- [Alias](/graphql/alias.md)
 
 
 <!-- ## Usage
