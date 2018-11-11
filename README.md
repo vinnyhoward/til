@@ -6,7 +6,7 @@ A collection of small things that I've learned and toy problems that I have done
 
 _Streaks:_
 
-_83 TILs in a row so far..._
+_84 TILs in a row so far..._
 
 <!-- _0 Toy Problems done and counting..._ -->
 
@@ -143,6 +143,7 @@ _83 TILs in a row so far..._
 - [Queries](/graphql/queries.md)
 - [Arguments](/graphql/arguments.md)
 - [Alias](/graphql/alias.md)
+- [Mutations](/graphql/mutations.md)
 
 ### Prisma
 
