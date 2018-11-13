@@ -2,6 +2,14 @@
 
 ```N``` represents the length of the input to your function.
 
+## Big Omega
+
+Big Omega is the equivalent concept of big O but for lower bound
+
+## Big Theta 
+
+Is both Big O and Big Omego combined and in return requires a tight bound run time.
+
 ## O(n) Basics
 
 
