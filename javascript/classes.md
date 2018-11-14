@@ -53,3 +53,24 @@ let Rectangle = class Rectangle2 {
 console.log(Rectangle.name);
 // output: "Rectangle2"
 ```
+
+### Class Inheritance
+
+A class can extend another class, and objects initialized using that class inherit all the methods of both classes.
+
+If the inherited class has a method with the same name as one of the classes higher in the hierarchy, the closest method takes precedence:
+
+```
+class Programmer extends Person {
+  hello() {
+    return super.hello() + ' I am a programmer.'
+  }
+}
+const flavio = new Programmer('Flavio')
+flavio.hello(
+```
+The above program prints “Hello, I am Flavio. I am a programmer.”
+
+Classes do not have explicit class variable declarations, but you must initialize any variable in the constructor.
+
+Inside a class, you can reference the parent class calling super().
