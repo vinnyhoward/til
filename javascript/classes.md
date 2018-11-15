@@ -74,3 +74,18 @@ The above program prints “Hello, I am Flavio. I am a programmer.”
 Classes do not have explicit class variable declarations, but you must initialize any variable in the constructor.
 
 Inside a class, you can reference the parent class calling super().
+
+### Static methods
+
+Normally methods are defined on the instance, not on the class.
+
+Static methods are executed on the class instead:
+
+```
+class Person {
+  static genericHello() {
+    return 'Hello'
+  }
+}
+Person.genericHello() //Hello
+```
