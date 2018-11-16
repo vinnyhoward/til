@@ -89,3 +89,45 @@ class Person {
 }
 Person.genericHello() //Hello
 ```
+
+### Getters and setters
+You can add methods prefixed with ```get``` or ```set``` to create a getter and setter, which are two different pieces of code that are execute based on what you are doing: accessing the variable, or modifying its value.
+
+```
+class Guy {
+  constructor(name) {
+    this.name = name
+  }
+  set name(value) {
+    this.name = value
+  }
+  get name() {
+    return this.name
+  }
+}
+```
+If you only have a getter, the property cannot be set, and any attempt at doing so will be ignored:
+
+```
+class Guy {
+  constructor(name) {
+    this.name = name
+  }
+  get name() {
+    return this.name
+  }
+}
+```
+
+If you only have a setter, you can change the value but not access it from the outside:
+
+```
+class Guy {
+  constructor(name) {
+    this.name = name
+  }
+  set name(value) {
+    this.name = value
+  }
+}
+```
