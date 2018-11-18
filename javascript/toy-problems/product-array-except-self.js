@@ -44,7 +44,9 @@
 
 const productExceptSelf = (numbers) => {
 	const firstZeroIdx = numbers.indexOf(0);
+	console.log(firstZeroIdx);
 	const secondZeroIdx = numbers.slice(firstZeroIdx + 1).indexOf(0);
+	console.log(secondZeroIdx);
 	const containsZero = firstZeroIdx !== -1;
 	const containsMultipleZeros = secondZeroIdx !== -1;
 
@@ -70,5 +72,5 @@ let arr1 = [ 1, 2, 3, 4 ];
 let arr2 = [ 9, 0, -2 ];
 // Output: [0,-18,0]
 
-console.log(productExceptSelf(arr1));
+// console.log(productExceptSelf(arr1));
 console.log(productExceptSelf(arr2));

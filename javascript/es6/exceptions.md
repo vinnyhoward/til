@@ -30,3 +30,41 @@ try {
 ```err``` in this example is the exception value.
 
 You can add multiple handlers, that can catch different types of errors.
+
+## Finally
+
+To complete this statement JavaScript has another statement called finally, which contains code that is executed regardless of the program flow, if the exception was handled or not, if there was an exception or if there wasn't:
+
+```
+try {
+  //lines of code
+} catch (e) {
+} finally {
+}
+```
+
+You can use finally without a catch block, to serve as a way to clean up any resource you might have opened in the tryblock, like files or network requests:
+
+```
+try {
+  //lines of code
+} finally {
+}
+```
+## Nested try blocks
+
+try blocks can be nested, and an exception is always handled in the nearest catch block:
+
+```
+try {
+  //lines of code
+  try {
+    //other lines of code
+  } finally {
+    //other lines of code
+  }
+} catch (e) {
+}
+```
+
+If an exception is raised in the inner try, it's handled in the outer catch block.
