@@ -6,7 +6,10 @@ A collection of small things that I've learned and toy problems that I have done
 
 _Streaks:_
 
-_91 TILs in a row so far..._
+
+_1 TILs in a row so far..._
+
+_Previous streak: 91 TILs😢_
 
 <!-- _0 Toy Problems done and counting..._ -->
 
@@ -168,6 +171,7 @@ current number of TILs and display the result in the command tray. -->
 
 - [HTML](https://htmlcheatsheet.com/)
 
+- [Field Ops Guide](https://github.com/futurice/field-ops-guide/blob/master/dist/field-ops-guide.pdf)
 
 ## About
 

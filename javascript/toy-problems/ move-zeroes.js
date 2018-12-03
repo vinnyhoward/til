@@ -47,3 +47,36 @@ console.log(moveZeroesV2(arr1));
 console.log(moveZeroesV2(arr2));
 console.log(moveZeroesV2(arr3));
 console.log(moveZeroesV2(arr4));
+
+// const a = [1, 2, 3, 4, 5];
+
+// const multiply = (num) => {
+// 	let numLength = num.length
+//   for(let i = 0; i < numLength; i++) {
+//     num.push(num[i] * num[i])
+//   }
+//   return num
+// }
+// multiply(a);
+// console.log(a); 
+
+// [1, 2, 3, 4, 5, 1, 4, 9, 16, 25]
+
+
+
+
+const a = [1, 2, 3, 4, 5];
+
+// Implement this
+
+Array.prototype.multiply = function() {
+
+let multiplied = this.map(number => number * number);
+
+this.push(...multiplied);
+
+}
+
+a.multiply();
+
+console.log(a); // [1, 2, 3, 4, 5, 1, 4, 9, 16, 25]
