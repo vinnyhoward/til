@@ -7,7 +7,7 @@ A collection of small things that I've learned and toy problems that I have done
 _Streaks:_
 
 
-_1 TILs in a row so far..._
+_2 TILs in a row so far..._
 
 _Previous streak: 91 TILs😢_
 
@@ -56,6 +56,8 @@ _Previous streak: 91 TILs😢_
 - [Event Loop](/javascript/event-loop.md)
 - [Object.keys()](/javascript/object-keys.md)
 - [For-of Loop](/javascript/for-of-loop.md)
+- [Closures](/javascript/closures.md)
+- [Prototypes](/javascript/prototypes.md)
 
 ### ES6 
 
