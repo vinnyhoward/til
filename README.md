@@ -139,6 +139,7 @@ _Previous streak: 91 TILs😢_
 - [Accessing Refs](/react/accessing-refs.md)
 - [Key](/react/key.md)
 - [context](/react/context.md)
+- [memo](/react/memo.md)
 
 ### Node
 
