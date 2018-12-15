@@ -7,7 +7,7 @@ A collection of small things that I've learned and toy problems that I have done
 _Streaks:_
 
 
-_1 TILs in a row so far..._
+_2 TILs in a row so far..._
 
 _Previous streak: 91 TILs😢_
 
@@ -25,6 +25,8 @@ _Previous streak: 91 TILs😢_
 * [React](#react)
 * [MongoDB](#mongodb)
 * [GraphQL](#graphql)
+* [Prisma](#prisma)
+* [TypeScript](#typescript)
 
 ---
 
@@ -138,8 +140,9 @@ _Previous streak: 91 TILs😢_
 - [Portals](/react/portals.md)
 - [Accessing Refs](/react/accessing-refs.md)
 - [Key](/react/key.md)
-- [context](/react/context.md)
-- [memo](/react/memo.md)
+- [Context](/react/context.md)
+- [Memo](/react/memo.md)
+- [Render Props](/react/render-props.md)
 
 ### Node
 
@@ -162,6 +165,12 @@ _Previous streak: 91 TILs😢_
 ### Prisma
 
 - [Introduction](/prisma/intro-prisma.md)
+
+
+### TypeScript
+
+- [Playground](/typescript/ts-sandbox)
+- [Basic Types](/typescript/basic-types.md)
 
 <!-- ## Usage
 
