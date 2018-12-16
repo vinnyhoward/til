@@ -58,24 +58,19 @@ console.log(moveZeroesV2(arr4));
 //   return num
 // }
 // multiply(a);
-// console.log(a); 
+// console.log(a);
 
 // [1, 2, 3, 4, 5, 1, 4, 9, 16, 25]
 
-
-
-
-const a = [1, 2, 3, 4, 5];
+const a = [ 1, 2, 3, 4, 5 ];
 
 // Implement this
 
 Array.prototype.multiply = function() {
+	let multiplied = this.map((number) => number * number);
 
-let multiplied = this.map(number => number * number);
-
-this.push(...multiplied);
-
-}
+	this.push(...multiplied);
+};
 
 a.multiply();
 
