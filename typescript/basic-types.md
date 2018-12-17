@@ -85,3 +85,43 @@ By default, enums begin numbering their members starting at 0. You can change th
 enum Color {Red = 1, Green, Blue}
 let c: Color = Color.Green;
 ```
+
+## Any
+
+```
+let notSure: any = 4;
+notSure = "maybe a string instead";
+notSure = false; // okay, definitely a boolean
+```
+
+```
+let notSure: any = 4;
+notSure.ifItExists(); // okay, ifItExists might exist at runtime
+notSure.toFixed(); // okay, toFixed exists (but the compiler doesn't check)
+
+let prettySure: Object = 4;
+prettySure.toFixed(); // Error: Property 'toFixed' doesn't exist on type 'Object'.
+```
+
+```
+let list: any[] = [1, true, "free"];
+
+list[1] = 100;
+
+```
+
+## Void
+
+void is a little like the opposite of any: the absence of having any type at all. You may commonly see this as the return type of functions that do not return a value:
+
+```
+function warnUser(): void {
+    console.log("This is my warning message");
+}
+```
+
+Declaring variables of type void is not useful because you can only assign undefined or null to them:
+
+```
+let unusable: void = undefined;
+```
