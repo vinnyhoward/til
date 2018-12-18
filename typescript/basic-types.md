@@ -125,3 +125,18 @@ Declaring variables of type void is not useful because you can only assign undef
 ```
 let unusable: void = undefined;
 ```
+
+## Null and Undefined
+
+In TypeScript, both ```undefined``` and ```null``` actually have their own types named ```undefined``` and ```null``` respectively. Much like ```void```, they’re not extremely useful on their own:
+
+```
+// Not much else we can assign to these variables!
+let u: undefined = undefined;
+let n: null = null;
+```
+
+
+## Never
+
+```Never``` represents the type of values that never occur. For example, ```never``` is the return type for a function expression or an arrow function expression that always throws an exception or one that never returns; Variables also acquire the type never when narrowed by any type guards that can ```never``` be true.
