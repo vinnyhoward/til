@@ -140,3 +140,38 @@ let n: null = null;
 ## Never
 
 ```Never``` represents the type of values that never occur. For example, ```never``` is the return type for a function expression or an arrow function expression that always throws an exception or one that never returns; Variables also acquire the type never when narrowed by any type guards that can ```never``` be true.
+
+## Object
+
+```Object``` is a non-primitive type.
+
+```
+declare function create(o: object | null): void;
+
+create({ prop: 0 }); // OK
+create(null); // OK
+
+create(42); // Error
+create("string"); // Error
+create(false); // Error
+create(undefined); // Error
+
+```
+
+## Type assertions
+
+Type assertions have two forms. One is the “angle-bracket” syntax:
+
+```
+let someValue: any = "this is a string";
+
+let strLength: number = (<string>someValue).length;
+```
+
+And the other is the ```as```-syntax:
+
+```
+let someValue: any = "this is a string";
+
+let strLength: number = (someValue as string).length;
+```
