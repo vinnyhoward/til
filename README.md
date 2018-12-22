@@ -7,8 +7,8 @@ A collection of small things that I've learned and toy problems that I have done
 _Streaks:_
 
 
-_8 TILs in a row so far..._
-_8 Toy Problems done and counting..._
+_9 TILs in a row so far..._
+_9 Toy Problems done and counting..._
 
 _Previous streak: 91 TILs😢_
 
@@ -172,6 +172,7 @@ _Previous streak: 91 TILs😢_
 - [Playground](/typescript/ts-sandbox)
 - [Basic Types](/typescript/basic-types.md)
 - [Interfaces](/typescript/inerfaces.md)
+- [Classes](/typescript/classes.md)
 
 <!-- ## Usage
 
@@ -187,6 +188,8 @@ current number of TILs and display the result in the command tray. -->
 - [CSS](https://htmlcheatsheet.com/css/)
 
 - [HTML](https://htmlcheatsheet.com/)
+
+- [Python](https://github.com/jwasham/coding-interview-university/blob/master/extras/cheat%20sheets/python-cheat-sheet-v1.pdf)
 
 - [Field Ops Guide](https://github.com/futurice/field-ops-guide/blob/master/dist/field-ops-guide.pdf)
 
