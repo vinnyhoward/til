@@ -59,4 +59,33 @@ This example shows the most basic inheritance feature:
 
 - Because ```Dog``` extends the functionality from ```Animal```, we were able to create an instance of ```Dog``` that could both ```bark()``` and ```move()```.
 
-Let’s now look at a more complex example:
+## Public, private, and protected modifiers
+
+#### Public by default
+
+In our examples, we’ve been able to freely access the members that we declared throughout our programs. If you’re familiar with classes in other languages, you may have noticed in the above examples we haven’t had to use the word ```public``` to accomplish this
+
+You may still mark a member ```public``` explicitly. We could have written the ```Animal``` class from the previous section in the following way:
+
+```
+class Animal {
+    public name: string;
+    public constructor(theName: string) { this.name = theName; }
+    public move(distanceInMeters: number) {
+        console.log(`${this.name} moved ${distanceInMeters}m.`);
+    }
+}
+```
+
+### Understanding private
+
+When a member is marked ````private```, it cannot be accessed from outside of its containing class. For example:
+
+```
+class Animal {
+    private name: string;
+    constructor(theName: string) { this.name = theName; }
+}
+
+new Animal("Cat").name; // Error: 'name' is private;
+```
