@@ -7,8 +7,8 @@ A collection of small things that I've learned and toy problems that I have done
 _Streaks:_
 
 
-_10 TILs in a row so far..._
-_10 Toy Problems done and counting..._
+_11 TILs in a row so far..._
+_11 Toy Problems completed and counting..._
 
 _Previous streak: 91 TILs😢_
 

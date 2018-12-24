@@ -18,7 +18,7 @@ let arr2 = [ 0, 0, 1 ];
 let arr3 = [ 0, 0, 1, 0, 1, 0, 1 ];
 let arr4 = [ 0, 1, 0, 3, 12 ];
 
-// This  version doesn't work for the problem since it makes a copy of the array
+// This version doesn't work for the problem since it makes a copy of the array and doesn't follow the rules of the kata exactly
 // and doesn't move it in place, BUT it still works
 const moveZeroesV1 = (num) => {
 	let zeroArr = num.filter((num) => num === 0);
