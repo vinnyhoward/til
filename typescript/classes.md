@@ -179,3 +179,50 @@ Notice how we dropped ```theName``` altogether and just use the shortened ```rea
 
 Parameter properties are declared by prefixing a constructor parameter with an accessibility ```modifier``` or ```readonly```, or both. Using ```private``` for a parameter property declares and initializes a ```private member```; likewise, the same is done for ```public```, ```protected```, and ```readonly```.
 
+### Accessors]
+
+TypeScript supports ```getters```/```setters``` as a way of intercepting accesses to a member of an object. This gives you a way of having finer-grained control over how a member is accessed on each object.
+
+Let’s convert a simple class to use ```get``` and ```set```. First, let’s start with an example without ```getters``` and ```setters```.
+
+```
+class Employee {
+    fullName: string;
+}
+
+let employee = new Employee();
+employee.fullName = "Bob Smith";
+if (employee.fullName) {
+    console.log(employee.fullName);
+}
+```
+
+While allowing people to randomly set ```fullName``` directly is pretty handy, this might get us in trouble if people can change names on a whim.
+
+In this version, we check to make sure the user has a secret passcode available before we allow them to modify the employee. We do this by replacing the direct access to fullName with a set that will check the passcode. We add a corresponding get to allow the previous example to continue to work seamlessly.
+
+```
+let passcode = "secret passcode";
+
+class Employee {
+    private _fullName: string;
+
+    get fullName(): string {
+        return this._fullName;
+    }
+
+    set fullName(newName: string) {
+        if (passcode && passcode == "secret passcode") {
+            this._fullName = newName;
+        }
+        else {
+            console.log("Error: Unauthorized update of employee!");
+        }
+    }
+}
+
+let employee = new Employee();
+employee.fullName = "Bob Smith";
+if (employee.fullName) {
+    console.log(employee.fullName)
+    ```
