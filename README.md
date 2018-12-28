@@ -7,8 +7,8 @@ A collection of small things that I've learned and toy problems that I have done
 _Streaks:_
 
 
-_14 TILs in a row so far..._
-_1 Toy Problems completed in a row and counting..._
+_15 TILs in a row so far..._
+_2 Toy Problems completed in a row and counting..._
 
 _Previous streak: 91 TILs😢_
 
@@ -64,6 +64,7 @@ _Previous streak: 91 TILs😢_
 - [xpression-vs-statement](/javascript/expression-vs-statement.md)
 - [Map](/javascript/map.md)
 - [Callbacks](/javascript/callbacks.md)
+- [Lexical vs Dynamic Scoping](/javascript/lexical-vs-dynamic.md)
 
 ### ES6 
 
