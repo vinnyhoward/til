@@ -71,3 +71,42 @@ Here's a few things to note about the datamodel:
 - The ```@default``` directive is used by Prisma to set default values when records of this model are being created.
 
 - ```createdAt``` is not writeable and will be maintained by Prisma, it indicates the exact time when a record was created. There also is ```updatedAt``` which indicates the time when a record was last updated.
+
+### Prisma client
+
+ The Prisma client is an auto-generated library that replaces a traditional ORM in your API server. It connects to a Prisma server which sits on top your database:
+
+
+
+#### Seamless relation API
+
+The Prisma client is available in various programming languages and provides type safe database access. In contrast to traditional ORMs, it provides a seamless API to work with relational data, JOINs and transactions.
+
+Here is an example that performs several write operations in a single transaction:
+
+- Create a new User record
+
+- Create two new Post records
+
+- Connect the two newly created and one existing Post record to the new 
+
+- User record via the posts relation
+
+```
+const newUserWithLinks = await prisma
+  .createUser({
+    name: "Alice",
+    password: "IlikeTurtles",
+    posts: {
+      create: [{
+        title: "Prisma is the data layer for modern applications",
+      }, {
+        title: "Check out How to GraphQL - The fullstack tutorial for GraphQL",
+      }],
+      connect: {
+        id: "cjli6tknz005s0a23uf0lmlve"
+      }
+    }, 
+  })
+  ```
+For traditional ```ORMs```, such a set of write operations requires you to manually control a database transaction. Prisma client handles the transaction for you.
