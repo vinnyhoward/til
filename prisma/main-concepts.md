@@ -110,3 +110,11 @@ const newUserWithLinks = await prisma
   })
   ```
 For traditional ```ORMs```, such a set of write operations requires you to manually control a database transaction. Prisma client handles the transaction for you.
+
+### Type safe data access
+
+The operations exposed by your Prisma client are strongly ```typed```. For any ```typed``` programming language, this means that you get compile-time safety for all database operations and you know exactly what shape of data is going to be returned.
+
+It also makes for an amazing developer experience where you get auto-completion in your editor.
+
+All the typings are auto-generated, so you don't need to deal with writing any boilerplate for that. After you changed your datamodel, you just regenerate your Prisma client and all typings will be updated.
