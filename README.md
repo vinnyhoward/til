@@ -6,8 +6,8 @@ A collection of small things that I've learned and toy problems that I have done
 
 _Streaks:_
 
-_20 TILs in a row so far..._
-_7 Toy Problems completed in a row and counting..._
+_21 TILs in a row so far..._
+_8 Toy Problems completed in a row and counting..._
 
 _Previous streak: 91 TILs😢_
 
@@ -173,6 +173,10 @@ _Previous streak: 91 TILs😢_
 - [Basic Types](/typescript/basic-types.md)
 - [Interfaces](/typescript/inerfaces.md)
 - [Classes](/typescript/classes.md)
+
+### RegEx
+
+- [Introduction](/regex/intro)
 
 <!-- ## Usage
 
