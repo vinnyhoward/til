@@ -118,3 +118,17 @@ The operations exposed by your Prisma client are strongly ```typed```. For any `
 It also makes for an amazing developer experience where you get auto-completion in your editor.
 
 All the typings are auto-generated, so you don't need to deal with writing any boilerplate for that. After you changed your datamodel, you just regenerate your Prisma client and all typings will be updated.
+
+### Realtime updates
+
+Adding a realtime event system to your database is an extremely complicated task. Prisma client lets you ```subsribe``` to any database event without having to deal with the underlying infrastructure. You can do so via generated methods on the ```$subscribe``` property.
+
+Here is an example that subscribes to events where new User records are created that have gmail in their email address:
+
+```
+prisma.$subsribe.user({
+  mutation_in: ["CREATED"],
+  email_contains: "gmail"
+}).node()
+```
+
