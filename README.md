@@ -6,8 +6,8 @@ A collection of small things that I've learned and toy problems that I have done
 
 _Streaks:_
 
-_21 TILs in a row so far..._
-_8 Toy Problems completed in a row and counting..._
+_22 TILs in a row so far..._
+_9 Toy Problems completed in a row and counting..._
 
 _Previous streak: 91 TILs😢_
 
@@ -177,6 +177,7 @@ _Previous streak: 91 TILs😢_
 ### RegEx
 
 - [Introduction](/regex/intro)
+- [Basics](/regex/basics)
 
 <!-- ## Usage
 
