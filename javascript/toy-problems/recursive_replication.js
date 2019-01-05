@@ -11,6 +11,7 @@ const replicate = (times, number) => {
 	if (times < 1) return [];
 	else return [ number ].concat(replicate(times - 1, number));
 };
+
 console.log(replicate(3, 5), [ 5, 5, 5 ]);
 console.log(replicate(5, 1), [ 1, 1, 1, 1, 1 ]);
 console.log(replicate(0, 12), []);
