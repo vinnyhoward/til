@@ -25,3 +25,19 @@ abc{2,5}    matches a string that has ab followed by 2 up to 5 c
 a(bc)*      matches a string that has a followed by zero or more copies of the sequence bc
 a(bc){2,5}  matches a string that has a followed by 2 up to 5 copies of the sequence bc
 ```
+
+## OR operator — | or []
+
+```
+a(b|c)     matches a string that has a followed by b or c -> Try it!
+a[bc]      same as previous
+```
+
+## Character classes — \d \w \s and .
+
+```
+\d         matches a single character that is a digit -> Try it!
+\w         matches a word character (alphanumeric character plus underscore) -> Try it!
+\s         matches a whitespace character (includes tabs and line breaks)
+.          matches any character -> Try it!
+```

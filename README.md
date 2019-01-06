@@ -6,8 +6,8 @@ A collection of small things that I've learned and toy problems that I have done
 
 _Streaks:_
 
-_23 TILs in a row so far..._
-_10 Toy Problems completed in a row and counting..._
+_24 TILs in a row so far..._
+_11 Toy Problems completed in a row and counting..._
 
 _Previous streak: 91 TILs😢_
 
@@ -195,6 +195,8 @@ current number of TILs and display the result in the command tray. -->
 - [HTML](https://htmlcheatsheet.com/)
 
 - [Python](https://github.com/jwasham/coding-interview-university/blob/master/extras/cheat%20sheets/python-cheat-sheet-v1.pdf)
+
+- [Regular Expressions](https://medium.com/factory-mind/regex-tutorial-a-simple-cheatsheet-by-examples-649dc1c3f285)
 
 - [Field Ops Guide](https://github.com/futurice/field-ops-guide/blob/master/dist/field-ops-guide.pdf)
 
