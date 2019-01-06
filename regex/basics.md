@@ -41,3 +41,21 @@ a[bc]      same as previous
 \s         matches a whitespace character (includes tabs and line breaks)
 .          matches any character -> Try it!
 ```
+
+Use the ```.``` operator carefully since often class or negated character class (which we’ll cover next) are faster and more precise.
+
+```\d```, ```\w``` and ```\s``` also present their negations with ```\D```, ```\W``` and ```\S``` respectively.
+
+For example, ```\D``` will perform the inverse match with respect to that obtained with ```\d``.
+
+In order to be taken literally, you must escape the characters ```^.[$()|*+?{\``` with a backslash ```\``` as they have special meaning
+
+```
+\D         matches a single non-digit character -> Try it!
+```
+
+```
+\$\d       matches a string that has a $ before one digit
+```
+
+Notice that you can match also non-printable characters like tabs ```\t```, new-lines ```\n```, carriage returns \r.
