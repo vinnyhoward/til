@@ -14,18 +14,30 @@
 
 const capitalize = (s) => {
 	let arr = [ ...s ],
+		evenWord = [],
+		oddWord = [],
 		altArr = [];
 
 	for (let i = 0; i < arr.length; i++) {
-		if (i % 2 === 0) altArr.push(arr[i].toUpperCase());
-		if (i % 2 !== 0) altArr.push(arr[i]);
+		if (i % 2 === 0) evenWord += arr[i].toUpperCase();
+		if (i % 2 !== 0) evenWord += arr[i];
 	}
 
-	for (let i = 0; i < arr.length; i++) {
-		if (i % 2 === 0) altArr.push(arr[i].toUpperCase());
-		if (i % 2 !== 0) altArr.push(arr[i]);
+	for (let j = 0; j < arr.length; j++) {
+		if (j % 2 !== 0) oddWord += arr[j].toUpperCase();
+		if (j % 2 === 0) oddWord += arr[j];
 	}
+
+	altArr.push(evenWord, oddWord);
+
+	return altArr;
 };
+
+// Better Answer
+// function capitalize(s){
+//   return [[...s].map((x,i) => i % 2 == 0 ? x.toUpperCase() : x).join(''),
+//           [...s].map((x,i) => i % 2 != 0 ? x.toUpperCase() : x).join('')]
+// }
 
 console.log(capitalize('abcdef'));
 // ['AbCdEf', 'aBcDeF'];
