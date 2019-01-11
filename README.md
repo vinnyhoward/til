@@ -6,7 +6,7 @@ A collection of small things that I've learned and toy problems that I have done
 
 _Streaks:_
 
-_27 TILs in a row so far..._
+_28 TILs in a row so far..._
 _14 Toy Problems completed in a row and counting..._
 
 _Previous streak: 91 TILs😢_
@@ -15,16 +15,16 @@ _Previous streak: 91 TILs😢_
 
 ### Categories
 
-* [Python](#python)
-* [Javascript](#javascript)
-* [Data Structures & Algorithms](#data-structures-and-algorithms)
-* [Web](#web)
-* [CSS](#css)
-* [React](#react)
-* [MongoDB](#mongodb)
-* [GraphQL](#graphql)
-* [Prisma](#prisma)
-* [TypeScript](#typescript)
+- [Python](#python)
+- [Javascript](#javascript)
+- [Data Structures & Algorithms](#data-structures-and-algorithms)
+- [Web](#web)
+- [CSS](#css)
+- [React](#react)
+- [MongoDB](#mongodb)
+- [GraphQL](#graphql)
+- [Prisma](#prisma)
+- [TypeScript](#typescript)
 
 ---
 
@@ -64,7 +64,7 @@ _Previous streak: 91 TILs😢_
 - [Callbacks](/javascript/callbacks.md)
 - [Lexical vs Dynamic Scoping](/javascript/lexical-vs-dynamic.md)
 
-### ES6 
+### ES6
 
 - [Constants](/javascript/es6/constants.md)
 - [Scoping](/javascript/es6/scoping.md)
@@ -144,6 +144,10 @@ _Previous streak: 91 TILs😢_
 - [Memo](/react/memo.md)
 - [Render Props](/react/render-props.md)
 
+### React Native
+
+- [Deep Linking](/react-native/deep-linking)
+
 ### Node
 
 - [Introduction](/node/intro-node.md)
@@ -188,6 +192,7 @@ be invoked with `<leader>c`. This will do a substitution count of the
 current number of TILs and display the result in the command tray. -->
 
 ---
+
 ## Cheat Sheets
 
 - [Javascript](https://htmlcheatsheet.com/js/)
@@ -212,13 +217,12 @@ I shamelessly stole these ideas from
 
 [kale-stew/til](https://github.com/kale-stew/TIL)
 
-
 ## Other TIL Collections
 
-* [Today I Learned by Hashrocket](https://til.hashrocket.com)
-* [jwworth/til](https://github.com/jwworth/til)
-* [thoughtbot/til](https://github.com/thoughtbot/til)
-* [kale-stew/til](https://github.com/kale-stew/TIL)
+- [Today I Learned by Hashrocket](https://til.hashrocket.com)
+- [jwworth/til](https://github.com/jwworth/til)
+- [thoughtbot/til](https://github.com/thoughtbot/til)
+- [kale-stew/til](https://github.com/kale-stew/TIL)
 
 ## License
 
