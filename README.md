@@ -17,16 +17,16 @@ _Record Streak: 91 TILs_
 
 ### Categories
 
-* [Python](#python)
-* [Javascript](#javascript)
-* [Data Structures & Algorithms](#data-structures-and-algorithms)
-* [Web](#web)
-* [CSS](#css)
-* [React](#react)
-* [MongoDB](#mongodb)
-* [GraphQL](#graphql)
-* [Prisma](#prisma)
-* [TypeScript](#typescript)
+- [Python](#python)
+- [Javascript](#javascript)
+- [Data Structures & Algorithms](#data-structures-and-algorithms)
+- [Web](#web)
+- [CSS](#css)
+- [React](#react)
+- [MongoDB](#mongodb)
+- [GraphQL](#graphql)
+- [Prisma](#prisma)
+- [TypeScript](#typescript)
 
 ---
 
@@ -66,7 +66,7 @@ _Record Streak: 91 TILs_
 - [Callbacks](/javascript/callbacks.md)
 - [Lexical vs Dynamic Scoping](/javascript/lexical-vs-dynamic.md)
 
-### ES6 
+### ES6
 
 - [Constants](/javascript/es6/constants.md)
 - [Scoping](/javascript/es6/scoping.md)
@@ -146,6 +146,10 @@ _Record Streak: 91 TILs_
 - [Memo](/react/memo.md)
 - [Render Props](/react/render-props.md)
 
+### React Native
+
+- [Deep Linking](/react-native/deep-linking)
+
 ### Node
 
 - [Introduction](/node/intro-node.md)
@@ -190,6 +194,7 @@ be invoked with `<leader>c`. This will do a substitution count of the
 current number of TILs and display the result in the command tray. -->
 
 ---
+
 ## Cheat Sheets
 
 - [Javascript](https://htmlcheatsheet.com/js/)
@@ -214,13 +219,12 @@ I shamelessly stole these ideas from
 
 [kale-stew/til](https://github.com/kale-stew/TIL)
 
-
 ## Other TIL Collections
 
-* [Today I Learned by Hashrocket](https://til.hashrocket.com)
-* [jwworth/til](https://github.com/jwworth/til)
-* [thoughtbot/til](https://github.com/thoughtbot/til)
-* [kale-stew/til](https://github.com/kale-stew/TIL)
+- [Today I Learned by Hashrocket](https://til.hashrocket.com)
+- [jwworth/til](https://github.com/jwworth/til)
+- [thoughtbot/til](https://github.com/thoughtbot/til)
+- [kale-stew/til](https://github.com/kale-stew/TIL)
 
 ## License
 
