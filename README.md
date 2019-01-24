@@ -145,6 +145,8 @@ _Record Streak: 91 TILs_
 - [Context](/react/context.md)
 - [Memo](/react/memo.md)
 - [Render Props](/react/render-props.md)
+- [Immutability](/react/immutability.md)
+- [Purity](/react/purity.md)
 
 ### React Native
 
