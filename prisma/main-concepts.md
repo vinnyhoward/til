@@ -132,3 +132,21 @@ prisma.$subsribe.user({
 }).node()
 ```
 
+### Native GraphQL
+
+The Prisma client lets you run GraphQL queries and mutations against your database using the ```$graphql``` method.
+
+Here is an example that shows how to create a new ```User``` record using the native GraphQL API:
+
+```
+const mutation = `=
+  mutation ($name: String!){
+    createUser(name: $name) {
+      id
+    }
+  }
+`
+
+const variables = { name: 'Alice' }
+const result = prisma.$graphql(mutation, variables)
+```
