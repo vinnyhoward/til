@@ -65,6 +65,7 @@ _Record Streak: 91 TILs_
 - [Map](/javascript/map.md)
 - [Callbacks](/javascript/callbacks.md)
 - [Lexical vs Dynamic Scoping](/javascript/lexical-vs-dynamic.md)
+- [Javascript Function Executions](/javascript/javascript-function-executions.md)
 
 ### ES6
 
