@@ -1,0 +1,3 @@
+# JavaScript and Numbers
+
+JavaScript numbers are all ```floating``` point, stored according to the``` IEEE 754``` standard. That standard has several formats. JavaScript uses ```binary64``` or double precision. As the former name indicates, numbers are stored in a binary format, in 64 bits. These bits are allotted as follows: The fraction occupies bits 0 to 51, the exponent occupies bits 52 to 62, the sign occupies bit 63.
