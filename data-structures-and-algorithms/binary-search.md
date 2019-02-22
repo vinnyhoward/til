@@ -25,3 +25,29 @@ _Problem Solving Tip_
 
 Use tables to find patterns that will ultimately help you in solving and knowing the time notation for the problem, if you absolutely can't solve a problem. Create a results table 
 
+# Identification of main Binary Search Types
+
+## How do we identify a Binary Search?
+
+```Binary Search``` is an algorithm that divides the search space in 2 after every comparison. ```Binary Search``` should be considered every time you need to search for an index or element in a collection. If the collection is unordered, we can always sort it first before applying ```Binary Search```.
+
+## 3 Parts of a Successful Binary Search
+
+Binary Search is generally composed of 3 main sections:
+
+1. Pre-processing - Sort if collection is unsorted.
+
+2. Binary Search - Using a loop or recursion to divide search space in half after each comparison.
+
+3. Post-processing - Determine viable candidates in the remaining space.
+
+Questions to consider when implementing a ```Binary Search```
+
+- Why was it implemented slightly differently?
+
+- What was the developer thinking?
+
+- Which way was easier?
+
+- Which way is better?
+
