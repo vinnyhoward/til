@@ -34,3 +34,14 @@ The next example is 11111111 in binary, the maximum 8-bit value of 255. Again, r
 - Counting on a computer normally starts with 0 instead of 1. Therefore, counting all the bits does equal 255, but if you start at 0, it is really 256.
 
 - If you took the binary code from the first example (which totaled 104) and put it into ```ASCII```, it would produce a lowercase h. To spell the word hi, you would need to add the binary for the letter i, which is 01101001. Putting these two codes together, we have ```0110100001101001``` or ```104``` and ```105```, which represents hi.
+
+## Difference between ascii and binary
+
+ASCII: American Standard Code for Information Interchange. A coded character set consisting of 128 7-bit characters. There are 32 control characters, 94 graphic characters, the space character and the delete character.
+
+An ASCII file is defined as a file that consists of ASCII characters. It’s usually created by using a text editor like notepad or textpad.  If you want to get down to the basics, technically ASCII stores information in ones and zeros. They are stored like this, just like any other file because that is all that a computer can understand.
+
+An ASCII file is a binary file that stores ASCII codes. There are 128 different ASCII codes; this means that only 7 bits are needed to represent an ASCII character. So in any ASCII file, you’re wasting 1/8 of the bits. In particular, the most significant bit of each byte is not being used (0).
+A full, general binary file has no such restrictions. Any of the 256 bit patterns can be used in any byte of a binary file.
+A binary file are executables, sound files, image files, object files… etc…What makes them binary is merely the fact that each byte of a binary file can be one of 256 bit patterns. They’re not restricted to the ASCII codes.
+Since every character responds to one byte of a file, it makes editing binary files very, very difficult (I’m not going to say impossible because I know some very talented people.)
