@@ -6,8 +6,8 @@ A collection of small things that I've learned and toy problems that I have done
 
 _Streaks:_
 
-_6 TILs in a row so far..._
-_6 Toy Problems completed in a row and counting..._
+_1 TILs in a row so far..._
+_1 Toy Problems completed in a row and counting..._
 
 _Previous streak: 27 TILs and 14 toy problems😢_
 
@@ -17,9 +17,10 @@ _Record Streak: 91 TILs_
 
 ### Categories
 
+- [Computer Science Basics](#computer-science-basics)
+- [Data Structures & Algorithms](#data-structures-and-algorithms)
 - [Python](#python)
 - [Javascript](#javascript)
-- [Data Structures & Algorithms](#data-structures-and-algorithms)
 - [Web](#web)
 - [CSS](#css)
 - [React](#react)
@@ -101,6 +102,7 @@ _Record Streak: 91 TILs_
 ### Computer Science Basics
 
 - [Binary](/computer-science-basics/binary.md)
+- [Functional Progamming](/computer-science-basics/functional-programming.md)
 
 ### Data Structures And Algorithms
 
@@ -237,7 +239,7 @@ I shamelessly stole these ideas from
 
 ## License
 
-&copy; 2018 Vince Howard
+&copy; 2019 Vince Howard
 
 This repository is licensed under the MIT license. See `LICENSE` for
 details.
