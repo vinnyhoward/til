@@ -10,8 +10,12 @@ app.get('/api', (req, res) => {
 });
 
 app.post('/api/posts', verifyToken, (req, res) => {
-	res.json({
-		message: 'Post Created'
+	jwt.verify(req.token, 'someSecretKey', (err, authData) => {
+		if (err) res.sendStatus(403);
+		res.json({
+			message: 'Post Created...',
+			authData
+		});
 	});
 });
 
@@ -24,7 +28,7 @@ app.post('/api/login', (req, res) => {
 		lastName: 'Vickers'
 	};
 
-	jwt.sign({ user }, 'someSecretKey', (err, token) => {
+	jwt.sign({ user }, 'someSecretKey', { expiresIn: '30s' }, (err, token) => {
 		res.json({
 			token
 		});
@@ -38,15 +42,17 @@ function verifyToken(req, res, next) {
 	// Get auth header
 	const bearerHeader = req.headers['authorization'];
 	// Check if bearer is undefined
-	if (typeof bearerHeader !== undefined) {
+	if (typeof bearerHeader !== 'undefined') {
+		console.log('bearerHeader:', bearerHeader);
 		const bearer = bearerHeader.split(' ');
 		// Get token from array
 		const bearerToken = bearer[1];
 		// Set the token
-		req.token = bearToken;
+		req.token = bearerToken;
 		// Next Middleware
 		next();
 	} else {
+		console.log('Forbidden');
 		// Forbidden
 		res.sendStatus(403);
 	}

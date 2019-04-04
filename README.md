@@ -6,7 +6,7 @@ A collection of small things that I've learned and toy problems that I have done
 
 _Streaks:_
 
-_2 TILs in a row so far..._
+_3 TILs in a row so far..._
 
 <!-- _1 Toy Problems completed in a row and counting..._ -->
 
@@ -22,6 +22,7 @@ _Record Streak: 91 TILs_
 - [Data Structures & Algorithms](#data-structures-and-algorithms)
 - [Python](#python)
 - [Javascript](#javascript)
+- [Node](#node)
 - [Web](#web)
 - [CSS](#css)
 - [React](#react)
