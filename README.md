@@ -6,7 +6,7 @@ A collection of small things that I've learned and toy problems that I have done
 
 _Streaks:_
 
-_4 TILs in a row so far..._
+_1 TILs in a row so far..._
 
 <!-- _1 Toy Problems completed in a row and counting..._ -->
 
@@ -109,7 +109,7 @@ _Record Streak: 91 TILs_
 ### Computer Science Basics
 
 - [Binary](/computer-science-basics/binary.md)
-- [Functional Progamming](/computer-science-basics/functional-programming.md)
+- [Functional Programming](/computer-science-basics/functional-programming.md)
 
 ### Data Structures And Algorithms
 
@@ -154,6 +154,7 @@ _Record Streak: 91 TILs_
 - [PropTypes](/react/proptypes.md)
 - [Error Boundary](/react/error-boundary.md)
 - [Fragments](/react/fragments.md)
+- [useReducer](/react/use-reducer.md)
 - [Portals](/react/portals.md)
 - [Accessing Refs](/react/accessing-refs.md)
 - [Key](/react/key.md)
