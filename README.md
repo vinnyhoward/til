@@ -8,7 +8,7 @@ _Streaks:_
 
 _1 TILs in a row so far..._
 
-<!-- _1 Toy Problems completed in a row and counting..._ -->
+_2 Toy Problems completed in a row and counting..._
 
 _Previous streak: 27 TILs and 14 toy problems😢_
 
@@ -154,6 +154,7 @@ _Record Streak: 91 TILs_
 - [PropTypes](/react/proptypes.md)
 - [Error Boundary](/react/error-boundary.md)
 - [Fragments](/react/fragments.md)
+- [useState](/react/use-state.md)
 - [useReducer](/react/use-reducer.md)
 - [Portals](/react/portals.md)
 - [Accessing Refs](/react/accessing-refs.md)
