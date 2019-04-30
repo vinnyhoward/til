@@ -62,3 +62,28 @@ function Example() {
 What is a Hook? A Hook is a special function that lets you “hook into” React features. For example, `useState` is a `Hook` that lets you add React state to function components. We’ll learn other Hooks later.
 
 When would I use a Hook? If you write a function component and realize you need to add some state to it, previously you had to convert it to a class. Now you can use a Hook inside the existing function component. We’re going to do that right now!
+
+## How to declare state
+
+In a class, we initialize the count state to `0` by setting `this.state ` to `{ count: 0 }` in the constructor:
+
+```
+class Example extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      count: 0
+    };
+  }
+```
+
+In a function component, we have no this, so we can’t assign or read `this.state.` Instead, we call the `useState` Hook directly inside our component:
+
+```
+import React, { useState } from 'react';
+
+function Example() {
+  // Declare a new state variable, which we'll call "count"
+  const [count, setCount] = useState(0);
+
+```
