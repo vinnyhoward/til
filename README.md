@@ -6,9 +6,9 @@ A collection of small things that I've learned and toy problems that I have done
 
 _Streaks:_
 
-_1 TILs in a row so far..._
+_2 TILs in a row so far..._
 
-_2 Toy Problems completed in a row and counting..._
+_3 Toy Problems completed in a row and counting..._
 
 _Previous streak: 27 TILs and 14 toy problems😢_
 
@@ -176,6 +176,10 @@ _Record Streak: 91 TILs_
 - [Assert Equals](/node/assert-testing.md)
 - [REST](/node/rest.md)
 - [JWT](/node/json-web-token.md)
+
+### TypeORM
+- [Introduction](/typeORM/intro.md)
+- [Migrations](/typeORM/migrations.md)
 
 ### MongoDB
 
