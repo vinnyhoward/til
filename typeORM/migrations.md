@@ -77,3 +77,14 @@ Before creating a new migration you need to setup your connection options proper
     }
 }
 ```
+
+Here we setup three options:
+
+- "migrationsTableName": "migrations" - Specify this option only if you need migration table name to be different from "migrations".
+- "migrations": ["migration/*.js"] - indicates that typeorm must load migrations from the given "migration" directory.
+- "cli": { "migrationsDir": "migration" } - indicates that the CLI must create new migrations in the "migration" directory.
+- Once you setup connection options you can create a new migration using CLI:
+
+```
+typeorm migration:create -n PostRefactoring
+```
