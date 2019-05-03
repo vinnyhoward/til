@@ -88,3 +88,47 @@ Here we setup three options:
 ```
 typeorm migration:create -n PostRefactoring
 ```
+
+Here, `PostRefactoring` is the name of the migration - you can specify any name you want. After you run the command you can see a new file generated in the "migration" directory named `{TIMESTAMP}-PostRefactoring.ts` where `{TIMESTAMP}` is the current timestamp when the migration was generated. Now you can open the file and add your migration sql queries there.
+
+You should see the following content inside your migration:
+
+```
+import {MigrationInterface, QueryRunner} from "typeorm";
+
+export class PostRefactoringTIMESTAMP implements MigrationInterface {
+    
+    async up(queryRunner: QueryRunner): Promise<any> {
+        
+    }
+
+    async down(queryRunner: QueryRunner): Promise<any> { 
+        
+    }
+
+    
+}
+```
+
+There are two methods you must fill with your migration code: `up` and `down`. `up` has to contain the code you need to perform the migration. `down` has to revert whatever up changed.
+
+Inside both `up` and `down` you have a `QueryRunner` object. All database operations are executed using this object.
+
+Let's see what the migration looks like with our Post changes:
+
+```
+import {MigrationInterface, QueryRunner} from "typeorm";
+
+export class PostRefactoringTIMESTAMP implements MigrationInterface {
+    
+    async up(queryRunner: QueryRunner): Promise<any> {
+        await queryRunner.query(`ALTER TABLE "post" ALTER COLUMN "title" RENAME TO "name"`);
+    }
+
+    async down(queryRunner: QueryRunner): Promise<any> { 
+        await queryRunner.query(`ALTER TABLE "post" ALTER COLUMN "name" RENAME TO "title"`); // reverts things made in "up" method
+    }
+
+    
+}
+```
