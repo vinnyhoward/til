@@ -17,21 +17,33 @@
  * @return {boolean}
  */
 
-// NEED TO FINISH
 const validPalindrome = (s) => {
-	if (s.split('').reverse().join('') === s) return true;
-	let wordArr = s.split('');
-	let count = 0;
-	for (let i = 0; i < wordArr.length; i++) {
-		const index = wordArr.indexOf(i);
-		wordArr.splice(index, 1);
+	const match = (i, j) => {
+		console.log(i);
+		console.log(j);
+		while (i < j && s[i] === s[j]) {
+			i++;
+			j--;
+		}
+		return [ i, j ];
+	};
 
-		console.log(wordArr);
-	}
+	let [ i, j ] = match(0, s.length - 1);
+	if (i >= j) return true;
+
+	let [ x, y ] = match(i + 1, j);
+	if (x >= y) return true;
+	[ x, y ] = match(i, j - 1);
+	if (x >= y) return true;
+
+	return false;
 };
 
+// Runtime: 92 ms, faster than 91.09% of JavaScript online submissions for Valid Palindrome II.
+// Memory Usage: 42.6 MB, less than 78.26% of JavaScript online submissions for Valid Palindrome II.
+
 const input1 = 'aba';
-const input2 = 'abca';
+const input2 = 'abca'; // bca // aca // aba // abc
 
 // console.log(validPalindrome(input1));
 console.log(validPalindrome(input2));

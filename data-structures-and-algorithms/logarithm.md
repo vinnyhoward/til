@@ -17,3 +17,25 @@ The logarithm of a number roughly measures the number of times you can divide th
 - Efficient sorting algorithms involve logarithms
 
 - Recursion sometimes involves logarithmic space complexity
+
+## Most common logarithms
+
+1. Common Logarithms: ```Base 10```
+Sometimes a logarithm is written without a base, like this ```log(100)```
+
+This usually means that the base is really 10.
+
+Example:
+
+```
+ log(1000) = log10(1000) = 3
+ ```
+
+2. Natural Logarithms: ```Base "e"```
+Another base that is often used is e (Euler's Number) which is about 2.71828.
+
+Example: 
+
+```
+ln(7.389) = loge(7.389) ≈ 2
+```
