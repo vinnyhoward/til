@@ -6,9 +6,9 @@ A collection of small things that I've learned and toy problems that I have done
 
 _Streaks:_
 
-_10 TILs in a row so far..._
+_11 TILs in a row so far..._
 
-_1 Toy Problems completed in a row and counting..._
+<!-- _2 Toy Problems completed in a row and counting..._ -->
 
 _Previous streak: 27 TILs and 14 toy problems😢_
 
@@ -106,6 +106,7 @@ _Record Streak: 91 TILs_
 - [BigInt](/javascript/es10/big-int.md)
 - [String.prototype.matchAll()](/javascript/es10/string-prototype-match-all.md)
 - [Array.Flat()](/javascript/es10/array-flat.md)
+- [Array.flatMap()](/javascript/es10/array-flat-map.md)
 
 ### Computer Science Basics
 
