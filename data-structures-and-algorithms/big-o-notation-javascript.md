@@ -127,17 +127,28 @@ quickSort( ['q','a','z','w','s','x','e','d','c','r']);
 // ["a", "c", "d", "e", "q", "r", "s", "w", "x", "z"]
 ```
 
-## Conclusion
+## Big O of Array Operations
 
-In a nutshell arrays generally follow these guidelines:
+- push - O(1)
 
-- Insertion - It depends
+- pop - O(1)
 
-- Removal - It depends
+- shift - O(n)
 
-- Searching - O(N)
+- unshift - O(n)
 
 - Access - O(n)
+
+- concat - O(n)
+
+- slice - O(n)
+
+- splice - O(n)
+
+- sort - O(N * log N)
+
+- forEach/map/filter/reduce/etc - O(N)
+
 
 ## Objects
 
