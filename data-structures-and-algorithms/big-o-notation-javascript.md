@@ -138,3 +138,7 @@ In a nutshell arrays generally follow these guidelines:
 - Searching - O(N)
 
 - Access - O(n)
+
+## Objects
+
+Accessing, inserting or removing a value by using a key is instantaneous, and so, they have a complexity of `O(1)`. Searching through each “deposit box” for a specific item by using every available key is essentially a linear search. And so, it has a complexity of `O(n)`.
