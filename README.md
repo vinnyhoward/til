@@ -6,9 +6,9 @@ A collection of small things that I've learned and toy problems that I have done
 
 _Streaks:_
 
-_14 TILs in a row so far..._
+_15 TILs in a row so far..._
 
-<!-- _2 Toy Problems completed in a row and counting..._ -->
+<!-- _1 Toy Problems completed in a row and counting..._ -->
 
 _Previous streak: 27 TILs and 14 toy problems😢_
 
@@ -107,11 +107,12 @@ _Record Streak: 91 TILs_
 - [String.prototype.matchAll()](/javascript/es10/string-prototype-match-all.md)
 - [Array.Flat()](/javascript/es10/array-flat.md)
 - [Array.flatMap()](/javascript/es10/array-flat-map.md)
+- [Function.toString()](/javascript/es10/array-flat-map.md)
 
 ### Computer Science Basics
 
 - [Binary](/computer-science-basics/binary.md)
-- [Functional Programming](/computer-science-basics/functional-programming.md)
+- [Functional Programming](/computer-science-basics/function-to-string.md)
 
 ### Data Structures And Algorithms
 
@@ -119,6 +120,7 @@ _Record Streak: 91 TILs_
 - [Big O notation (Javascript)](/data-structures-and-algorithms/big-o-notation-javascript.md)
 - [Space Complexity](/data-structures-and-algorithms/big-o-notation.md)
 - [Logarithm](/data-structures-and-algorithms/logarithm.md)
+- [Algorithms Problem Solving Patterns](/data-structures-and-algorithms/algorithms-problem-solving-patterns.md)
 - [Binary Search](/data-structures-and-algorithms/binary-search.md)
 - [Bubble Sort](/data-structures-and-algorithms/bubble-sort.md)
 - [Linked List](/data-structures-and-algorithms/linked-list.md)
