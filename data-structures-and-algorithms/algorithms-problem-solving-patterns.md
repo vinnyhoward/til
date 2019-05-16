@@ -31,3 +31,18 @@ Coming up with examples can help you understand the problem better. Examples als
 ## Break down the problem
 
 Write out the step that you will take to solve the problem, it can be pseudo code, it can be just guidelines written with comments, or whatever helps you best to visualize and breaking it down to smaller digestible parts. This forces you to think about the code you'll write before you write it, and helps you catch any lingering conceptual issues or misunderstandings before you dive in and have to worry about the details.
+
+Example of pseudo code process:
+
+```
+const charCount = (str) => {
+    // object = {}
+    // for loop over str
+    // if string doesn't exist in object
+    // create key value pair in object
+    // if it does exist
+    // increment key value pair in object
+}
+```
+
+## Solve Simplify
