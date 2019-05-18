@@ -46,3 +46,25 @@ const charCount = (str) => {
 ```
 
 ## Solve Simplify
+
+Find the core difficulty in what you're trying to do, temporarily ignore that difficulty and write a simplified solution, then incorporate that difficulty back in.
+
+## Look back and refactor
+
+Just because the first solution you found, does not mean its the best answer. Its important to look at your solution critically, see if you can find different solutions or augmentations to help your solution run faster and or use less memory. Another important aspect of this step is making the code readable. Chances are, you aren't going to be the only one that is going to be looking at this code. You have to make it easier for the next person to be able to understand it fairly quickly.
+
+### Refactoring Questions
+
+- Can you check the result
+
+- Can you derive the result differently?
+
+- Can you understand it at a glance?
+
+- Can you use the result or method for some other problem?
+
+- Can you improve the performance (space, time) of your solution?
+
+- Can you think of other ways to refactor?
+
+- How have other people solved this problem?
