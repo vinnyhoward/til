@@ -8,7 +8,7 @@ _Streaks:_
 
 _1 TILs in a row so far..._
 
-_2 Toy Problems completed in a row and counting..._ /
+_1 Toy Problems completed in a row and counting..._ /
 
 _Previous streak: 20 TILs😢_
 
@@ -109,6 +109,7 @@ _Record Streak: 91 TILs_
 - [Array.flatMap()](/javascript/es10/array-flat-map.md)
 - [Function.toString()](/javascript/es10/array-flat-map.md)
 - [Object.fromEntries()](/javascript/es10/object-from-entries.md)
+- [Optional Catch Binding](/javascript/es10/optional-catch-binding.md)
 
 ### Computer Science Basics
 
