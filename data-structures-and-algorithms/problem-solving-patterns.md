@@ -53,3 +53,5 @@ const sameFrequency = (arr1, arr2) => {
   return true;
 };
 ```
+
+The second solution is much faster then the first solution, the first solution would essentially have a nested loop which causes the time complexity to be `N^2` which is terrible, however the second solution is much more efficient with a time complexity of `O(N)`. The idea behind the frequency counter is to use objects (usually) to help break down the contents of what are you trying to solve such as an array or a string to help quickly compare between two objects.
