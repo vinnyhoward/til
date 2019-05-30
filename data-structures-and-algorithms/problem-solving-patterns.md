@@ -55,3 +55,31 @@ const sameFrequency = (arr1, arr2) => {
 ```
 
 The second solution is much faster then the first solution, the first solution would essentially have a nested loop which causes the time complexity to be `N^2` which is terrible, however the second solution is much more efficient with a time complexity of `O(N)`. The idea behind the frequency counter is to use objects (usually) to help break down the contents of what are you trying to solve such as an array or a string to help quickly compare between two objects.
+
+# Multiple Pointers
+
+Creating `pointers` or values that correspond to an index or position and move towards the beginning, end, or middle based on a certain condition. Very efficient for solving problems with minimal space complexity as well.
+
+Example:
+
+Write a function called `sumZero` which accepts a `sorted` array of integers. The function should find the first pair where the sum is 0. Return an array that includes both values that sum to zero or undefined if a pair does not exist.
+
+```
+sumZero([3, -2, -1, 0, 1, 2, 3]) // [3. -3]
+sumZero([-2, 0, 1, 3]) // undefined
+sumZero([1, 2, 3]) // undefined
+```
+
+Naive Solution
+
+```
+const sumZero = (arr) => {
+  for(let i = 0; i < arr.length; i++) {
+      for(let j = i + 1; j < arr.length; j++) {
+    if(arr[i] + arr[j] === 0) {
+      return [arr[i], arr[j]]
+    }
+  }
+  }
+}
+```

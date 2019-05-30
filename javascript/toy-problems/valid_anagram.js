@@ -4,6 +4,7 @@
 
 const validAnagram = (arr1, arr2) => {
   if (arr1.length === 0 && arr2.length === 0) return true
+  if (arr1.length !== arr2.length) return false
 
   let gramCounter1 = {};
   let gramCounter2 = {};
