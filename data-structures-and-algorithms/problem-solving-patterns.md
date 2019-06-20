@@ -12,7 +12,7 @@ same([1, 2, 3,], [1, 9]) // true
 same([1, 2, 1], [4, 4, 1]) // true
 ```
 
-A naive solution with a time complexity of N^2:
+### A naive solution with a time complexity of N^2:
 
 ```
 function same(arr1, arr2) {
@@ -30,7 +30,7 @@ function same(arr1, arr2) {
 }
 ```
 
-A refactored solution 0(N):
+### A refactored solution 0(N):
 
 ```
 
@@ -60,7 +60,7 @@ The second solution is much faster then the first solution, the first solution w
 
 Creating `pointers` or values that correspond to an index or position and move towards the beginning, end, or middle based on a certain condition. Very efficient for solving problems with minimal space complexity as well.
 
-Example:
+### Example:
 
 Write a function called `sumZero` which accepts a `sorted` array of integers. The function should find the first pair where the sum is 0. Return an array that includes both values that sum to zero or undefined if a pair does not exist.
 
@@ -70,7 +70,7 @@ sumZero([-2, 0, 1, 3]) // undefined
 sumZero([1, 2, 3]) // undefined
 ```
 
-Naive Solution
+### Naive Solution
 
 ```
 const sumZero = (arr) => {
@@ -84,7 +84,7 @@ const sumZero = (arr) => {
 }
 ```
 
-Refactored Efficient Version
+### Refactored Efficient Version
 
 ```
 const sumZeroAlt = (arr) => {
@@ -111,7 +111,7 @@ Depending on a certain condition, the window either increases or closes (and a n
 
 Very useful for keeping track of a subset of data in an array/string etc.
 
-Example:
+### Example:
 
 Write a function called `maxSubArraySum` which accepts an array of integers and a number called `n`. The function should calculate the maximum sum of `n` consecutive elements in the array.
 
@@ -121,6 +121,47 @@ maxSubArraySum([1, 2, 5, 2, 8, 1, 5], 4)
 maxSubArraySum([4, 2, 1, 6, 2], 1)
 maxSubArraySum([4, 2, 1, 6, 2], 4)
 maxSubArraySum([], 4)
+```
+
+### Naive example with a time complexity of O(N^2):
+
+```
+const maxSubArraySum = (arr, num) => {
+  if (num > arr.length) return null;
+
+  let max = -Infinity;
+  for (let i = 0; i < arr.length - num +1; i++) {
+    temp = 0;
+
+    for (let j = 0; j < num; j++) temp += arr[i + j];
+    if (temp > max) max = temp;
+    console.log('temp:', temp, 'max:', max)
+  };
+  return max;
+};
+```
+
+### Efficient example with a time complexity of O(N):
+
+```
+const maxSubArraySumAlt = (arr, num) => {
+  let maxSum = 0;
+  let tempSum = 0;
+  if (num > arr.length) return null;
+
+  for (let i = 0; i < num; i++) {
+    maxSum += arr[i]
+  }
+
+  tempSum = maxSum;
+  for (let i = num; i < arr.length; i++) {
+
+    tempSum = (tempSum - arr[i - num])+ arr[i];
+    maxSum = Math.max(maxSum, tempSum);
+  }
+  
+  return maxSum
+};
 ```
 
 # Divide and Conquer 

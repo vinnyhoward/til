@@ -1,4 +1,22 @@
-# How migrations work
+# Quick Migrations Guide
+
+First check your `ormconfig.json` to see if things are in order according to your project, or at the very least, see if you are in `development` mode and if you're hitting the right `database`.
+
+First lets grab all of our executables from our bin folder in `node_modules`. Open up your terminal and type in `ls node_modules/.bin/typeorm` and press enter to make sure you're in the right directory and that `node_modules/.bin/typeorm` exists. Then type in `ls node_modules/.bin` to see all of your executables. After that, type in `./node_modules/.bin/typeorm` to view all of your `typeORM` commands that are available to you.
+
+We are going ot focus on these commands:
+
+```
+  typeorm entity:create       Generates a new entity.
+  typeorm subscriber:create   Generates a new subscriber.
+  typeorm migration:create    Creates a new migration file.
+  typeorm migration:generate  Generates a new migration file with sql needs to
+                              be executed to update schema.
+  typeorm migration:run       Runs all pending migrations.
+  typeorm migration:revert 
+```
+
+# How Migrations Work
 
 Once you get into production you'll need to synchronize model changes into the database. Typically it is unsafe to use `synchronize: true` for schema synchronization on production once you get data in your database. Here is where migrations come to help.
 
@@ -20,22 +38,22 @@ import WineFuture from './WineFuture';
 
 @Entity()
 export default class CouponCode {
-  @PrimaryGeneratedColumn()
-  id: number;
+  @PrimaryGeneratedColumn("uuid")
+  id: string;
 
-  @Column({length: 40})
+  @Column("varchar", {length: 255})
   userId: string;
 
-  @Column('text')
+  @Column("varchar", {length: 255})
   couponCode: string;
 
   @Column()
   redeemed: boolean;
 
-  @Column('text')
+  @Column("varchar", {length: 100})
   transactionType: string;
 
-  @Column('text')
+  @Column("varchar", {length: 255})
   transactionId: string;
 
   @CreateDateColumn()
