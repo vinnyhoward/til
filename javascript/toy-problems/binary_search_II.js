@@ -10,19 +10,16 @@ const search = (arr, num) => {
     let currElement = arr[middleNum];
     
     if(currElement < num) {
-      console.log(min)
       min = middleNum + 1;
-      console.log(min)
     } else if (currElement > num) {
-      console.log(max)
       max = middleNum - 1;
-      console.log(max)
     } else {
       return middleNum
     }
   };
+  return 'IT AIN\'T HERE BRO';
 };
 
 console.log(search([1, 2, 3, 4, 5, 6,], 6)) // 3
-// console.log(search([1, 2, 3, 4, 5, 6], 6)) // 5
-// console.log(search([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 11)) // -1
+console.log(search([1, 2, 3, 4, 5, 6], 6)) // 5
+console.log(search([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 11)) // -1
