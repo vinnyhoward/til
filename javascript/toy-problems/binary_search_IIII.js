@@ -47,14 +47,17 @@ const binarySearch = (arr, target) => {
   let mid = Math.floor((stop + start) / 2);
 
   // Check if arr !== target AND min < start
-  while(arr !== target && start < stop) {
+  while (start < stop && arr[mid] !== target) {
     // Assign current element
     let currElement = arr[mid];
+
     if (target < currElement) stop = mid - 1;
     if (target > currElement) start = mid + 1;
 
     // Divide array in half
     mid = Math.floor((start + stop) / 2);
+    console.log(arr[mid])
+    console.log(start < stop && arr !== target)
   }
   return arr[mid] !== target ? -1 : mid;
 };
@@ -72,5 +75,6 @@ const arr3 = [ -1, 0, 3, 5, 9, 12 ];
 const target3 = 12;
 
 console.log(binarySearch(arr, target));
-// console.log(binarySearch(arr1, target1));
-// console.log(binarySearch(arr2, target2));
+console.log(binarySearch(arr1, target1));
+console.log(binarySearch(arr2, target2));
+console.log(binarySearch(arr3, target3));
