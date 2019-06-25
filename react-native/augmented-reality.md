@@ -53,3 +53,15 @@ Defining how an object will be shown in a scene by defining the materials and te
 ![alt text][materials-textures]
 
 [materials-textures]: https://i.ibb.co/Mcv4hsK/Screen-Shot-2019-06-23-at-3-23-37-PM.png "Materials and Textures"
+
+### 3D Models
+
+Defining how an object will be shown in a scene by defining the materials and textures
+
+- .Obj files - .obj files are used along with .mtl(Material) files and lists of textures
+- .vrx - fbx models transformed with `./bin/ViroFBX` script
+- GTLF files - Json => Bin => PNG
+
+![alt text][3d-model]
+
+[3d-model]: https://cdna.artstation.com/p/assets/images/images/012/254/620/large/losha-magee-loshamagee1.jpg?1533842078 "Materials and Textures"

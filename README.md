@@ -6,9 +6,9 @@ A collection of small things that I've learned and toy problems that I have done
 
 _Streaks:_
 
-_7 TILs in a row so far..._
+_8 TILs in a row so far..._
 
-_7 Toy Problems completed in a row and counting..._ 
+_8 Toy Problems completed in a row and counting..._ 
 
 _Previous streak: 20 TILs😢_
 
@@ -179,6 +179,7 @@ _Record Streak: 91 TILs_
 ### React Native
 
 - [Deep Linking](/react-native/deep-linking)
+- [Augmented Reality](/react-native/augmented-reality)
 
 ### Node
 

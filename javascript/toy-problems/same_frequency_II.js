@@ -21,30 +21,35 @@
  */
 
 const sameFrequency = (num1, num2) => {
-  let stringArr1 = num1.toString().split('');
-  let stringArr2 = num2.toString().split('');
+  let stringArr1 = String(num1).split('');
+  let stringArr2 = String(num2).split('');
 
   if (stringArr1.length !== stringArr2.length) return false
 
-  let numHashMap1 = {}
-  let numHashMap2 = {}
+  let freqHashMap1 = {}
+  let freqHashMap2 = {}
 
-  let mappedArr1 = stringArr1.map(item => {
-    if(!numHashMap1[item]) numHashMap1[item] = item;
+  stringArr1.map(item => {
+    if(!freqHashMap1[item]) freqHashMap1[item] = parseInt(item);
+    if(freqHashMap1[item]) freqHashMap1[item] = item++;
   })
 
-  let mappedArr2 = stringArr2.map(item => {
-    if(!numHashMap2[item]) numHashMap2[item] = item;
+  stringArr2.map(item => {
+    if(!freqHashMap2[item]) freqHashMap2[item] = parseInt(item);
+    if(freqHashMap2[item]) freqHashMap1[item] = item++;
   })
 
-  for (let val in numHashMap1) {
-    if (numHashMap1[val] !== numHashMap2[val]) return false
+  for (let val in freqHashMap1) {
+    if (freqHashMap1[val] !== freqHashMap2[val]) return false
   }
 
   return true;
 }
 
-console.log(sameFrequency(182, 281)); // true
+console.log(sameFrequency(123456, 123756)); // false
+console.log(sameFrequency(187, 781)); // true
 console.log(sameFrequency(34, 14)); // false
 console.log(sameFrequency(3589578, 5879385)); // true
 console.log(sameFrequency(22, 222)); // false
+console.log(sameFrequency(1000001, 1000000)); // true
+console.log(sameFrequency(4444599110, 4594194190)); // true
