@@ -56,8 +56,6 @@ const binarySearch = (arr, target) => {
 
     // Divide array in half
     mid = Math.floor((start + stop) / 2);
-    console.log(arr[mid])
-    console.log(start < stop && arr !== target)
   }
   return arr[mid] !== target ? -1 : mid;
 };
