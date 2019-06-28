@@ -16,8 +16,21 @@
 
 // Space Complexity - O(N)
 
-const isSubsequence = () => {
+const isSubsequence = (str1, str2) => {
+  // Assign starting points for str1 for comparisons str2
+  let leftStr1 = 0;
+  let rightStr1 = str1.length - 1;
+  
+  // Assign starting points for str2 for comparisons for str1
+  let leftStr2 = 0;
+  let rightStr2 = str2.length - 1;
 
+  // Start while loop with a base case to stop it
+  while(leftStr2 < rightStr2) {
+    if (str1[leftStr1] === str1[leftStr1]) {
+
+    }
+  };
 };
 
 console.log(isSubsequence('hello', 'hello world')); // true

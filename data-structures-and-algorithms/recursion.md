@@ -45,7 +45,55 @@ function countDown(num) {
 ## Base Case Condition 
 The base case condition is like the exit condition, without the base case, the recursion will be running infinitely and unusable
 
+For example:
+
+```
+function sumRange(sum) {
+  if (num ===1) return 1;
+  return num + sumRange(num - 1)
+}
+```
+
+The `base case` condition will always be a conditional following a return. In the example up above, it is `if (num ===1) return 1;`
+
 ## Two essential parts of a recursive function
 
 - Base Case
 - Different Input
+
+
+## Factorials 
+
+The ```factorial``` of a natural number is a number multiplied by `"number minus one"`, then by `"number minus two"`, and so on till `1`. The factorial of `n` is denoted as `n`!
+
+We can write a definition of factorial like this:
+
+```
+n! = n * (n - 1) * (n - 2) * ...*1
+```
+
+Values of factorials for different `n`:
+
+```
+1! = 1
+2! = 2 * 1 = 2
+3! = 3 * 2 * 1 = 6
+4! = 4 * 3 * 2 * 1 = 24
+5! = 5 * 4 * 3 * 2 * 1 = 120
+```
+
+The task is to write a function ```factorial(n)``` that calculates n! using recursive calls.
+
+```
+alert( factorial(5) ); // 120
+```
+
+P.S. Hint: `n!` can be written as `n * (n-1)!` For instance: `3! = 3*2! = 3*2*1! = 6`
+
+```
+function factorial(n) {
+  return (n != 1) ? n * factorial(n - 1) : 1;
+}
+
+alert( factorial(5) ); // 120
+```
