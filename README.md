@@ -6,9 +6,9 @@ A collection of small things that I've learned and toy problems that I have done
 
 _Streaks:_
 
-_11 TILs in a row so far..._
+_12 TILs in a row so far..._
 
-_11 Toy Problems completed in a row and counting..._ 
+_12 Toy Problems completed in a row and counting..._ 
 
 _Previous streak: 20 TILs😢_
 
@@ -51,6 +51,7 @@ _Record Streak: 91 TILs_
 ### Javascript
 
 - [Hoisting](/javascript/hoisting.md)
+- [Arguments Object](/javascript/arguments-object.md)
 - [Methods](/javascript/methods.md)
 - [This](/javascript/this.md)
 - [Imperative vs Declarative](/javascript/imperative-declarative.md)
