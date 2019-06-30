@@ -65,3 +65,11 @@ Defining how an object will be shown in a scene by defining the materials and te
 ![alt text][3d-model]
 
 [3d-model]: https://cdna.artstation.com/p/assets/images/images/012/254/620/large/losha-magee-loshamagee1.jpg?1533842078 "Materials and Textures"
+
+### Shading
+
+Every detail matters in a 3D world. Proper adjusted levels of light and color as well as realistic surface of a 3D model add vividness to the object and improve its visual appearance. To make a 3D model look realistic it is recommended to set appropriate parameters in Shader application and to overlay suitable texture. There are four major shaders that can be applied to 3D models
+
+![alt text][3d-shaders]
+
+[3d-shaders]: https://i.ibb.co/s1Z90JR/Screen-Shot-2019-06-29-at-6-58-20-PM.png "Materials and Textures"

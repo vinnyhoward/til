@@ -10,13 +10,16 @@ The following snippet:
 console.log(hoist)
 var hoist = "value"
 ```
+
 is equivalent to:
+
 
 ```
 var hoist
 console.log(hoist)
 hoist = "value"
 ```
+
 Therefore logging hoist outputs undefined to the console, not "value".
 
 Hoisting also allows you to invoke a function declaration before it appears to be declared in a program.
@@ -36,6 +39,7 @@ var myFunction = function() {
   console.log("hello")
 }
 ```
+
 - Good to hearHoisting is JavaScript’s default behavior of moving declarations to the top
 
 - Functions declarations are hoisted before variable declarations
