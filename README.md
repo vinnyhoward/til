@@ -6,9 +6,9 @@ A collection of small things that I've learned and toy problems that I have done
 
 _Streaks:_
 
-_14 TILs in a row so far..._
+_15 TILs in a row so far..._
 
-_14 Toy Problems completed in a row and counting..._ 
+_15 Toy Problems completed in a row and counting..._ 
 
 _Previous streak: 20 TILs😢_
 
@@ -71,6 +71,7 @@ _Record Streak: 91 TILs_
 - [Lexical vs Dynamic Scoping](/javascript/lexical-vs-dynamic.md)
 - [Javascript Function Executions](/javascript/javascript-function-executions.md)
 - [JavaScript and Numbers](/javascript/numbers.md)
+- [Math.log2()](/javascript/math-log-2.md)
 
 ### ES6
 

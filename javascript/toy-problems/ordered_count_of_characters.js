@@ -10,16 +10,14 @@ const orderedCount = (text) => {
   const countHashMap = {};
   const countArr = [];
 
-  [...text].map(char => {
-    if(!countHashMap[char]) countHashMap[char] = 0;
-    if(countHashMap[char] || countHashMap[char] === 0) countHashMap[char]++;
-  })
+  [...text].map(char => !countHashMap[char] ? countHashMap[char] = 1 : countHashMap[char]++)
+  
   for (let item in countHashMap) {
     countArr.push([item, countHashMap[item]])
   }
-
+  
   return countArr;
 };
 
-// console.log(orderedCount("abracadabra"));
+console.log(orderedCount("abracadabra"));
 console.log(orderedCount("212"));
