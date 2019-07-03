@@ -1,4 +1,4 @@
-// Math.log2(n)
+# Math.log2(n)
 
 The `Math.log2()` function returns the `base 2 logarithm` of a number, that is
 

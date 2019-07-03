@@ -97,3 +97,20 @@ function factorial(n) {
 
 alert( factorial(5) ); // 120
 ```
+
+## Common Pitfalls in Recursion
+
+- No base case
+- Forgetting to return or returning the incorrect value
+- Stack overflow (no, not the site)
+
+```
+function factorial(num) {
+  if (num === 1) return 1; // If this base case did not exist, the environment would exceed its call stack
+  return num * factorial(num - 1);
+};
+```
+
+## Helper Method Recursion
+
+It is a function that has a smaller function within it that is the `helper` recursive function that would constantly be called until the base case is met
