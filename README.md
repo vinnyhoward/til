@@ -6,9 +6,9 @@ A collection of small things that I've learned and toy problems that I have done
 
 _Streaks:_
 
-_17 TILs in a row so far..._
+_18 TILs in a row so far..._
 
-_17 Toy Problems completed in a row and counting..._ 
+_18 Toy Problems completed in a row and counting..._ 
 
 _Previous streak: 20 TILs😢_
 
