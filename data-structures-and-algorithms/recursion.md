@@ -111,6 +111,36 @@ function factorial(num) {
 };
 ```
 
-## Helper Method Recursion
+## Memoization
 
-It is a function that has a smaller function within it that is the `helper` recursive function that would constantly be called until the base case is met
+It is a function that has a smaller function within it that is the `helper` recursive function that would constantly be called until the base case is met while storing its results without the recursion needing to recompile.
+
+Lets take this fibonacci sequence as an example.
+
+```
+function fib(n) {
+  if (n < 2) {
+    return n;
+  }
+  return fib(n - 1) + fib(n - 2);
+}
+```
+
+The recursive solution up above was getting significantly slower for each additional number in the sequence due to exponential time growth. There is, however, a smart way of improving this solution and that is using ```Memoization```.
+
+_“Memoization is an optimization technique used primarily to speed up computer programs by storing the results of expensive function calls and returning the cached result when the same inputs occur again.”_ (Wikipedia)
+
+For our more efficient recursive solution we would want to store the arguments of each function call as well as the function’s output, and reuse it later on if the function was called with the same arguments.
+
+Our efficient recursive solution looked like this:
+
+```
+const fastFib = memoize(fib);
+function fib(n) {
+  if (n < 2) {
+    return n;
+  }
+  return 
+fastFib(n - 1) + fastFib(n - 2);
+}
+```
