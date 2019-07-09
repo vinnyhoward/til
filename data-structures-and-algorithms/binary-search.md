@@ -8,7 +8,7 @@ A simple approach is to do linear search.The time complexity of above algorithm 
 
 ### Binary Search: Efficiency  
 
-The idea of binary search is to use the information that the array is sorted and reduce the time complexity to O(log(n)).
+The idea of binary search is to use the information that the array is sorted and reduce the time complexity to `O(log(n))` which is the worse or average case, while the best case would be `O(1)`. Whenever the size of `n` doubles the amount of steps it takes to find the element is increased by only 1. For example, an `array` with 16 elements within it, will take `4` steps because `2 * 2 * 2 * 2 = 16` and it would only 4 steps or divisions of the array to find the target element. If the size of `n` is 32 then that array is double the size of 16, meaning it will just take one extra step to find the target element.
 
 Example:
 
