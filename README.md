@@ -6,9 +6,9 @@ A collection of small things that I've learned and toy problems that I have done
 
 _Streaks:_
 
-_2 TILs in a row so far..._
+_3 TILs in a row so far..._
 
-_2 Toy Problems completed in a row and counting..._ 
+_3 Toy Problems completed in a row and counting..._ 
 
 _Previous streak: 23 TILs😢 and 23 toy problems..._
 
@@ -132,6 +132,7 @@ _Record Streak: 91 TILs_
 - [Linked List](/data-structures-and-algorithms/linked-list.md)
 - [Recursion](/data-structures-and-algorithms/recursion.md)
 - [Stacks](/data-structures-and-algorithms/stacks.md)
+- [Selection Sort](/data-structures-and-algorithms/selection-sort.md)
 - [Merge Sort](/data-structures-and-algorithms/merge-sort.md)
 - [Quick Sort](/data-structures-and-algorithms/quick-sort.md)
 - [Hashing](/data-structures-and-algorithms/hashing.md)
