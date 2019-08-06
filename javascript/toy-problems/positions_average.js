@@ -23,10 +23,26 @@
 // In a set the n substrings will have the same length ( > 0 ).
 
 const posAverage = (s) => {
-	// your code
+	const parentArray = s.split(', ')
+	const firstArr = parentArray[0].split('')
+	const numHash = {};
+
+	for (const item of firstArr) {
+		numHash[item] = 'a';
+	}
+
+	for (let i = 0; i < parentArray.length; i++) {
+		const nestedArr = parentArray[i].split('');
+		for (let j = 0; j < nestedArr.length; j++) {
+			// if(numHash[nestedArr[]) {
+				numHash[nestedArr[i]]
+			// }
+		}
+	}
 };
 
-console.log(posAverage('466960, 069060, 494940, 060069, 060090, 640009, 496464, 606900, 004000, 944096'));
+// console.log(posAverage('466960, 069060, 494940, 060069, 060090, 640009, 496464, 606900, 004000, 944096'));
 // 26.6666666667
-console.log(posAverage('444996, 699990, 666690, 096904, 600644, 640646, 606469, 409694, 666094, 606490'));
+// console.log(posAverage('444996, 699990, 666690, 096904, 600644, 640646, 606469, 409694, 666094, 606490'));
 // 29.2592592593
+console.log(posAverage('466960, 069060'));
