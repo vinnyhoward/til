@@ -15,40 +15,56 @@
 // ### Example
 
 const titleCase = (title, minorWords) => {
-  if (!title && !minorWords) return '';
-
-  let titleCaseArray = []
   const titleLower = title.toLowerCase().split(' ');
+  let titleCaseArray = []
   let minorLower;
 
+  if (!title && !minorWords) return '';
+
   if (minorWords)  minorLower = minorWords.toLowerCase().split(' ');
+
+  function capitalizeFirstLetter(word) {
+    const uppercaseFirstLetter = word.charAt(0).toUpperCase();
+    const stringWithoutFirstLetter = word.slice(1);
+    const upperCaseWord = uppercaseFirstLetter + stringWithoutFirstLetter;
+
+    titleCaseArray.push(upperCaseWord);
+  }
 
   for (let i = 0; i < titleLower.length; i++) {
     let curWord = titleLower[i];
 
     if (minorWords) {
       if (i !== 0 && minorLower.includes(curWord)) titleCaseArray.push(curWord);
-
-      if (i === 0 ||!minorLower.includes(curWord)) {
-        const uppercaseFirstLetter = curWord.charAt(0).toUpperCase();
-        const stringWithoutFirstLetter = curWord.slice(1);
-        const upperCaseWord = uppercaseFirstLetter + stringWithoutFirstLetter;
-  
-        titleCaseArray.push(upperCaseWord);
-      } 
-    } else {
-      const uppercaseFirstLetter = curWord.charAt(0).toUpperCase();
-      const stringWithoutFirstLetter = curWord.slice(1);
-      const upperCaseWord = uppercaseFirstLetter + stringWithoutFirstLetter;
-
-      titleCaseArray.push(upperCaseWord);
+      if (i === 0 ||!minorLower.includes(curWord)) capitalizeFirstLetter(curWord)
+      
     }
+
+    if (!minorWords) capitalizeFirstLetter(curWord)
   }
 
   return titleCaseArray.join(' ')
 }
 
-// console.log(titleCase('', ''));
+console.log(titleCase('', ''));
 console.log(titleCase('a clash of KINGS', 'a an the of')); // should return: 'A Clash of Kings'
 console.log(titleCase('THE WIND IN THE WILLOWS', 'The In')); // should return: 'The Wind in the Willows'
 console.log(titleCase('the quick brown fox')); // should return: 'The Quick Brown Fox
+
+// Better Answer
+String.prototype.capitalize = function() {
+  return this.charAt(0).toUpperCase() + this.slice(1).toLowerCase();
+}
+
+const titleCaseAlt = (title, minorWords) => {  
+var titleAr = title.toLowerCase().split(' '),
+    minorWordsAr = minorWords ? minorWords.toLowerCase().split(' ') : [];
+  
+return titleAr.map(function(e, i){return minorWordsAr.indexOf(e) === -1 || i === 0 ? e.capitalize() : e })
+              .join(' ');
+}
+
+console.log(titleCaseAlt('', ''));
+console.log(titleCaseAlt('a clash of KINGS', 'a an the of')); // should return: 'A Clash of Kings'
+console.log(titleCaseAlt('THE WIND IN THE WILLOWS', 'The In')); // should return: 'The Wind in the Willows'
+console.log(titleCaseAlt('the quick brown fox')); // should return: 'The Quick Brown Fox

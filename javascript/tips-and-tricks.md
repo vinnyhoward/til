@@ -92,3 +92,37 @@ console.log({} - 50); // NaN
 console.log(new Date + 1000); // "Thu May 31 2018 18:27:51 GMT+0100 (WAT)1000"
 console.log(new Date - 1000); // 1527787670595
 ```
+
+As you can see, implicit type coercion may not always give you the result you are expecting. This is because of how JavaScript handles type conversion especially for objects. The difference is due to the order in which JavaScript calls the `toString()` and `valueOf()` methods on the object for object-to-primitive conversion.
+
+Now here is the trick. The + operator when used as a unary operator always converts its operand to a number. Hence, the following:
+
+```
+console.log(+'100'); // 100
+
+console.log(+null); // 0
+console.log(+void 0); // NaN
+
+console.log(+true); // 1
+console.log(+false); // 0
+
+console.log(+[]); // 0
+console.log(+[100]); // 100
+console.log(+[100, 50]); // NaN
+
+console.log(+{}); // NaN
+
+console.log(+new Date); // 1527790306576
+```
+
+Using the unary `+` operator on a value is functionally equivalent to casting the value using the `Number()` function.
+
+```
++new Date === Number(new Date); // true
+```
+
+The `+` operator can also be used to convert values to `string`. Concatenate an empty `string('')` to any value using the `+` operator to convert the value to a string.
+
+```
+([100, 50] + '') === String([100, 50]); // true
+```
