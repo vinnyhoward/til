@@ -52,9 +52,16 @@ function digital_root(n) {
   return curNum;
 }
 
-// Better Answer
+// Better Answers
 // function digital_root(n) {
 //   return (n - 1) % 9 + 1;
+// }
+
+// function digital_root(n) {
+//   if (n < 10) return n;
+  
+//   return digital_root(
+//     n.toString().split('').reduce(function(acc, d) { return acc + +d; }, 0));
 // }
 
 console.log(digital_root(6))

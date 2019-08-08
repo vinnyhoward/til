@@ -126,3 +126,28 @@ The `+` operator can also be used to convert values to `string`. Concatenate an 
 ```
 ([100, 50] + '') === String([100, 50]); // true
 ```
+
+## Short-Circuiting
+
+When working with the (`||` and `&&`) logical operators, you may have noticed an interesting behavior called `short-circuiting`. Here is how it works: 
+
+The logical `&&` operator returns the first operand if it is `fasly`, otherwise it returns the second operand.
+
+The logical && short-circuiting is commonly used as a replacement for very simple if statements as shown in the following snippet:
+
+```
+
+// METHOD 1: Using if statement
+if (person) {
+  fetchProfile(person);
+}
+
+// METHOD 2: Using short-circuiting
+person && fetchProfile(person);
+```
+
+Note that using short-circuiting actually returns a value since it is a JavaScript expression. Hence, the result of a short-circuiting operation can be stored in a variable or used anywhere JavaScript expects a value.
+
+```
+const personProfile = person && fetchProfile(person);
+```
