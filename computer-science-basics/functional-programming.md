@@ -64,6 +64,24 @@ x = x + 1 // this changes the value assigned to the variable x.
           // So the expression is not referentially transparent. 
 ```
 
+## Functional Composition
+
+Re using pure functions to create a large functional component
+
+## Currying
+
+Chaining function calls
+
+```
+function add (a) {
+    return (b) => {
+        return a + b;
+    }
+}
+
+add(1)(2);
+```
+
 ## Functions are First-Class and can be Higher-Order 
 
 First-class functions are treated as first-class variable. The first class variables can be passed to functions as parameter, can be returned from functions or stored in data structures. Higher order functions are the functions that take other functions as arguments and they can also return functions.
