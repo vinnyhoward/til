@@ -15,38 +15,51 @@
 // Please don't post issue about difficulty or duplicate.
 
 function remove(s){
-  let stringArr = s.split(' ')
-  let resultStr = [];
-
-  const stripAndCompare = (arr) => {
-    if (arr.length === 1) resultStr.push(arr[0]);
-
-    let leftArr = [];
-    let rightArr = [];
-
-    if (arr[0] === '!') leftArr.push(arr.shift());
-    if (arr[arr.length - 1] === '!') rightArr.push(arr.pop())
-
-    if (arr.length !== 1) stripAndCompare(arr);
-
-    if (leftArr.length === rightArr.length && arr.length === 1) {
-      return resultStr.push([...leftArr, arr[0], ...rightArr].join(''));
-    }
-    console.log(arr)
-    if (leftArr.length === 1 && rightArr.length === 0 && arr.length === 1) return resultStr.push(arr[0]);
-    if (leftArr.length === 0 && rightArr.length === 1 && arr.length === 1) return resultStr.push(arr[0]);
-  }
-
+  let stringArr = s.split(' ');
+  let difference;
+  let finalArr = [];
+  let halfWayMark = false;
+  
   for (let i = 0; i < stringArr.length; i++) {
-    let curElem = stringArr[i].split(/(!)/g).filter(item => item !== '');
+    let curElem = stringArr[i].split(/(!)/).filter(elem => elem !== '');
+    let leftHalf = [];
+    let rightHalf = [];
+    let word = [];
 
-    if (curElem.length !== 1) stripAndCompare(curElem);
-  }
-  return resultStr.join(' ');
-}
+    for (let j = 0; j < curElem.length; j++) {
+      let innCurElem = curElem[j]
+
+      if (innCurElem === '!' && !halfWayMark)  leftHalf.push(innCurElem);
+      if (innCurElem === '!' && halfWayMark)  rightHalf.push(innCurElem);
+
+      if (innCurElem !== '!') {
+        halfWayMark = true;
+        word.push(innCurElem);
+      }
+    };
+
+
+    if (leftHalf.length > rightHalf.length) {
+      difference = leftHalf.length - rightHalf.length;
+      leftHalf.splice(0, difference);
+    }
+
+    if (rightHalf.length > leftHalf.length) {
+      difference = rightHalf.length - leftHalf.length;
+      console.log(rightHalf);
+      console.log(leftHalf);
+      console.log(difference)
+      rightHalf.splice(0, difference);
+    }
+    let composedWord = [...leftHalf, ...word, ...rightHalf]
+    finalArr.push(composedWord.join(''));;
+  };
+  return finalArr.join(' ');
+};
 
 // console.log(remove("Hi!"));
-console.log(remove("!Hi! Hi!"));
+// console.log(remove("!Hi! Hi!"));
+// console.log(remove("!!Hi! !Hi!!"));
 console.log(remove("!!Hi! !Hi!!"));
 // console.log(remove("!!Hi!"));
 // console.log(remove("!!!!Hi!! !!!!Hi !Hi!!!"));

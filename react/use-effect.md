@@ -32,3 +32,8 @@ Data fetching, setting up a subscription, and manually changing the `DOM` in Rea
 The counterparts for `useEffect` in class components are `componentDidMount`, `componentDidUpdate`, and `componentWillUnmount` combined (which is nice).
 
 There are two common kinds of side effects in React components: those that don't require clean-up, and those that do. Here are some examples.
+
+## Effects Without Cleanup
+
+Sometimes, we want to run some additional code after React has updated the DOM. Network requests, manual DOM mutations, and logging are common examples of effects that don’t require a cleanup. We say that because we can run them and immediately forget about them. Let’s compare how classes and Hooks let us express such side effects.
+
