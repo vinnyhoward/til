@@ -19,12 +19,12 @@ function remove(s){
   let difference;
   let finalArr = [];
   let halfWayMark = false;
+  let leftHalf = [];
+  let rightHalf = [];
+  let word = [];
   
   for (let i = 0; i < stringArr.length; i++) {
     let curElem = stringArr[i].split(/(!)/).filter(elem => elem !== '');
-    let leftHalf = [];
-    let rightHalf = [];
-    let word = [];
 
     for (let j = 0; j < curElem.length; j++) {
       let innCurElem = curElem[j]
