@@ -6,9 +6,9 @@ A collection of small things that I've learned and toy problems that I have done
 
 _Streaks:_
 
-_7 TILs in a row so far..._
+_1 TILs in a row so far..._
 
-_7 Toy Problems completed in a row and counting..._ 
+_1 Toy Problems completed in a row and counting..._ 
 
 _Previous streak: 23 TILs😢 and 23 toy problems..._
 
@@ -16,7 +16,7 @@ _Record Streak: 91 TILs_
 
 ---
 
-### Categories
+## Categories
 
 - [Computer Science Basics](#computer-science-basics)
 - [Data Structures & Algorithms](#data-structures-and-algorithms)
@@ -33,7 +33,7 @@ _Record Streak: 91 TILs_
 
 ---
 
-### Python
+## Python
 
 - [For Loops](/python/control-flow/for-loops.md)
 - [If Statements](/python/control-flow/if-statements.md)
@@ -48,7 +48,7 @@ _Record Streak: 91 TILs_
 - [Range](/python/useful-operators/range.md)
 - [Zip](/python/useful-operators/zip.md)
 
-### Javascript
+## Javascript
 
 - [Hoisting](/javascript/hoisting.md)
 - [Arguments Object](/javascript/arguments-object.md)
@@ -72,8 +72,10 @@ _Record Streak: 91 TILs_
 - [Javascript Function Executions](/javascript/javascript-function-executions.md)
 - [JavaScript and Numbers](/javascript/numbers.md)
 - [Math.log2()](/javascript/math-log-2.md)
+- [Call Stack](/javascript/call-stack.md)
+- [Asynchronous Javascript](/javascript/asynchronous-javascript.md)
 
-### ES6
+#### ES6
 
 - [Constants](/javascript/es6/constants.md)
 - [Scoping](/javascript/es6/scoping.md)
@@ -113,12 +115,16 @@ _Record Streak: 91 TILs_
 - [Object.fromEntries()](/javascript/es10/object-from-entries.md)
 - [Optional Catch Binding](/javascript/es10/optional-catch-binding.md)
 
-### Computer Science Basics
+## AWS
+
+- [Intro](/aws/lamda-functions/intro.md)
+
+## Computer Science Basics
 
 - [Binary](/computer-science-basics/binary.md)
 - [Functional Programming](/computer-science-basics/function-to-string.md)
 
-### Data Structures And Algorithms
+## Data Structures And Algorithms
 
 - [Big O notation](/data-structures-and-algorithms/big-o-notation.md)
 - [Big O notation (Javascript)](/data-structures-and-algorithms/big-o-notation-javascript.md)
@@ -142,7 +148,7 @@ _Record Streak: 91 TILs_
 - [Binary Tree](/data-structures-and-algorithms/binary-tree.md)
 - [Binary Search Tree](/data-structures-and-algorithms/binary_search_tree.md)
 
-### Web
+## Web
 
 - [FTP](/web/ftp.md)
 - [SSH](/web/ssh.md)
@@ -152,7 +158,7 @@ _Record Streak: 91 TILs_
 - [CORS](/web/cors.md)
 - [DOM](/web/dom.md)
 
-### CSS
+## CSS
 
 - [Alt Attribute](/web/ftp.md)
 - [CSS BEM](/css/css-bem.md)
@@ -161,7 +167,7 @@ _Record Streak: 91 TILs_
 - [CSS Sprites](/css/css-sprites.md)
 - [Media Queries](/css/media-queries.md)
 
-### React
+## React
 
 - [React Component Patterns](/react/react-component-patterns.md)
 - [Get Derived State](/react/lifecycle-methods/get-derived-state-from-props.md)
@@ -180,28 +186,31 @@ _Record Streak: 91 TILs_
 - [Immutability](/react/immutability.md)
 - [Purity](/react/purity.md)
 - [JSX](/react/jsx.md)
+- [useContext](/react/use-context.md)
+- [useCallback](/react/use-callback.md)
+- [Code Splitting Routes](/react/code-splitting-routes.md)
 
-### React Native
+## React Native
 
 - [Deep Linking](/react-native/deep-linking)
 - [Augmented Reality](/react-native/augmented-reality)
 
-### Node
+## Node
 
 - [Introduction](/node/intro-node.md)
 - [Assert Equals](/node/assert-testing.md)
 - [REST](/node/rest.md)
 - [JWT](/node/json-web-token.md)
 
-### TypeORM
+## TypeORM
 - [Introduction](/typeORM/intro.md)
 - [Migrations](/typeORM/migrations.md)
 
-### MongoDB
+## MongoDB
 
 - [Introduction](/mongodb/intro-mongo.md)
 
-### GraphQL
+## GraphQL
 
 - [Introduction](/graphql/introduction-graphql.md)
 - [Queries](/graphql/queries.md)
@@ -209,19 +218,23 @@ _Record Streak: 91 TILs_
 - [Alias](/graphql/alias.md)
 - [Mutations](/graphql/mutations.md)
 
-### Prisma
+## Prisma
 
 - [Introduction](/prisma/intro-prisma.md)
 - [Main Concepts](/prisma/main-concepts.md)
 
-### TypeScript
+## TypeScript
 
 - [Playground](/typescript/ts-sandbox)
 - [Basic Types](/typescript/basic-types.md)
 - [Interfaces](/typescript/inerfaces.md)
 - [Classes](/typescript/classes.md)
 
-### RegEx
+#### Concepts
+
+- [Wide vs Narrow](/typescript/wide-vs-narrow-type.md)
+
+## RegEx
 
 - [Introduction](/regex/intro)
 - [Basics](/regex/basics)
