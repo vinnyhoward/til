@@ -6,9 +6,9 @@ A collection of small things that I've learned and toy problems that I have done
 
 _Streaks:_
 
-_1 TILs in a row so far..._
+_2 TILs in a row so far..._
 
-_1 Toy Problems completed in a row and counting..._ 
+_0 Toy Problems completed in a row and counting..._ 
 
 _Previous streak: 23 TILs😢 and 23 toy problems..._
 
@@ -114,6 +114,15 @@ _Record Streak: 91 TILs_
 - [Function.toString()](/javascript/es10/array-flat-map.md)
 - [Object.fromEntries()](/javascript/es10/object-from-entries.md)
 - [Optional Catch Binding](/javascript/es10/optional-catch-binding.md)
+
+
+## Webpack
+
+- [Introduction](/webpack/introduction.md)
+- [Entry](/webpack/entry.md)
+- [Output](/webpack/output.md)
+- [Loaders](/webpack/loaders.md)
+- [Plugins](/webpack/plugins.md)
 
 ## AWS
 
