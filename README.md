@@ -8,7 +8,7 @@ _Streaks:_
 
 _2 TILs in a row so far..._
 
-_0 Toy Problems completed in a row and counting..._ 
+_0 Toy Problems completed in a row and counting..._
 
 _Previous streak: 23 TILs😢 and 23 toy problems..._
 
@@ -115,7 +115,6 @@ _Record Streak: 91 TILs_
 - [Object.fromEntries()](/javascript/es10/object-from-entries.md)
 - [Optional Catch Binding](/javascript/es10/optional-catch-binding.md)
 
-
 ## Webpack
 
 - [Introduction](/webpack/introduction.md)
@@ -212,6 +211,7 @@ _Record Streak: 91 TILs_
 - [JWT](/node/json-web-token.md)
 
 ## TypeORM
+
 - [Introduction](/typeORM/intro.md)
 - [Migrations](/typeORM/migrations.md)
 
