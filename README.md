@@ -6,9 +6,9 @@ A collection of small things that I've learned and toy problems that I have done
 
 _Streaks:_
 
-_2 TILs in a row so far..._
+_1 TILs in a row so far..._
 
-_0 Toy Problems completed in a row and counting..._
+_1 Toy Problems completed in a row and counting..._
 
 _Previous streak: 23 TILs😢 and 23 toy problems..._
 
@@ -22,14 +22,19 @@ _Record Streak: 91 TILs_
 - [Data Structures & Algorithms](#data-structures-and-algorithms)
 - [Python](#python)
 - [Javascript](#javascript)
+- [Webpack](#webpack)
 - [Node](#node)
+- [AWS](#AWS)
 - [Web](#web)
 - [CSS](#css)
 - [React](#react)
+- [Gatsby](#gatsby)
+- [React Native](#react-native)
 - [MongoDB](#mongodb)
 - [GraphQL](#graphql)
 - [Prisma](#prisma)
 - [TypeScript](#typescript)
+- [RegEx](#regex)
 
 ---
 
@@ -197,6 +202,17 @@ _Record Streak: 91 TILs_
 - [useContext](/react/use-context.md)
 - [useCallback](/react/use-callback.md)
 - [Code Splitting Routes](/react/code-splitting-routes.md)
+
+## Gatsby
+
+- [Gatsby Config API](/gatsby/gatsby-config-api.md)
+- [siteMetadata](/gatsby/site-meta-data.md)
+- [plugins](/gatsby/plugins.md)
+- [pathPrefix](/gatsby/path-prefix.md)
+- [polyfill](/gatsby/polyfill.md)
+- [mapping](/gatsby/mapping.md)
+- [proxy](/gatsby/proxy.md)
+- [developMiddleware](/gatsby/develop-middleware.md)
 
 ## React Native
 
