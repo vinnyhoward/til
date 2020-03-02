@@ -20,6 +20,7 @@ _Record Streak: 91 TILs_
 
 - [Computer Science Basics](#computer-science-basics)
 - [Data Structures & Algorithms](#data-structures-and-algorithms)
+- [Go](#go)
 - [Python](#python)
 - [Javascript](#javascript)
 - [Webpack](#webpack)
@@ -37,6 +38,10 @@ _Record Streak: 91 TILs_
 - [RegEx](#regex)
 
 ---
+
+## Go
+
+- [Intro](/golang/intro.md)
 
 ## Python
 
@@ -213,6 +218,7 @@ _Record Streak: 91 TILs_
 - [mapping](/gatsby/mapping.md)
 - [proxy](/gatsby/proxy.md)
 - [developMiddleware](/gatsby/develop-middleware.md)
+- [GraphQL API](/gatsby/graphql-api.md)
 
 ## React Native
 
@@ -307,7 +313,7 @@ I shamelessly stole these ideas from
 
 ## License
 
-&copy; 2019 Vince Howard
+&copy; 2020 Vince Howard
 
 This repository is licensed under the MIT license. See `LICENSE` for
 details.
