@@ -261,6 +261,7 @@ _Record Streak: 91 TILs_
 - [Basic Types](/typescript/basic-types.md)
 - [Interfaces](/typescript/inerfaces.md)
 - [Classes](/typescript/classes.md)
+- [Type Aliases](/typescript/type-aliases.md)
 
 #### Concepts
 
