@@ -7,11 +7,11 @@ type Name = string;
 type NameResolver = () => string;
 type NameOrResolver = Name | NameResolver;
 function getName(n: NameOrResolver): Name {
-  if (typeof n === 'string') {
-    return n;
-  } else {
-    return n();
-  }
+    if (typeof n === 'string') {
+        return n;
+    } else {
+        return n();
+    }
 }
 ```
 
@@ -27,9 +27,9 @@ We can also have a type alias refer to itself in a property:
 
 ```ts
 type Tree<T> = {
-  value: T;
-  left: Tree<T>;
-  right: Tree<T>;
+    value: T;
+    left: Tree<T>;
+    right: Tree<T>;
 };
 ```
 
@@ -39,7 +39,7 @@ Together with intersection types, we can make some pretty mind-bending types:
 type LinkedList<T> = T & { next: LinkedList<T> };
 
 interface Person {
-  name: string;
+    name: string;
 }
 
 var people: LinkedList<Person>;
