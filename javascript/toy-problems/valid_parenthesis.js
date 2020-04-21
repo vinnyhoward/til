@@ -28,38 +28,40 @@
 // Review Code, Coudln't figuire it out
 
 const validParentheses = (parens) => {
-	var parentheses = '()',
-		stack = [],
-		i,
-		character,
-		bracePosition;
+    let parentheses = '()',
+        stack = [],
+        i,
+        character,
+        bracePosition;
 
-	for (i = 0; (character = parens[i]); i++) {
-		bracePosition = parentheses.indexOf(character);
+    for (i = 0; (character = parens[i]); i++) {
+        bracePosition = parentheses.indexOf(character);
 
-		if (bracePosition === -1) {
-			continue;
-		}
+        if (bracePosition === -1) {
+            continue;
+        }
+        console.log(bracePosition);
+        if (bracePosition % 2 === 0) {
+            console.log(stack);
+            stack.push(bracePosition + 1); // push next expected brace position
+            console.log(stack);
+        } else {
+            if (stack.length === 0 || stack.pop() !== bracePosition) {
+                return false;
+            }
+        }
+    }
 
-		if (bracePosition % 2 === 0) {
-			stack.push(bracePosition + 1); // push next expected brace position
-		} else {
-			if (stack.length === 0 || stack.pop() !== bracePosition) {
-				return false;
-			}
-		}
-	}
-
-	return stack.length === 0;
+    return stack.length === 0;
 };
 
 console.log(validParentheses('()'));
 // =>  true
-console.log(validParentheses(')(()))'));
-// =>  false
-console.log(validParentheses('('));
-// =>  false
-console.log(validParentheses('(())((()())())'));
-//  =>  true
-console.log(validParentheses(')()('));
+// console.log(validParentheses(')(()))'));
+// // =>  false
+// console.log(validParentheses('('));
+// // =>  false
+// console.log(validParentheses('(())((()())())'));
+// //  =>  true
+// console.log(validParentheses(')()('));
 //  =>  false

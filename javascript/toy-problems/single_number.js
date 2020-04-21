@@ -17,27 +17,24 @@
 
 const singleNumber = (num) => {
 	var numObj = {};
-	let answer;
 
-	num.forEach((x) => {
-		if (!numObj[x]) numObj[x] = 0;
-		numObj[x]++;
+	num.forEach((int) => {
+		if (!numObj[int]) numObj[int] = 0;
+		numObj[int]++;
 	});
 
-	Object.keys(numObj).forEach((key) => {
+	return Object.keys(numObj).filter((key) => {
 		if (numObj[key] === 1) {
-			answer = key;
+			return numObj[key]
 		}
-	});
-
-	return parseInt(answer);
+	})[0];
 };
 
 let arr1 = [ 2, 2, 1 ];
 // Output: 1
 let arr2 = [ 4, 1, 2, 1, 2 ];
 // Output: 4
-let arr3 = [ 4, 1, 2, 1, 2, 4, 4, 6, 7, 8, 9, 5, 5, 7, 6, 9, 18 ];
+let arr3 = [ 4, 1, 2, 1, 2, 4, 4, 6, 7, 9, 5, 5, 7, 6, 9, 18 ];
 // Output: 18
 
 console.log(singleNumber(arr1));
