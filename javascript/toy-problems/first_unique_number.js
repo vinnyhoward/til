@@ -75,7 +75,7 @@ FirstUnique.prototype.showFirstUnique = function () {
             if (value === searchValue) return key;
         }
     }
-    console.log(this.queue);
+
     this.queue.forEach((int) => {
         if (this.hashMap.get(int) === 1) {
             uniqueInt = getByValue(this.hashMap, this.hashMap.get(int));
@@ -84,8 +84,7 @@ FirstUnique.prototype.showFirstUnique = function () {
         }
         return uniqueInt;
     });
-    console.log(this.queue);
-    console.log(this.hashMap);
+    return uniqueInt;
 };
 
 /**
@@ -98,7 +97,6 @@ FirstUnique.prototype.add = function (value) {
     let currentIteration = this.hashMap.get(value);
     currentIteration += 1;
     this.hashMap.set(value, currentIteration);
-    console.log(this.hashMap);
 };
 
 /**
