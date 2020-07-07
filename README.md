@@ -8,7 +8,7 @@ _Streaks:_
 
 _1 TILs in a row so far..._
 
-_1 Toy Problems completed in a row and counting..._
+_0 Toy Problems completed in a row and counting..._
 
 _Previous streak: 23 TILs😢 and 23 toy problems..._
 
@@ -20,6 +20,7 @@ _Record Streak: 91 TILs_
 
 -   [Computer Science Basics](#computer-science-basics)
 -   [Data Structures & Algorithms](#data-structures-and-algorithms)
+-   [Functional Programming](#functional-programming)
 -   [Go](#go)
 -   [Python](#python)
 -   [Javascript](#javascript)
@@ -170,6 +171,10 @@ _Record Streak: 91 TILs_
 -   [Tree Traversal](/data-structures-and-algorithms/tree-traversal.md)
 -   [Binary Tree](/data-structures-and-algorithms/binary-tree.md)
 -   [Binary Search Tree](/data-structures-and-algorithms/binary_search_tree.md)
+
+## Functional Programming
+
+-   [Intro](/functional-programming/intro.md)
 
 ## Web
 
