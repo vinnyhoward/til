@@ -6,7 +6,7 @@ A collection of small things that I've learned and toy problems that I have done
 
 _Streaks:_
 
-_1 TILs in a row so far..._
+_2 TILs in a row so far..._
 
 _0 Toy Problems completed in a row and counting..._
 
@@ -175,6 +175,7 @@ _Record Streak: 91 TILs_
 ## Functional Programming
 
 -   [Intro](/functional-programming/intro.md)
+-   [Properties, Arguments and Currying](/functional-programming/properties-arguments-currying.md)
 
 ## Web
 

@@ -6,10 +6,24 @@ Functional programming is a programming paradigm, meaning that it is a way of th
 
 Functional code tends to be more concise, more predictable, and easier to test than imperative or object oriented code — but if you’re unfamiliar with it and the common patterns associated with it, functional code can also seem a lot more dense, and the related literature can be impenetrable to newcomers.
 
-Functional programming can be broken down into 3 main parts
+#### Functional programming can be broken down into 3 main parts
 
 -   Total - For every input there is a corresponding output
 
--   Deterministic -
+-   Deterministic - Always receive the same output for give input
 
--   No Observable Side-Effects
+-   No Observable Side-Effects - No observable effects besides computing a value
+
+#### Why is functional programming powerful?
+
+-   Reliable
+
+-   Portable
+
+-   Reusable
+
+-   Testable
+
+-   Composable
+
+-   Properties/Contract
