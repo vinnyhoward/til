@@ -218,6 +218,7 @@ _Record Streak: 91 TILs_
 -   [useContext](/react/use-context.md)
 -   [useCallback](/react/use-callback.md)
 -   [Code Splitting Routes](/react/code-splitting-routes.md)
+-   [Actions and Dispatch](/react/action-dispatch.md)
 
 ## Gatsby
 

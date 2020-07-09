@@ -1,12 +1,9 @@
 # useCallback
 
 ```js
-const memoizedCallback = useCallback(
-  () => {
+const memoizedCallback = useCallback(() => {
     doSomething(a, b);
-  },
-  [a, b],
-);
+}, [a, b]);
 ```
 
 Returns a `memoized` callback.
