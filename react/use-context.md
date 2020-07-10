@@ -4,55 +4,61 @@
 const value = useContext(MyContext);
 ```
 
-Accepts a context object (the value returned from ```React.createContext```) and returns the current context value for that context. The current context value is determined by the value prop of the nearest ```<MyContext.Provider>``` above the calling component in the tree.
+Accepts a context object (the value returned from `React.createContext`) and returns the current context value for that context. The current context value is determined by the value prop of the nearest `<MyContext.Provider>` above the calling component in the tree.
 
 Don’t forget that the argument to useContext must be the context object itself:
 
-- Correct: useContext(MyContext)
+-   Correct: useContext(MyContext)
 
-- Incorrect: useContext(MyContext.Consumer)
+-   Incorrect: useContext(MyContext.Consumer)
 
-- Incorrect: useContext(MyContext.Provider)
+-   Incorrect: useContext(MyContext.Provider)
 
 A component calling `useContext` will always re-render when the context value changes. If re-rendering the component is expensive, you can optimize it by using `memoization`.
 
 ```js
 const themes = {
-  light: {
-    foreground: "#000000",
-    background: "#eeeeee"
-  },
-  dark: {
-    foreground: "#ffffff",
-    background: "#222222"
-  }
+    light: {
+        foreground: '#000000',
+        background: '#eeeeee',
+    },
+    dark: {
+        foreground: '#ffffff',
+        background: '#222222',
+    },
 };
 
 const ThemeContext = React.createContext(themes.light);
 
 function App() {
-  return (
-    <ThemeContext.Provider value={themes.dark}>
-      <Toolbar />
-    </ThemeContext.Provider>
-  );
+    return (
+        <ThemeContext.Provider value={themes.dark}>
+            <Toolbar />
+        </ThemeContext.Provider>
+    );
 }
 
 function Toolbar(props) {
-  return (
-    <div>
-      <ThemedButton />
-    </div>
-  );
+    return (
+        <div>
+            <ThemedButton />
+        </div>
+    );
 }
 
 function ThemedButton() {
-  const theme = useContext(ThemeContext);
+    const theme = useContext(ThemeContext);
 
-  return (
-    <button style={{ background: theme.background, color: theme.foreground }}>
-      I am styled by theme context!
-    </button>
-  );
+    return (
+        <button
+            style={{ background: theme.background, color: theme.foreground }}
+        >
+            I am styled by theme context!
+        </button>
+    );
 }
 ```
+
+## useContext versus Redux (other state management libraries)
+
+Right out of the box `useContext` does not support middleware; if your project requires middleware you may want to reconsider using this hook and opt in for a state management library instead. Other state management libraries can handle multiple middleware easily. State management libraries also offer combine reducers and a plethora of other helper functions.
