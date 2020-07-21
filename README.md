@@ -6,7 +6,7 @@ A collection of small things that I've learned and toy problems that I have done
 
 _Streaks:_
 
-_4 TILs in a row so far..._
+_1 TILs in a row so far..._
 
 _0 Toy Problems completed in a row and counting..._
 
@@ -38,6 +38,8 @@ _Record Streak: 91 TILs_
 -   [Prisma](#prisma)
 -   [TypeScript](#typescript)
 -   [RegEx](#regex)
+-   [Dart](#dart)
+-   [Flutter](#flutter)
 
 ---
 
@@ -285,6 +287,11 @@ _Record Streak: 91 TILs_
 -   [Basics](/regex/basics)
 -   [Grouping and Capturing](/regex/grouping-capturing)
 -   [Bracket Expression](/regex/bracket-expression)
+
+## Flutter
+
+-   [Flutter Architecture](/flutter/flutter-architecture)
+-   [Compilation and Flutter](/flutter/compilation-and-flutter)
 
 <!-- ## Usage
 
