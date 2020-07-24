@@ -292,6 +292,7 @@ _Record Streak: 91 TILs_
 
 -   [Flutter Architecture](/flutter/flutter-architecture)
 -   [Compilation and Flutter](/flutter/compilation-and-flutter)
+-   [Folder Structure and Files](/flutter/folder-structure)
 
 <!-- ## Usage
 
