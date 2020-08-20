@@ -298,6 +298,7 @@ _Record Streak: 91 TILs_
 
 -   [Dart Basics](/dart/dart-basics)
 -   [Final and Const](/dart/final-const.md)
+-   [Enumerated Types](/dart/enumerated-types.md)
 
 <!-- ## Usage
 
