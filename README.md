@@ -6,9 +6,9 @@ A collection of small things that I've learned and toy problems that I have done
 
 _Streaks:_
 
-_2 TILs in a row so far..._
+_3 TILs in a row so far..._
 
-_2 Toy Problems completed in a row and counting..._
+_3 Toy Problems completed in a row and counting..._
 
 _Previous streak: 23 TILs😢 and 23 toy problems..._
 
@@ -305,6 +305,7 @@ _Record Streak: 91 TILs_
 -   [yield](/dart/yield.md)
 -   [Static](/dart/static.md)
 -   [Static Methods](/dart/static-methods.md)
+-   [Mixins and With](/dart/mixins-and-with.md)
 
 <!-- ## Usage
 
