@@ -19,6 +19,7 @@ function canConstruct(ransomNote, magazine) {
     const charObject = {};
 
     [...ransomNote].forEach((char) => {
+        console.log(char);
         if (!charObject[char]) charObject[char] = 0;
         charObject[char]++;
     });
