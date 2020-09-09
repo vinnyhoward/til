@@ -6,9 +6,9 @@ A collection of small things that I've learned and toy problems that I have done
 
 _Streaks:_
 
-_5 TILs in a row so far..._
+_1 TILs in a row so far..._
 
-_5 Toy Problems completed in a row and counting..._
+_1 Toy Problems completed in a row and counting..._
 
 _Previous streak: 23 TILs😢 and 23 toy problems..._
 
@@ -298,6 +298,7 @@ _Record Streak: 91 TILs_
 ## Dart
 
 -   [Dart Basics](/dart/dart-basics)
+-   [Type Systems](/dart/dart-type-systems.md)
 -   [Main](/dart/main.md)
 -   [Final and Const](/dart/final-const.md)
 -   [Enumerated Types](/dart/enumerated-types.md)

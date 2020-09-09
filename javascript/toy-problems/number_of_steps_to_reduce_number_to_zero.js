@@ -36,17 +36,15 @@
  */
 
 function numberOfSteps(num) {
-    let currentNum;
     let count = 0;
 
     function breakDown(int) {
         if (int === 0) return;
 
-        int % 2 === 0 ? (currentNum = int / 2) : (currentNum = int - 1);
+        int % 2 === 0 ? breakDown(int / 2) : breakDown(int - 1);
 
         count++;
-        breakDown(currentNum);
-    }
+    
 
     breakDown(num);
 
