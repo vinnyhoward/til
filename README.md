@@ -40,6 +40,7 @@ _Record Streak: 91 TILs_
 -   [RegEx](#regex)
 -   [Dart](#dart)
 -   [Flutter](#flutter)
+-   [Rust](#rust)
 
 ---
 
@@ -308,6 +309,8 @@ _Record Streak: 91 TILs_
 -   [Static Methods](/dart/static-methods.md)
 -   [Mixins and With](/dart/mixins-and-with.md)
 -   [Abstract](/dart/abstract.md)
+
+## Rust
 
 <!-- ## Usage
 
