@@ -312,6 +312,11 @@ _Record Streak: 91 TILs_
 
 ## Rust
 
+-   [Literals and Operators](/rust/literals-and-operators.md)
+-   [Shadowing](/rust/shadowing.md)
+-   [Data Types](/rust/data-types.md)
+-   [Functions](/rust/functions.md)
+
 <!-- ## Usage
 
 The `.vimrc` file for this project contains a function `CountTILs` that can

@@ -11,7 +11,9 @@
 // mod pointer_ref;
 // mod structs;
 // mod enums;
-mod cli;
+// mod cli;
+// mod literals_and_operators;
+mod tuples_extended;
 
 fn main() {
     // print::run();
@@ -25,5 +27,7 @@ fn main() {
     // functions::run();
     // pointer_ref::run();
     // structs::run();
-    cli::run();
+    // cli::run();
+    // literals_and_operators::run();
+    tuples_extended::run();
 }
