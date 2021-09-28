@@ -6,9 +6,9 @@ A collection of small things that I've learned and toy problems that I have done
 
 _Streaks:_
 
-_4 TILs in a row so far..._
+_1 TILs in a row so far..._
 
-_4 Toy Problems completed in a row and counting..._
+_1 Toy Problems completed in a row and counting..._
 
 _Previous streak: 23 TILs😢 and 23 toy problems..._
 
@@ -321,6 +321,15 @@ _Record Streak: 91 TILs_
 
 -   [Ownership](/rust/ownership.md)
 -   [References and Borrowing](/rust/ownership-references-and-borrowing.md)
+
+## Web Components
+
+- [Intro](/web-components/intro.md)
+- [Lifecycle Callbacks](/web-components/lifecycle-callbacks.md)
+
+## Threejs
+
+- [Camera](/threejs/lessons/lesson-5-cameras/readme.md)
 
 <!-- ## Usage
 
