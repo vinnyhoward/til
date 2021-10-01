@@ -32,6 +32,14 @@ loadingManager.onError = () =>
     console.log('loadingManager: loading error')
 }
 
+// native javascript for fetching images
+// const image = new Image();
+// image.onLoad = () => {
+//     console.log(' image loaded ');
+// };
+
+// image.src = 'textures/door/color.jpg';
+
 const textureLoader = new THREE.TextureLoader(loadingManager)
 
 // const colorTexture = textureLoader.load('/textures/checkerboard-1024x1024.png')
