@@ -20,37 +20,18 @@ const scene = new THREE.Scene()
 /**
  * Textures
  */
-const textureLoader = new THREE.TextureLoader()
-const particleTexture = textureLoader.load('/textures/particles/1.png')
+// const textureLoader = new THREE.TextureLoader()
+// const particleTexture = textureLoader.load('/textures/particles/1.png')
 
-/**
- * Particles
- */
 // Geometry
-// // Particle Sphere Start
-// const particlesSphereGeometry = new THREE.SphereBufferGeometry(1, 32, 32);
-// const particlesSphereMaterial = new THREE.PointsMaterial();
-// particlesSphereMaterial.size = 0.02;
-// particlesSphereMaterial.sizeAttenuation = true;
-// // Points
-// const particlesSphere = new THREE.Points(particlesSphereGeometry, particlesSphereMaterial);
-// scene.add(particlesSphere);
-// // Particle Sphere End
-
-// Particle Wave Start
 const particlesGeometry = new THREE.BufferGeometry()
-const count = 50000
+const count = 1000
 
 const positions = new Float32Array(count * 3)
-const colors = new Float32Array(count * 3)
-
-for (let i = 0; i < count * 3; i++) {
-    positions[i] = (Math.random() - 0.5) * 10
-    colors[i] = Math.random()
-}
+// const ≈ = new Float32Array(count * 3)
 
 particlesGeometry.setAttribute('position', new THREE.BufferAttribute(positions, 3))
-particlesGeometry.setAttribute('color', new THREE.BufferAttribute(colors, 3))
+// particlesGeometry.setAttribute('color', new THREE.BufferAttribute(colors, 3))
 
 // Material
 const particlesMaterial = new THREE.PointsMaterial()
@@ -58,21 +39,37 @@ const particlesMaterial = new THREE.PointsMaterial()
 particlesMaterial.size = 0.1
 particlesMaterial.sizeAttenuation = true
 
-particlesMaterial.color = new THREE.Color('#ff88cc')
+// particlesMaterial.color = new THREE.Color('#ff88cc')
 
 particlesMaterial.transparent = true
-particlesMaterial.alphaMap = particleTexture
+// particlesMaterial.alphaMap = particleTexture
 // particlesMaterial.alphaTest = 0.01
 // particlesMaterial.depthTest = false
 particlesMaterial.depthWrite = false
 particlesMaterial.blending = THREE.AdditiveBlending
 
-particlesMaterial.vertexColors = true
+// particlesMaterial.vertexColors = true
 
 // Points
 const particles = new THREE.Points(particlesGeometry, particlesMaterial)
 scene.add(particles)
-// Particle Wave End
+
+/**
+ * Galaxy
+ */
+const parameters = {
+
+};
+parameters.count = 1000;
+
+const generateGalaxy = () => {
+    for (let i = 0; i < count * 3; i++) {
+        positions[i] = (Math.random() - 0.5) * 10
+        // colors[i] = Math.random()
+    }
+}
+generateGalaxy();
+
 /**
  * Sizes
  */
@@ -100,6 +97,8 @@ window.addEventListener('resize', () => {
  */
 // Base camera
 const camera = new THREE.PerspectiveCamera(75, sizes.width / sizes.height, 0.1, 100)
+camera.position.x = 3
+camera.position.y = 3
 camera.position.z = 3
 scene.add(camera)
 
@@ -123,15 +122,6 @@ const clock = new THREE.Clock()
 
 const tick = () => {
     const elapsedTime = clock.getElapsedTime()
-
-    // Update particles
-    for (let i = 0; i < count; i++) {
-        let i3 = i * 3
-
-        const x = particlesGeometry.attributes.position.array[i3]
-        particlesGeometry.attributes.position.array[i3 + 1] = Math.sin(elapsedTime + x)
-    }
-    particlesGeometry.attributes.position.needsUpdate = true
 
     // Update controls
     controls.update()
