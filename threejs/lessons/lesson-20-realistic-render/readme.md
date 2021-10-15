@@ -1,16 +1,21 @@
-# Three.js Journey
+# Realistic Render
 
-## Setup
-Download [Node.js](https://nodejs.org/en/download/).
-Run this followed commands:
+## Tone mapping
 
-``` bash
-# Install dependencies (only the first time)
-npm install
+The tone mapping intends to convert High Dynamic Range (HDR) values to Low Dynamic Range (LDR) values. HDR is much more than the following interpretation, but you can see that like images where the color values can go beyond 1. It's useful if we want to store light information because light doesn't have intensity limits.
 
-# Run the local server at localhost:8080
-npm run dev
+While our assets are not HDR, the tone mapping effect can have a realistic result as if the camera was poorly adjusted.
 
-# Build for production in the dist/ directory
-npm run build
-```
+To change the tone mapping, update the toneMapping property on the `WebGLRenderer`.
+
+There are multiple possible values:
+
+- THREE.NoToneMapping (default)
+
+- THREE.LinearToneMapping
+
+- THREE.ReinhardToneMapping
+
+- THREE.CineonToneMapping
+
+- THREE.ACESFilmicToneMapping
