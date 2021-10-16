@@ -32,7 +32,14 @@ scene.add(testSphere);
 // Step 2: Lights
 const directionalLight = new THREE.DirectionalLight("#ffffff", 3);
 directionalLight.position.set(0.25, 3, -2.25);
+// Step 13 - part b: Shadows
+directionalLight.castShadow = true;
+directionalLight.shadow.camera.far = 15
+directionalLight.shadow.mapSize.set(1024, 1024)
 scene.add(directionalLight);
+// Step 13 - part d: Shadow Camera Helper
+const directionalLightCameraHelper = new THREE.CameraHelper(directionalLight.shadow.camera);
+scene.add(directionalLightCameraHelper)
 
 // Step 3: Add lights to GUI
 gui
@@ -99,6 +106,8 @@ controls.enableDamping = true;
 // Step 7: Add renderer
 const renderer = new THREE.WebGLRenderer({
   canvas: canvas,
+  // Step 12: Add Anti-Aliasing
+  antialias: true
 });
 renderer.setSize(sizes.width, sizes.height);
 renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
@@ -106,6 +115,9 @@ renderer.physicallyCorrectLights = true;
 // Add better renderer
 renderer.outputEncoding = THREE.sRGBEncoding;
 renderer.toneMappingExposure = 1;
+// Step 13 - part a: Shadows
+renderer.shadowMap.enabled = true;
+renderer.shadowMap.type = THREE.PCFSoftShadowMap;
 
 // Step 11: Add Tone Mapping
 renderer.toneMapping = THREE.ACESFilmicToneMapping;
@@ -140,6 +152,10 @@ const updateAllMaterials = () => {
       child.material.envMapIntensity = debugObject.envMapIntensity;
       // part of Step 11 - need to render "needsUpdate to true"
       child.material.needsUpdate = true;
+      // Step 13 - part c: Shadows
+      child.castShadow = true
+      child.receiveShadow = true
+      
     }
   });
 };
