@@ -3,8 +3,8 @@ import * as THREE from 'three'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
 import * as dat from 'dat.gui'
 // custom shaders
-import testVertexShader from './shaders/test/vertex.glsl'
-import testFragmentShader from './shaders/test/fragment.glsl'
+import vertexShader from './shaders/test/vertex.glsl'
+import fragmentShader from './shaders/test/fragment.glsl'
 
 // Step 1: Base
 
@@ -20,21 +20,47 @@ const scene = new THREE.Scene()
 
 // Step 2: Textures
 const textureLoader = new THREE.TextureLoader()
-
+const flagTextures = textureLoader.load('/textures/flag-french.jpg');
 
 // Step 3: Test mesh
 // Geometry
-const geometry = new THREE.PlaneGeometry(1, 1, 32, 32)
+const geometry = new THREE.PlaneBufferGeometry(1, 1, 32, 32)
+
+// Step 9: Adding and manipulating random attributes
+const count = geometry.attributes.position.count;
+const randoms = new Float32Array(count);
+
+for (let i = 0; i < count; i++) {
+    randoms[i] = Math.random();
+}
+
+geometry.setAttribute('attributeRandom', new THREE.BufferAttribute(randoms, 1));
 
 // Step 8: Add custom shaders corresponding files, and webpack configurations
-// Material
+// Raw Material
 const material = new THREE.RawShaderMaterial({
     vertexShader,
     fragmentShader,
+    uniforms: {
+        // sending frequency to "vertex"
+        uniformFrequency: { value: new THREE.Vector2(10, 5) },
+        // Step 12 - part a: Adding animations through time
+        uniformTime: { value: 0 },
+        // Step 13: Sending color to "fragment"
+        uniformColor: { value: new THREE.Color('orange') },
+        // Step 14 - part a: Sending image to "fragment"
+        uniformTexture: { value: flagTextures }
+    }
 })
+
+
+// Step 11 - part b: Adding Frequency Controls
+gui.add(material.uniforms.uniformFrequency.value, 'x').min(0).max(20).step(0.01).name('frequencyX')
+gui.add(material.uniforms.uniformFrequency.value, 'y').min(0).max(20).step(0.01).name('frequencyY')
 
 // Mesh
 const mesh = new THREE.Mesh(geometry, material)
+mesh.scale.y = 2 / 3;
 scene.add(mesh)
 
 
@@ -84,6 +110,9 @@ const clock = new THREE.Clock()
 const tick = () =>
 {
     const elapsedTime = clock.getElapsedTime()
+    // Step 12 - part b: Adding animations through time
+    // Update material by sending "elapsedTime" to "vertex"
+    material.uniforms.uniformTime.value = elapsedTime;
 
     // Update controls
     controls.update()
