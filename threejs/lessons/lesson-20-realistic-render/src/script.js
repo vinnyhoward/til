@@ -23,11 +23,11 @@ const canvas = document.querySelector("canvas.webgl");
 const scene = new THREE.Scene();
 
 // Step 1: Mesh - Test Sphere
-const testSphere = new THREE.Mesh(
-  new THREE.SphereGeometry(1, 32, 32),
-  new THREE.MeshStandardMaterial() // Remember to use "MeshStandardMaterial" so light can react with material
-);
-scene.add(testSphere);
+// const testSphere = new THREE.Mesh(
+//   new THREE.SphereGeometry(1, 32, 32),
+//   new THREE.MeshStandardMaterial() // Remember to use "MeshStandardMaterial" so light can react with material
+// );
+// scene.add(testSphere);
 
 // Step 2: Lights
 const directionalLight = new THREE.DirectionalLight("#ffffff", 3);
@@ -36,6 +36,8 @@ directionalLight.position.set(0.25, 3, -2.25);
 directionalLight.castShadow = true;
 directionalLight.shadow.camera.far = 15
 directionalLight.shadow.mapSize.set(1024, 1024)
+// Step 14: Remove Shadow Artifacts (Shadow Acne)
+directionalLight.shadow.normalBias = 0.05
 scene.add(directionalLight);
 // Step 13 - part d: Shadow Camera Helper
 const directionalLightCameraHelper = new THREE.CameraHelper(directionalLight.shadow.camera);
@@ -184,12 +186,12 @@ gltfLoader.load("/models/FlightHelmet/glTF/FlightHelmet.gltf", (gltf) => {
 // Step 10: Add Environment Map
 // Add Environment Map
 const environmentMap = cubeTextureLoader.load([
-  "/textures/environmentMaps/0/px.jpg",
-  "/textures/environmentMaps/0/nx.jpg",
-  "/textures/environmentMaps/0/py.jpg",
-  "/textures/environmentMaps/0/ny.jpg",
-  "/textures/environmentMaps/0/pz.jpg",
-  "/textures/environmentMaps/0/nz.jpg",
+  "/textures/environmentMaps/1/px.jpg",
+  "/textures/environmentMaps/1/nx.jpg",
+  "/textures/environmentMaps/1/py.jpg",
+  "/textures/environmentMaps/1/ny.jpg",
+  "/textures/environmentMaps/1/pz.jpg",
+  "/textures/environmentMaps/1/nz.jpg",
 ]);
 // Use SRGB encoding for more precise colors
 environmentMap.encoding = THREE.sRGBEncoding;

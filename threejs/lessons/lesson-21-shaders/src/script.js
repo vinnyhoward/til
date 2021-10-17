@@ -2,10 +2,12 @@ import './style.css'
 import * as THREE from 'three'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
 import * as dat from 'dat.gui'
+// custom shaders
+import testVertexShader from './shaders/test/vertex.glsl'
+import testFragmentShader from './shaders/test/fragment.glsl'
 
-/**
- * Base
- */
+// Step 1: Base
+
 // Debug
 const gui = new dat.GUI()
 
@@ -15,27 +17,28 @@ const canvas = document.querySelector('canvas.webgl')
 // Scene
 const scene = new THREE.Scene()
 
-/**
- * Textures
- */
+
+// Step 2: Textures
 const textureLoader = new THREE.TextureLoader()
 
-/**
- * Test mesh
- */
+
+// Step 3: Test mesh
 // Geometry
 const geometry = new THREE.PlaneGeometry(1, 1, 32, 32)
 
+// Step 8: Add custom shaders corresponding files, and webpack configurations
 // Material
-const material = new THREE.MeshBasicMaterial()
+const material = new THREE.RawShaderMaterial({
+    vertexShader,
+    fragmentShader,
+})
 
 // Mesh
 const mesh = new THREE.Mesh(geometry, material)
 scene.add(mesh)
 
-/**
- * Sizes
- */
+
+// Step 4: Sizes
 const sizes = {
     width: window.innerWidth,
     height: window.innerHeight
@@ -56,9 +59,8 @@ window.addEventListener('resize', () =>
     renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
 })
 
-/**
- * Camera
- */
+
+// Step 5: Camera
 // Base camera
 const camera = new THREE.PerspectiveCamera(75, sizes.width / sizes.height, 0.1, 100)
 camera.position.set(0.25, - 0.25, 1)
@@ -68,18 +70,15 @@ scene.add(camera)
 const controls = new OrbitControls(camera, canvas)
 controls.enableDamping = true
 
-/**
- * Renderer
- */
+
+// Step 6: Renderer
 const renderer = new THREE.WebGLRenderer({
     canvas: canvas
 })
 renderer.setSize(sizes.width, sizes.height)
 renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
 
-/**
- * Animate
- */
+// Step 7: Animate
 const clock = new THREE.Clock()
 
 const tick = () =>
