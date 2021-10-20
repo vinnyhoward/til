@@ -6,7 +6,7 @@ A collection of small things that I've learned and toy problems that I have done
 
 _Streaks:_
 
-_18 TILs in a row so far..._
+_19 TILs in a row so far..._
 
 _0 Toy Problems completed in a row and counting..._
 
@@ -333,6 +333,7 @@ _Record Streak: 91 TILs_
 
 - [Scenes](/threejs/scenes.md)
 - [Camera](/threejs/basic-camera.md)
+- [Cube Camera](/threejs/cube-camera.md)
 
 <!-- ## Usage
 
