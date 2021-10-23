@@ -1,4 +1,4 @@
-# PerspectiveCamera
+# `PerspectiveCamera`
 
 Camera that uses perspective projection.
 
