@@ -6,7 +6,7 @@ A collection of small things that I've learned and toy problems that I have done
 
 _Streaks:_
 
-_5 TILs in a row so far..._
+_6 TILs in a row so far..._
 
 _5 Toy Problems completed in a row and counting..._
 
@@ -314,8 +314,11 @@ _Record Streak: 91 TILs_
 
 -   [Literals and Operators](/rust/literals-and-operators.md)
 -   [Shadowing](/rust/shadowing.md)
+
+### Primitives
 -   [Data Types](/rust/data-types.md)
 -   [Functions](/rust/functions.md)
+-   [usize](/rust/primitive-types/usize.md)
 
 ### Methods
 -   [char](/rust/methods/char.md)
