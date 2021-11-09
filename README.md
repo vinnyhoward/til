@@ -8,7 +8,7 @@ _Streaks:_
 
 _6 TILs in a row so far..._
 
-_5 Toy Problems completed in a row and counting..._
+_6 Toy Problems completed in a row and counting..._
 
 _Previous streak: 23 TILs😢 and 0 toy problems..._
 
