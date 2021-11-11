@@ -1,7 +1,6 @@
 varying vec2 varyingUv;
 
-void main()
-{
+void main() {
     // pattern 1
     // gl_FragColor = vec4(varyingUv.x, varyingUv.y, 1.0, 1.0);
 
