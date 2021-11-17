@@ -1,3 +1,6 @@
+/* eslint-disable no-loop-func */
+/* eslint-disable */
+
 export default class EventEmitter {
   constructor() {
     this.callbacks = {};
