@@ -2,6 +2,7 @@ import "./style.css";
 import * as THREE from "three";
 import * as dat from "lil-gui";
 import gsap from "gsap";
+
 /**
  * Debug
  */
@@ -179,7 +180,6 @@ window.addEventListener("scroll", () => {
     y: "+=5",
     // z: '+=1.5'
   });
-
 });
 
 /**
