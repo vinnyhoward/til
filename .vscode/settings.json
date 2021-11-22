@@ -1,4 +1,7 @@
 {
   "python.linting.pylintEnabled": false,
-  "python.jediEnabled": false
+  "python.jediEnabled": false,
+  "cSpell.words": [
+    "Raycaster"
+  ]
 }
