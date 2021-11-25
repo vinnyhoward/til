@@ -48,6 +48,27 @@ An integer is a number without a fractional component. We used one integer type 
 
 So how do you know which type of integer to use? If you’re unsure, Rust’s defaults are generally good choices, and integer types default to `i32`: this type is generally the fastest, even on 64-bit systems. The primary situation in which you’d use `isize` or `usize` is when indexing some sort of collection.
 
+Using larger integers are used for more precises calculations. Also, it is good to know that using larger integer types can lead to slowing down of your program. For example developing a game engine where you are tracking millions points of data. Using 64 bit over 32 bit when you don't need to can lead to a drastic increase in memory use.
+
+### Other information about integers
+
+```rust
+    // the compiler will infer the type based on what is assigned to it. In this case
+    // the default will be `i32`
+    let ninety = 90;
+    // this default will also work for negative types
+    let negative_five = -5;
+    // you can use underscores in your integers show larger numbers more clearly
+    // the compiler will treat this as white space or nothing and go on its merry way
+    let one_thousand = 1_000;
+    // dividing a number that can result in a float using two integers will lead to unintended
+    // consequences. The number below would make you think it would equal to 3.33 but since 
+    // this is a integer and not a float it will drop the decimals and would only equal in three
+    let exactly_three = 10 / 3;
+    // dividing a number with zero will blow up the compiler
+    let this_will_panic 5 / 0;
+```
+
 ### Floating-Point Types
 
 Rust also has two primitive types for floating-point numbers, which are numbers with decimal points. Rust’s floating-point types are `f32` and `f64`, which are 32 bits and 64 bits in size, respectively. The default type is `f64` because on modern CPUs it’s roughly the same speed as `f32` but is capable of more precision.
