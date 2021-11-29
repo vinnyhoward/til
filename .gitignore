@@ -64,4 +64,6 @@ typings/
 # webpack default dist folder
 dist/
 
+# rust
 rust/rust-sandbox/target
+target
