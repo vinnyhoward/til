@@ -389,66 +389,118 @@ tick();
 
 // Models
 
-// // Tip 29
+// Tip 23 - Low poly
+// Use low poly models. The fewer polygons, the better the frame rate. If you need details, 
+// try to use normal maps. They are cheap in terms of performances and can get you great 
+// details at the texture cost.
+
+// Tip 24 - Draco compression
+// If the model has a lot of details with very complex geometries, use the Draco compression. 
+// It can reduce weight drastically. The drawbacks are a potential freeze when uncompressing the 
+// geometry, and you also have to load the Draco libraries.
+
+// Tip 25 - Gzip
+// Gzip is a compression happening on the server side. Most of the servers don't gzip files such as .glb, .gltf, .obj, etc.
+
+// See if you can figure out how to fix that, depending on the server you are using.
+
+// Cameras
+
+// Tip - 26 - Field of view
+// When objects are not in the field of view, they won't be rendered. That is called frustum culling.
+
+// That can seem like a tawdry solution, but you can just reduce the camera's field of view. The fewer
+//  objects on the screen, the fewer triangles to render.
+
+// Tip 27 - Near and far
+// Just like the field of view, you can reduce the near and far properties of the camera. If you have a 
+// vast world with mountains, trees, structures, etc., the user probably can't see those small houses out of 
+// sight far behind the mountains. Reduce the far to a decent value and those houses won't even try to be rendered.
+
+// Renderer
+
+// Tip 29 - Pixel ratio
 // renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
 
-// // Tip 31, 32, 34 and 35
-// const shaderGeometry = new THREE.PlaneGeometry(10, 10, 256, 256)
+// Tip 30 - Power preferences
 
-// const shaderMaterial = new THREE.ShaderMaterial({
-//     uniforms:
-//     {
-//         uDisplacementTexture: { value: displacementTexture },
-//         uDisplacementStrength: { value: 1.5 }
-//     },
-//     vertexShader: `
-//         uniform sampler2D uDisplacementTexture;
-//         uniform float uDisplacementStrength;
+// Some devices may be able to switch between different GPU or different GPU usage.
+// We can give a hint on what power is required when instantiating the WebGLRenderer by specifying a powerPreference property:
 
-//         varying vec2 vUv;
-
-//         void main()
-//         {
-//             vec4 modelPosition = modelMatrix * vec4(position, 1.0);
-
-//             float elevation = texture2D(uDisplacementTexture, uv).r;
-//             if(elevation < 0.5)
-//             {
-//                 elevation = 0.5;
-//             }
-
-//             modelPosition.y += elevation * uDisplacementStrength;
-
-//             gl_Position = projectionMatrix * viewMatrix * modelPosition;
-
-//             vUv = uv;
-//         }
-//     `,
-//     fragmentShader: `
-//         uniform sampler2D uDisplacementTexture;
-
-//         varying vec2 vUv;
-
-//         void main()
-//         {
-//             float elevation = texture2D(uDisplacementTexture, vUv).r;
-//             if(elevation < 0.25)
-//             {
-//                 elevation = 0.25;
-//             }
-
-//             vec3 depthColor = vec3(1.0, 0.1, 0.1);
-//             vec3 surfaceColor = vec3(0.1, 0.0, 0.5);
-//             vec3 finalColor = vec3(0.0);
-//             finalColor.r += depthColor.r + (surfaceColor.r - depthColor.r) * elevation;
-//             finalColor.g += depthColor.g + (surfaceColor.g - depthColor.g) * elevation;
-//             finalColor.b += depthColor.b + (surfaceColor.b - depthColor.b) * elevation;
-
-//             gl_FragColor = vec4(finalColor, 1.0);
-//         }
-//     `
+// const renderer = new THREE.WebGLRenderer({
+//   canvas: canvas,
+//   powerPreference: 'high-performance'
 // })
 
-// const shaderMesh = new THREE.Mesh(shaderGeometry, shaderMaterial)
-// shaderMesh.rotation.x = - Math.PI * 0.5
-// scene.add(shaderMesh)
+// Tip 31 - Antialias
+// The default antialias is performant, but still, it's less performant than no antialias. 
+// Only add it if you have visible aliasing and no performance issue.
+
+// Postprocessing
+
+// Tip 32 - Limit passes
+
+// Each post-processing pass will take as many pixels as the render's resolution (including the pixel ratio) to render. 
+// If you have a 1920x1080 resolution with 4 passes and a pixel ratio of 2, that makes 1920 * 2 * 1080 * 2 * 4 = 33 177 600 
+// pixels to render. Be reasonable, and try to regroup your custom passes into one.
+
+// Shaders
+
+// Tip 33 - Specify the precision
+
+// You can force the precision of the shaders in the materials by changing their precision property:
+// const shaderMaterial = new THREE.ShaderMaterial({
+//   precision: 'lowp',
+//   // ...
+// })
+// Check the result for any quality downgrade or glitches.
+
+// That won't work with the RawShaderMaterial, and you'll have to add the precision by yourself on the shaders like we did on the 
+// first shaders lesson.
+
+// Tip 34 - Keep code simple
+// It's laborious to monitor the difference, but try to keep your shader codes as 
+// simple as possible. Avoid if statements. Make good use of swizzles and built-in functions.
+
+// As in the vertex shader, instead of the if statement:
+
+// modelPosition.y += clamp(elevation, 0.5, 1.0) * uDisplacementStrength;
+
+// GLSL
+// Or as in the fragment shader, instead of these complex formulas for r, g and b:
+
+// vec3 depthColor = vec3(1.0, 0.1, 0.1);
+// vec3 surfaceColor = vec3(0.1, 0.0, 0.5);
+// vec3 finalColor = mix(depthColor, surfaceColor, elevation);
+
+// Tip 35 - Use textures
+
+// Employing perlin noise functions is cool, but it can affect your performance considerably. Sometimes, 
+// you better use a texture representing the noise. Using texture2D() is way cheaper than a perlin noise 
+// function, and you can produce these textures quite efficiently with tools like photoshop.
+
+// Tip 34 - Use defines
+
+// Uniforms are beneficial because we can tweak them and animate the values in the JavaScript. 
+// But uniforms have a performance cost. If the value isn't supposed to change, you can use defines. 
+// There are two ways of creating a define.
+
+// Directly in the shader code:
+// #define uDisplacementStrength 1.5
+
+// Or in the defines property of the ShaderMaterial:
+// const shaderMaterial = new THREE.ShaderMaterial({
+
+//   // ...
+
+//   defines:
+//   {
+//       uDisplacementStrength: 1.5
+//   },
+
+//   // ...
+// }
+// Those defines will automatically be added to the GLSL code if you are using a ShaderMaterial.
+
+// Tip 35 - Do the calculations in the vertex shader
+// If possible, do the calculations in the vertex shader and send the result to the fragment shader.
