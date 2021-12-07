@@ -6,9 +6,9 @@ A collection of small things that I've learned and toy problems that I have done
 
 _Streaks:_
 
-_33 TILs in a row so far..._
+_34 TILs in a row so far..._
 
-_33 Toy problems completed in a row and counting..._
+_34 Toy problems completed in a row and counting..._
 
 _Previous streak: 23 TILs😢 and 0 toy problems..._
 
@@ -321,11 +321,12 @@ _Record Streak: 91 TILs_
 -   [usize](/rust/primitive-types/usize.md)
 
 ### Methods
--   [format](/rust/macros/format.md)
--   [unreachable](/rust/macros/unreachable.md)
+-   [char](/rust/methods/char.md)
 
 ### Macros
--   [char](/rust/methods/char.md)
+-   [format](/rust/macros/format.md)
+-   [unreachable](/rust/macros/unreachable.md)
+-   [panic](/rust/macros/panic.md)
 
 ### Ownership
 
