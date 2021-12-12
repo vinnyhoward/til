@@ -42,3 +42,36 @@ fn main() {
    }
 }
 ```
+
+### Output
+
+```bash
+   10 20 30
+```
+
+## Illustration:iter()
+
+The iter() function uses the concept of borrowing. It returns a reference to each element of the collection, leaving the collection untouched and available for reuse after the loop.
+
+```rust
+fn main() {
+   let names = vec!["Kannan", "Mohtashim", "Kiran"];
+   for name in names.iter() {
+      match name {
+         &"Mohtashim" => println!("There is a rustacean among us!"),
+         _ => println!("Hello {}", name),
+      }
+   }
+   println!("{:?}",names); 
+   // reusing the collection after iteration
+}
+```
+
+### Output
+
+```bash
+Hello Kannan
+There is a rustacean among us!
+Hello Kiran
+["Kannan", "Mohtashim", "Kiran"]
+```
